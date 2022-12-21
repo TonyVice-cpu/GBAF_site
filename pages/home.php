@@ -40,10 +40,10 @@
               <p class="nav-link-p">Bienvenue, Nom Prénom</p>
             </li>
             <li class="nav-item ms-2">
-              <a class="nav-link" href="./settings.html">Paramètres du compte</a>
+              <a class="nav-link" href="./settings.php">Paramètres du compte</a>
             </li>
             <li class="nav-item ms-2">
-              <a class="nav-link" href="../index.html">Se déconnecter</a>
+              <a class="nav-link" href="../index.php">Se déconnecter</a>
             </li>
           </ul>
         </div>
@@ -111,7 +111,7 @@
             <h3 class="card-title">Formation&co</h3>
             <p class="card-text"><strong>Formation&co</strong> est une association française présente sur tout le
               territoire. Nous proposons à des personnes issues de tout milieu de devenir entrepreneur ...</p>
-            <p class="card-text"><a class="btn btn-dark" href="partner_1.html"><small>Lire la suite</small></a>
+            <p class="card-text"><a class="btn btn-dark" href="partner_1.php"><small>Lire la suite</small></a>
             </p>
           </div>
         </div>
@@ -122,7 +122,7 @@
             <h3 class="card-title">Protectpeople</h3>
             <p class="card-text"><strong>Protectpeople</strong> finance la solidarité nationale. Nous appliquons le
               principe édifié par la Sécurité sociale française en 1945 ...</p>
-            <p class="card-text"><a class="btn btn-dark" href="partner_2.html"><small>Lire la suite</small></a>
+            <p class="card-text"><a class="btn btn-dark" href="partner_2.php"><small>Lire la suite</small></a>
             </p>
           </div>
         </div>
@@ -136,7 +136,7 @@
             <p class="card-text"><strong>DSA France</strong> accélère la croissance du territoire et s’engage avec les
               collectivités territoriales. Nous accompagnons les entreprises dans les étapes clés de leur évolution. ...
             </p>
-            <p class="card-text"><a class="btn btn-dark" href="partner_3.html"><small>Lire la suite</small></a>
+            <p class="card-text"><a class="btn btn-dark" href="partner_3.php"><small>Lire la suite</small></a>
             </p>
           </div>
         </div>
@@ -147,7 +147,7 @@
             <h3 class="card-title">CDE</h3>
             <p class="card-text"><strong>La CDE (Chambre Des Entrepreneurs) </strong>accompagne les entreprises dans
               leurs démarches de formation ...</p>
-            <p class="card-text"><a class="btn btn-dark" href="./partner_4.html"><small>Lire la suite</small></a>
+            <p class="card-text"><a class="btn btn-dark" href="./partner_4.php"><small>Lire la suite</small></a>
             </p>
           </div>
         </div>
@@ -160,8 +160,8 @@
   </main>
   <!-- FOOTER -->
   <footer>
-    <div class="footer-link mt-2"><a href="./notice.html"><i class="fa-solid fa-grip-lines-vertical me-2"></i>Mentions légales<i
-          class="fa-solid fa-grip-lines-vertical ms-2"></i></a><a href="./contact.html"><i
+    <div class="footer-link mt-2"><a href="./notice.php"><i class="fa-solid fa-grip-lines-vertical me-2"></i>Mentions légales<i
+          class="fa-solid fa-grip-lines-vertical ms-2"></i></a><a href="./contact.php"><i
           class="fa-solid fa-grip-lines-vertical me-2"></i>Contact<i
           class="fa-solid fa-grip-lines-vertical ms-2"></i></a>
     </div>

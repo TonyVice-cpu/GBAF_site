@@ -21,11 +21,11 @@
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="./home.html">
+        <a class="navbar-brand" href="./home.php">
           <img src="../assets/img/logo.PNG" alt="logo GBAF">
           Le Groupement Banque et Assurance Français
         </a>
-        <div class="tinynav-logo"><a href="./home.html">
+        <div class="tinynav-logo"><a href="./home.php">
             <img src="../assets/img/logo.PNG" alt="logo GBAF">
           </a>
           <p>Le Groupement Banque et Assurance Français</p>
@@ -40,10 +40,10 @@
               <p class="nav-link-p">Nom Prénom</p>
             </li>
             <li class="nav-item ms-2">
-              <a class="nav-link" href="./settings.html">Paramètres du compte</a>
+              <a class="nav-link" href="./settings.php">Paramètres du compte</a>
             </li>
             <li class="nav-item ms-2">
-              <a class="nav-link" href="../index.html">Se déconnecter</a>
+              <a class="nav-link" href="../index.php">Se déconnecter</a>
             </li>
           </ul>
         </div>
@@ -68,8 +68,8 @@
   </main>
   <!-- FOOTER -->
   <footer>
-    <div class="footer-link mt-2"><a href="./notice.html"><i class="fa-solid fa-grip-lines-vertical me-2"></i>Mentions
-        légales<i class="fa-solid fa-grip-lines-vertical ms-2"></i></a><a href="./contact.html"><i
+    <div class="footer-link mt-2"><a href="./notice.php"><i class="fa-solid fa-grip-lines-vertical me-2"></i>Mentions
+        légales<i class="fa-solid fa-grip-lines-vertical ms-2"></i></a><a href="./contact.php"><i
           class="fa-solid fa-grip-lines-vertical me-2"></i>Contact<i
           class="fa-solid fa-grip-lines-vertical ms-2"></i></a>
     </div>

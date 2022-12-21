@@ -52,7 +52,7 @@
         </div>
         <div class="hidden">Tous les champs avec un <i class="fa-solid fa-asterisk"></i>  sont obligatoire</div>
         <div>
-          <a class="btn btn-dark" href="./pages/home.html">Connexion</a>
+          <a class="btn btn-dark" href="./pages/home.php">Connexion</a>
         </div>
         <div><a href="#">Mot de passe oublié ?</a></div>
       </form>
@@ -62,9 +62,9 @@
   <section class="sign-up-link"><a class="mt-3" href="#">Première visite ?</a></section>
   <!-- FOOTER -->
   <footer>
-    <div class="footer-link mt-2"><a href="./pages/notice.html"><i
+    <div class="footer-link mt-2"><a href="./pages/notice.php"><i
           class="fa-solid fa-grip-lines-vertical me-2"></i>Mentions légales<i
-          class="fa-solid fa-grip-lines-vertical ms-2"></i></a><a href="./pages/contact.html"><i
+          class="fa-solid fa-grip-lines-vertical ms-2"></i></a><a href="./pages/contact.php"><i
           class="fa-solid fa-grip-lines-vertical me-2"></i>Contact<i
           class="fa-solid fa-grip-lines-vertical ms-2"></i></a>
     </div>

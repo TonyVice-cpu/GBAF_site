@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
   <!-- Mon CSS -->
   <link rel="stylesheet" href="../assets/css/styles.css">
-  <title>GBAF - Le Groupement Banque et Assurance Français - Protectpeople</title>
+  <title>GBAF - Le Groupement Banque et Assurance Français - DSA France</title>
 </head>
 
 <body>
@@ -21,11 +21,11 @@
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="./home.html">
+        <a class="navbar-brand" href="./home.php">
           <img src="../assets/img/logo.PNG" alt="logo GBAF">
           Le Groupement Banque et Assurance Français
         </a>
-        <div class="tinynav-logo"><a href="./home.html">
+        <div class="tinynav-logo"><a href="./home.php">
             <img src="../assets/img/logo.PNG" alt="logo GBAF">
           </a>
           <p>Le Groupement Banque et Assurance Français</p>
@@ -40,10 +40,10 @@
               <p class="nav-link-p">Nom Prénom</p>
             </li>
             <li class="nav-item ms-2">
-              <a class="nav-link" href="./settings.html">Paramètres du compte</a>
+              <a class="nav-link" href="./settings.php">Paramètres du compte</a>
             </li>
             <li class="nav-item ms-2">
-              <a class="nav-link" href="../index.html">Se déconnecter</a>
+              <a class="nav-link" href="../index.php">Se déconnecter</a>
             </li>
           </ul>
         </div>
@@ -55,27 +55,23 @@
     <!-- SECTIONS -->
     <!-- SECTION PARTNER-PRESENTATION -->
     <section class="partner-presentation">
-      <div><img src="../assets/img/protectpeople.png" class="img-fluid rounded mt-5" alt="Logo Protectpeople"></div>
+      <div><img src="../assets/img/Dsa_france.png" class="img-fluid rounded mt-5" alt="Logo DSA France"></div>
       <!-- SEPARATEUR -->
       <div class="separator rounded  bg-dark mt-5 mb-5"></div>
-      <h2 class="fs-1">Protectpeople</h2>
+      <h2 class="fs-1">DSA France</h2>
       <!-- SEPARATEUR - icons -->
       <div class="star-icon mt-5"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
           class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
       <!-- SEPARATEUR -->
       <div class="separator rounded  bg-dark mt-5 mb-5"></div>
-      <p><strong>Protectpeople</strong> finance la solidarité nationale.</br></br>
-        Nous appliquons le principe édifié par la Sécurité sociale française en 1945 : permettre à chacun de
-        bénéficier d’une protection sociale.</br></br>
-        Chez <strong>Protectpeople</strong>, chacun cotise selon ses moyens et reçoit selon ses besoins.</br></br>
-        <strong>Protecpeople</strong> est ouvert à tous, sans considération d’âge ou d’état de santé.
-        Nous garantissons un accès aux soins et une retraite.</br></br>
-        <strong>Chaque année, nous collectons et répartissons 300 milliards d’euros.</strong></br></br>
-        Notre mission est double :</br>
-         ● sociale : nous garantissons la fiabilité des données sociales ;</br>
-         ● économique : nous apportons une contribution aux activités économiques.
+      <p><strong>DSA France</strong> accélère la croissance du territoire et s’engage avec les collectivités
+        territoriales.</br></br>
+        Nous accompagnons les entreprises dans les étapes clés de leur évolution.</br></br>
+        <strong>Notre philosophie : s’adapter à chaque entreprise.</strong></br></br>
+        Nous les accompagnons pour voir plus grand et plus loin et proposons des solutions de financement adaptées à
+        chaque étape de la vie des entreprises.
       </p>
-      <a class="mb-4" href="#">www.Protectpeople.fr</a>
+      <a class="mb-4" href="#">www.DSA France.fr</a>
     </section>
     <!-- SEPARATEUR -->
     <div class="separator rounded  bg-dark mt-5 mb-5"></div>
@@ -84,7 +80,7 @@
       <div class="card">
         <h2 class="card-header">COMMENTAIRES</h2>
         <div class="card-header-btn mt-1 ">
-          <div><a href="./comment.html" class="btn btn-dark m-1">Nouveau commentaire</a></div>
+          <div><a href="./comment.php" class="btn btn-dark m-1">Nouveau commentaire</a></div>
           <div class="card-header-avis">
             <div><a href="#" class="btn btn-dark m-1"><i class="fa-regular fa-thumbs-up"></i></a></div>
             <div><a href="#" class="btn btn-dark m-1"><i class="fa-regular fa-thumbs-down"></i></a></div>
@@ -120,8 +116,8 @@
   </main>
   <!-- FOOTER -->
   <footer>
-    <div class="footer-link mt-2"><a href="./notice.html"><i class="fa-solid fa-grip-lines-vertical me-2"></i>Mentions légales<i
-          class="fa-solid fa-grip-lines-vertical ms-2"></i></a><a href="./contact.html"><i
+    <div class="footer-link mt-2"><a href="./notice.php"><i class="fa-solid fa-grip-lines-vertical me-2"></i>Mentions légales<i
+          class="fa-solid fa-grip-lines-vertical ms-2"></i></a><a href="./contact.php"><i
           class="fa-solid fa-grip-lines-vertical me-2"></i>Contact<i
           class="fa-solid fa-grip-lines-vertical ms-2"></i></a>
     </div>

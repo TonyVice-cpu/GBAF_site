@@ -21,11 +21,11 @@
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="./home.html">
+        <a class="navbar-brand" href="./home.php">
           <img src="../assets/img/logo.PNG" alt="logo GBAF">
           Le Groupement Banque et Assurance Français
         </a>
-        <div class="tinynav-logo"><a href="./home.html">
+        <div class="tinynav-logo"><a href="./home.php">
             <img src="../assets/img/logo.PNG" alt="logo GBAF">
           </a>
           <p>Le Groupement Banque et Assurance Français</p>
@@ -40,10 +40,10 @@
               <p class="nav-link-p">Nom Prénom</p>
             </li>
             <li class="nav-item ms-2">
-              <a class="nav-link" href="./settings.html">Paramètres du compte</a>
+              <a class="nav-link" href="./settings.php">Paramètres du compte</a>
             </li>
             <li class="nav-item ms-2">
-              <a class="nav-link" href="../index.html">Se déconnecter</a>
+              <a class="nav-link" href="../index.php">Se déconnecter</a>
             </li>
           </ul>
         </div>
@@ -77,7 +77,7 @@
       <div class="card">
         <h2 class="card-header">COMMENTAIRES</h2>
         <div class="card-header-btn mt-1 ">
-          <div><a href="./comment.html" class="btn btn-dark m-1">Nouveau commentaire</a></div>
+          <div><a href="./comment.php" class="btn btn-dark m-1">Nouveau commentaire</a></div>
           <div class="card-header-avis">
             <div><a href="#" class="btn btn-dark m-1"><i class="fa-regular fa-thumbs-up"></i></a></div>
             <div><a href="#" class="btn btn-dark m-1"><i class="fa-regular fa-thumbs-down"></i></a></div>
@@ -113,8 +113,8 @@
   </main>
   <!-- FOOTER -->
   <footer>
-    <div class="footer-link mt-2"><a href="./notice.html"><i class="fa-solid fa-grip-lines-vertical me-2"></i>Mentions légales<i
-          class="fa-solid fa-grip-lines-vertical ms-2"></i></a><a href="./contact.html"><i
+    <div class="footer-link mt-2"><a href="./notice.php"><i class="fa-solid fa-grip-lines-vertical me-2"></i>Mentions légales<i
+          class="fa-solid fa-grip-lines-vertical ms-2"></i></a><a href="./contact.php"><i
           class="fa-solid fa-grip-lines-vertical me-2"></i>Contact<i
           class="fa-solid fa-grip-lines-vertical ms-2"></i></a>
     </div>
