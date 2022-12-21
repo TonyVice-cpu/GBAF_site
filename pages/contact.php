@@ -1,3 +1,6 @@
+<?php
+$title = "Contact";
+?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -12,7 +15,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
   <!-- Mon CSS -->
   <link rel="stylesheet" href="../assets/css/styles.css">
-  <title>GBAF - Le Groupement Banque et Assurance Français - Contact</title>
+  <title>GBAF - Le Groupement Banque et Assurance Français - <?= $title ?></title>
 </head>
 
 <body>
@@ -43,8 +46,7 @@
       <div class="contact">
         <h2 class="fs-1 mt-5">Contact</h2>
         <!-- SEPARATEUR - icons -->
-        <div class="star-icon"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <div class="star-icon"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
         <!-- SEPARATEUR -->
         <div class="separator rounded bg-dark mt-5 mb-5"></div>
         <p class="mb-5 fs-4">Pour plus d'informations, n'hésitez pas à nous contacter.</p>
@@ -65,8 +67,7 @@
       </div>
       <div class="mb-3">
         <label for="exampleFormControlTextarea1" class="form-label">Votre texte :</label>
-        <textarea class="form-control bg-light " id="exampleFormControlTextarea1"
-          placeholder="Laissez votre message ici..." rows="3"></textarea>
+        <textarea class="form-control bg-light " id="exampleFormControlTextarea1" placeholder="Laissez votre message ici..." rows="3"></textarea>
       </div>
       <div class="section-button"><button type="submit" class="btn btn-dark mb-5">Envoyer</button></div>
     </section>
@@ -78,9 +79,7 @@
   <!-- FOOTER -->
   <footer>
     <div class="footer-link mt-2"><a href="./notice.php"><i class="fa-solid fa-grip-lines-vertical me-2"></i>Mentions
-        légales<i class="fa-solid fa-grip-lines-vertical ms-2"></i></a><a href="#"><i
-          class="fa-solid fa-grip-lines-vertical me-2"></i>Contact<i
-          class="fa-solid fa-grip-lines-vertical ms-2"></i></a>
+        légales<i class="fa-solid fa-grip-lines-vertical ms-2"></i></a><a href="#"><i class="fa-solid fa-grip-lines-vertical me-2"></i>Contact<i class="fa-solid fa-grip-lines-vertical ms-2"></i></a>
     </div>
     <div class="footer-copyright mt-2">
       <p>Copyright - GBAF - ANCELIN Anthony 2022</p>

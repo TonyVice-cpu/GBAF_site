@@ -1,3 +1,6 @@
+<?php 
+$title = "Paramètres du comptes";
+?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -12,7 +15,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
   <!-- Mon CSS -->
   <link rel="stylesheet" href="../assets/css/styles.css">
-  <title>GBAF - Le Groupement Banque et Assurance Français - Paramètres du compte</title>
+  <title>GBAF - Le Groupement Banque et Assurance Français - <?= $title ?></title>
 </head>
 
 <body>
