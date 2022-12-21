@@ -1,6 +1,15 @@
 <?php
+session_start();
+if (!isset($_SESSION['is_logged_in']) || !$_SESSION['is_logged_in']) {
+  header('Location: index.php');
+  die;
+}
+include('./_includes/connect/db.php');
+include('./_includes/functions.php');
 $title = "Accueil";
+$actors = get_actors();
 ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -9,6 +18,7 @@ $title = "Accueil";
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="../assets/img/fav_icon.PNG">
+  <!-- CSS -->
   <!-- CSS Font-awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
   <!-- CSS Bootstrap -->
@@ -73,55 +83,19 @@ $title = "Accueil";
       <div class="separator rounded bg-dark mt-5 mb-5"></div>
       <p>Retrouvez-ici la liste des différents acteurs et partenaires du Groupement Banque et Assurance Français.</p>
       <!-- PARTNER -->
-      <div class="partner">
-        <!-- PARTNER-1 -->
-        <div class="card card mt-5 mb-5">
-          <img src="../assets/img/formation_co.png" class="img-fluid rounded-start" alt="Logo Formation&co">
-          <div class="card-body rounded-end bg-light">
-            <h3 class="card-title">Formation&co</h3>
-            <p class="card-text"><strong>Formation&co</strong> est une association française présente sur tout le
-              territoire. Nous proposons à des personnes issues de tout milieu de devenir entrepreneur ...</p>
-            <p class="card-text"><a class="btn btn-dark" href="partner_1.php"><small>Lire la suite</small></a>
-            </p>
+      <?php foreach($actors as $actor): ?>
+        <div class="partner">
+          <div class="card card mt-5 mb-5">
+            <img src="../assets/img/<?= htmlspecialchars($actor['logo']) ?>" alt="logo <?= htmlspecialchars($actor['actor_name']) ?>">
+            <div class="card-body rounded-end bg-light">
+              <h3 class="card-title"><?= htmlspecialchars($actor['actor_name']) ?></h3>
+              <p class="card-text"><?= nl2br(htmlspecialchars(truncate($actor['description'], 80))) ?></p>
+              <p class="card-text"><a class="btn btn-dark" href="partner.php?id=<?= $actor['actor_id'] ?>"><small>Lire la suite</small></a>
+              </p>
+            </div>
           </div>
         </div>
-        <!-- PARTNER-2 -->
-        <div class="card card mb-5">
-          <img src="../assets/img/protectpeople.png" class="img-fluid rounded-start" alt="Logo Protectpeople">
-          <div class="card-body rounded-end bg-light">
-            <h3 class="card-title">Protectpeople</h3>
-            <p class="card-text"><strong>Protectpeople</strong> finance la solidarité nationale. Nous appliquons le
-              principe édifié par la Sécurité sociale française en 1945 ...</p>
-            <p class="card-text"><a class="btn btn-dark" href="partner_2.php"><small>Lire la suite</small></a>
-            </p>
-          </div>
-        </div>
-        <!-- SEPARATEUR -->
-        <div class="separator rounded  bg-dark mt-5 mb-5"></div>
-        <!-- PARTNER-3 -->
-        <div class="card card mb-5">
-          <img src="../assets/img/Dsa_france.png" class="img-fluid rounded-start" alt="Logo DSA France">
-          <div class="card-body rounded-end bg-light">
-            <h3 class="card-title">DSA France</h3>
-            <p class="card-text"><strong>DSA France</strong> accélère la croissance du territoire et s’engage avec les
-              collectivités territoriales. Nous accompagnons les entreprises dans les étapes clés de leur évolution. ...
-            </p>
-            <p class="card-text"><a class="btn btn-dark" href="partner_3.php"><small>Lire la suite</small></a>
-            </p>
-          </div>
-        </div>
-        <!-- PARTNER-4 -->
-        <div class="card card mb-5">
-          <img src="../assets/img/CDE.png" class="img-fluid rounded-start" alt="Logo CDE">
-          <div class="card-body rounded-end bg-light">
-            <h3 class="card-title">CDE</h3>
-            <p class="card-text"><strong>La CDE (Chambre Des Entrepreneurs) </strong>accompagne les entreprises dans
-              leurs démarches de formation ...</p>
-            <p class="card-text"><a class="btn btn-dark" href="./partner_4.php"><small>Lire la suite</small></a>
-            </p>
-          </div>
-        </div>
-      </div>
+      <?php endforeach ?>
       <!-- SEPARATEUR -->
       <div class="separator rounded  bg-dark mb-4"></div>
       <!-- LOGO -->
@@ -136,6 +110,7 @@ $title = "Accueil";
   <!-- inclusion du bouton haut de page -->
   <?php include('./_includes/to_top.php'); ?>
 
+  <!-- JAVASCRIPT -->
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Mon JS -->

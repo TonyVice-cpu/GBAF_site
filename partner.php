@@ -1,6 +1,15 @@
 <?php
-$title = "CDE";
+session_start();
+if (!isset($_SESSION['is_logged_in']) || !$_SESSION['is_logged_in']) {
+  header('Location: index.php');
+  die;
+}
+include('./_includes/connect/db.php');
+include('./_includes/functions.php');
+$title = "Formation&co";
+$actor = get_actor($_GET['id']);
 ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -9,6 +18,7 @@ $title = "CDE";
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="../assets/img/fav_icon.PNG">
+  <!-- CSS -->
   <!-- CSS Font-awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
   <!-- CSS Bootstrap -->
@@ -27,19 +37,28 @@ $title = "CDE";
     <!-- SECTIONS -->
     <!-- SECTION PARTNER-PRESENTATION -->
     <section class="partner-presentation">
-      <div><img src="../assets/img/CDE.png" class="img-fluid rounded mt-5" alt="Logo CDE"></div>
+      <div><img src="../assets/img/formation_co.png" class="img-fluid rounded mt-5" alt="Logo Formation&co"></div>
       <!-- SEPARATEUR -->
       <div class="separator rounded  bg-dark mt-5 mb-5"></div>
-      <h2 class="fs-1">Chambre Des Entrepreneurs</h2>
+      <h2 class="fs-1">Formation&co</h2>
       <!-- SEPARATEUR - icons -->
       <div class="star-icon mt-5"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
       <!-- SEPARATEUR -->
       <div class="separator rounded  bg-dark mt-5 mb-5"></div>
-      <p>La <strong>Chambre Des Entrepreneurs</strong> accompagne les entreprises dans leurs démarches de
-        formation.</br></br>
-        Son président est élu pour 3 ans par ses pairs, chefs d’entreprises et présidents des CDE.
+      <p><strong>Formation&co</strong> est une association française présente sur tout le territoire.</br></br>
+        Nous proposons à des personnes issues de tout milieu de devenir entrepreneur grâce à un crédit et un
+        accompagnement professionnel et personnalisé.</br></br>
+        Notre proposition :</br>
+         ● un financement jusqu’à 30 000€ ;</br>
+         ● un suivi personnalisé et gratuit ;</br>
+         ● une lutte acharnée contre les freins sociétaux et les stéréotypes.</br></br>
+
+        Le financement est possible, peu importe le métier :</br>
+        coiffeur, banquier, éleveur de chèvres… .</br></br>
+        <strong>Nous collaborons avec des personnes talentueuses et motivées.</strong></br></br>
+        Vous n’avez pas de diplômes ? Ce n’est pas un problème pour nous ! Nos financements s’adressent à tous.
       </p>
-      <a class="mb-4" href="#">www.CDE.fr</a>
+      <a class="mb-4" href="#">www.Formation&co.fr</a>
     </section>
     <!-- SEPARATEUR -->
     <div class="separator rounded  bg-dark mt-5 mb-5"></div>
@@ -90,6 +109,7 @@ $title = "CDE";
   <!-- inclusion du bouton haut de page -->
   <?php include('./_includes/to_top.php'); ?>
 
+  <!-- JAVASCRIPT -->
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Mon JS -->

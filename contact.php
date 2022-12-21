@@ -1,4 +1,5 @@
 <?php
+session_start();
 $title = "Contact";
 ?>
 <!DOCTYPE html>
@@ -9,6 +10,7 @@ $title = "Contact";
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="../assets/img/fav_icon.PNG">
+  <!-- CSS -->
   <!-- CSS Font-awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
   <!-- CSS Bootstrap -->
@@ -70,6 +72,7 @@ $title = "Contact";
   <!-- inclusion du bouton haut de page -->
   <?php include('./_includes/to_top.php'); ?>
 
+  <!-- JAVASCRIPT -->
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Mon JS -->
