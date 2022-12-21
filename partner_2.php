@@ -1,5 +1,5 @@
 <?php
-$title = "CDE";
+$title = "Protectpeople";
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -20,56 +20,33 @@ $title = "CDE";
 
 <body>
   <!-- HEADER -->
-  <header>
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="./home.php">
-          <img src="../assets/img/logo.PNG" alt="logo GBAF">
-          Le Groupement Banque et Assurance Français
-        </a>
-        <div class="tinynav-logo"><a href="./home.php">
-            <img src="../assets/img/logo.PNG" alt="logo GBAF">
-          </a>
-          <p>Le Groupement Banque et Assurance Français</p>
-        </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mt-3">
-            <li class="nav-item ms-2">
-              <p class="nav-link-p">Nom Prénom</p>
-            </li>
-            <li class="nav-item ms-2">
-              <a class="nav-link" href="./settings.php">Paramètres du compte</a>
-            </li>
-            <li class="nav-item ms-2">
-              <a class="nav-link" href="../index.php">Se déconnecter</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
+  <!-- inclusion du header -->
+  <?php include('./_includes/header.php'); ?>
   <!-- MAIN -->
   <main>
     <!-- SECTIONS -->
     <!-- SECTION PARTNER-PRESENTATION -->
     <section class="partner-presentation">
-      <div><img src="../assets/img/CDE.png" class="img-fluid rounded mt-5" alt="Logo CDE"></div>
+      <div><img src="../assets/img/protectpeople.png" class="img-fluid rounded mt-5" alt="Logo Protectpeople"></div>
       <!-- SEPARATEUR -->
       <div class="separator rounded  bg-dark mt-5 mb-5"></div>
-      <h2 class="fs-1">Chambre Des Entrepreneurs</h2>
+      <h2 class="fs-1">Protectpeople</h2>
       <!-- SEPARATEUR - icons -->
       <div class="star-icon mt-5"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
       <!-- SEPARATEUR -->
       <div class="separator rounded  bg-dark mt-5 mb-5"></div>
-      <p>La <strong>Chambre Des Entrepreneurs</strong> accompagne les entreprises dans leurs démarches de
-        formation.</br></br>
-        Son président est élu pour 3 ans par ses pairs, chefs d’entreprises et présidents des CDE.
+      <p><strong>Protectpeople</strong> finance la solidarité nationale.</br></br>
+        Nous appliquons le principe édifié par la Sécurité sociale française en 1945 : permettre à chacun de
+        bénéficier d’une protection sociale.</br></br>
+        Chez <strong>Protectpeople</strong>, chacun cotise selon ses moyens et reçoit selon ses besoins.</br></br>
+        <strong>Protecpeople</strong> est ouvert à tous, sans considération d’âge ou d’état de santé.
+        Nous garantissons un accès aux soins et une retraite.</br></br>
+        <strong>Chaque année, nous collectons et répartissons 300 milliards d’euros.</strong></br></br>
+        Notre mission est double :</br>
+         ● sociale : nous garantissons la fiabilité des données sociales ;</br>
+         ● économique : nous apportons une contribution aux activités économiques.
       </p>
-      <a class="mb-4" href="#">www.CDE.fr</a>
+      <a class="mb-4" href="#">www.Protectpeople.fr</a>
     </section>
     <!-- SEPARATEUR -->
     <div class="separator rounded  bg-dark mt-5 mb-5"></div>
@@ -113,20 +90,12 @@ $title = "CDE";
     <div class="section-logo"><img src="../assets/img/logo.PNG" alt="Logo GBAF"></div>
   </main>
   <!-- FOOTER -->
-  <footer>
-    <div class="footer-link mt-2"><a href="./notice.php"><i class="fa-solid fa-grip-lines-vertical me-2"></i>Mentions légales<i class="fa-solid fa-grip-lines-vertical ms-2"></i></a><a href="./contact.php"><i class="fa-solid fa-grip-lines-vertical me-2"></i>Contact<i class="fa-solid fa-grip-lines-vertical ms-2"></i></a>
-    </div>
-    <div class="footer-copyright mt-2">
-      <p>Copyright - GBAF - ANCELIN Anthony 2022</p>
-    </div>
-  </footer>
+  <!-- inclusion du footer -->
+  <?php include('./_includes/footer.php'); ?>
 
   <!-- BOUTON - TO TOP -->
-  <section>
-    <div id="totop" title="Haut de page">
-      <i class="fas fa-angle-double-up"></i>
-    </div>
-  </section>
+  <!-- inclusion du bouton haut de page -->
+  <?php include('./_includes/to_top.php'); ?>
 
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>

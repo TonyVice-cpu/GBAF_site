@@ -20,22 +20,8 @@ $title = "Contact";
 
 <body>
   <!-- HEADER -->
-  <header>
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="../index.php">
-          <img src="../assets/img/logo.PNG" alt="logo GBAF">
-          Le Groupement Banque et Assurance Français
-        </a>
-        <div class="tinynav-logo"><a href="../index.php">
-            <img src="../assets/img/logo.PNG" alt="logo GBAF">
-          </a>
-          <p>Le Groupement Banque et Assurance Français</p>
-        </div>
-      </div>
-    </nav>
-  </header>
+  <!-- inclusion du header -->
+  <?php include('./_includes/header.php'); ?>
   <!-- MAIN -->
   <main>
     <!-- SECTION -->
@@ -77,21 +63,12 @@ $title = "Contact";
     <div class="section-logo"><img src="../assets/img/logo.PNG" alt="Logo GBAF"></div>
   </main>
   <!-- FOOTER -->
-  <footer>
-    <div class="footer-link mt-2"><a href="./notice.php"><i class="fa-solid fa-grip-lines-vertical me-2"></i>Mentions
-        légales<i class="fa-solid fa-grip-lines-vertical ms-2"></i></a><a href="#"><i class="fa-solid fa-grip-lines-vertical me-2"></i>Contact<i class="fa-solid fa-grip-lines-vertical ms-2"></i></a>
-    </div>
-    <div class="footer-copyright mt-2">
-      <p>Copyright - GBAF - ANCELIN Anthony 2022</p>
-    </div>
-  </footer>
+  <!-- inclusion du footer -->
+  <?php include('./_includes/footer.php'); ?>
 
   <!-- BOUTON - TO TOP -->
-  <section>
-    <div id="totop" title="Haut de page">
-      <i class="fas fa-angle-double-up"></i>
-    </div>
-  </section>
+  <!-- inclusion du bouton haut de page -->
+  <?php include('./_includes/to_top.php'); ?>
 
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
