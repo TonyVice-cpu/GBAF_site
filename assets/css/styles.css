@@ -1,0 +1,531 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+/* Variables couleurs et fonts */
+:root {
+  --primary: #ff0000;
+  --light0: #ffffff;
+  --light1: #b8b8b8e0;
+  --dark0: #000000;
+  --dark1: #212529;
+
+  --Open: "Open", sans-serif;
+  --Montserrat: "Montserrat", sans-serif;
+}
+
+/* ******************************************************************************************************************************************************************/
+/* ALL */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+/* HTML */
+html {
+  scroll-behavior: smooth;
+}
+
+/* BODY */
+body {
+  font-family: var(--Open);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* TITRES */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--Montserrat);
+  font-weight: bold;
+  font-size: x-large;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 20px;
+}
+
+/* ******************************************************************************************************************************************************************/
+/* HEADER */
+/* NAV-BAR */
+nav {
+  border-bottom: 16px solid var(--primary);
+}
+
+.tinynav-logo {
+  display: none;
+  color: var(--light0);
+  font-weight: bold;
+}
+
+nav img {
+  width: 90px;
+  background-color: var(--light0);
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 10px 30px;
+}
+
+nav > div > a {
+  font-size: x-large !important;
+  font-weight: bold;
+}
+
+.navbar-expand-lg .navbar-nav {
+  flex-direction: column;
+  align-items: center;
+  margin: 0 30px;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  justify-content: flex-end;
+}
+
+nav ul li a {
+  font-size: small !important;
+}
+
+.nav-link-p {
+  color: var(--light0) !important;
+}
+
+/* ******************************************************************************************************************************************************************/
+/* MAIN */
+main {
+  width: 90%;
+  margin: auto;
+  flex: 1;
+}
+
+main p {
+  text-align: center;
+}
+
+/* LOGO GBAF */
+.section-logo img {
+  width: 70px;
+  display: flex;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+/* ICON STAR */
+.star-icon {
+  color: var(--primary);
+  display: flex;
+  justify-content: center;
+}
+
+/* ******************************************************************************************************************************************************************/
+/* PAGE INDEX */
+/* MAIN SECTION */
+/* MAIN SECTION - FORM */
+form > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+form > div > img {
+  width: 80px;
+}
+
+form > div > p {
+  background-color: var(--dark0);
+  color: var(--light0);
+  width: 50%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.hidden {
+  display: none;
+  text-align: center;
+  font-size: smaller;
+}
+
+form > div > label {
+  margin: 10px;
+  font-weight: bold;
+}
+
+form > div > input {
+  width: 80%;
+  height: 40px;
+  text-align: center;
+}
+
+form > div > a {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+form > div > a:hover {
+  color: var(--dark0);
+}
+
+.fa-asterisk {
+  color: var(--primary);
+  font-size: 12px;
+}
+
+/* LIEN VERS INSCRIPTION */
+.sign-up-link {
+  background-color: var(--primary);
+  font-size: 24px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.sign-up-link > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--dark0);
+}
+
+.sign-up-link > a:hover {
+  color: var(--light0);
+}
+
+/* ******************************************************************************************************************************************************************/
+/* PAGE HOME */
+/* MAIN SECTION */
+/* MAIN SECTION - PRESENTATION */
+.presentation ul {
+display: flex;
+justify-content: center;
+font-weight: bold;
+}
+
+/* SEPARATEUR */
+.separator {
+  height: 4px;
+}
+
+/* MAIN SECTION - PARTNERS*/
+.partners {
+  margin-bottom: 30px;
+}
+
+.partners h2 {
+  font-size: larger;
+}
+
+/* PARTNER */
+.partner .card {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: auto;
+}
+
+.partner img {
+  width: 40%;
+}
+
+/* ******************************************************************************************************************************************************************/
+/* PAGE PARTNER_1-2-3-4 */
+/* MAIN SECTION */
+/* MAIN SECTION - PARTNER PRESENTATION */
+.partner-presentation > div {
+  display: flex;
+  justify-content: center;
+}
+
+.partner-presentation a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  font-size: small;
+  color: var(--primary);
+}
+
+.partner-presentation a:hover {
+  color: var(--dark1);
+}
+/* MAIN SECTION - PARTNER COMMENTS*/
+.partner-comments .card-header-btn {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 16px;
+}
+
+.card-header-avis {
+  display: flex;
+  justify-content: center;
+}
+
+/* ******************************************************************************************************************************************************************/
+/* PAGE CONTACT */
+/* MAIN SECTION */
+/* MAIN SECTION - CONTACT */
+.contact ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+  padding-left: 0;
+}
+
+.contact ul li i {
+  font-size: 24px;
+}
+
+.section-button {
+  display: flex;
+  justify-content: center;
+}
+
+/* ******************************************************************************************************************************************************************/
+/* FOOTER */
+footer {
+  height: 100px;
+  background-color: var(--dark1);
+  border-top: 16px solid var(--primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer a {
+  margin: 10px;
+  text-decoration: none;
+  color: var(--light0);
+}
+
+footer a:hover {
+  color: var(--primary);
+}
+
+footer p {
+  color: var(--light1);
+  font-size: x-small;
+}
+
+/* ******************************************************************************************************************************************************************/
+/* DIVERS */
+/* BOUTON - TO TOP */
+#totop {
+  display: none;
+  position: fixed;
+  border-radius: 50%;
+  background-color: var(--primary);
+  padding: 8px;
+  bottom: 8px;
+  right: 24px;
+  cursor: pointer;
+}
+
+.fa-angle-double-up {
+  color: var(--light0);
+}
+
+/* ******************************************************************************************************************************************************************/
+/* RESPONSIVE */
+/* MAX-WIDTH: 375px */
+@media screen and (max-width: 375px){
+  /* ICON STAR */
+  .star-icon{
+    font-size: 10px !important;
+  }
+
+/* PAGE CONTACT */
+  /* MAIN SECTION */
+  /* MAIN SECTION - CONTACT */
+  .contact ul li i {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0 !important;
+    margin-bottom: 16px !important;
+    margin-top: 16px !important;
+  }
+
+  /* LOGO GBAF */
+  .section-logo > img {
+    margin-top: 40px !important;
+  }
+}
+
+/* ---------------------------------------------- */
+/* MAX-WIDTH: 425px */
+@media screen and (max-width: 425px) {
+  /* PAGE PARTNER_1-2-3-4 */
+  /* MAIN SECTION */
+  /* MAIN SECTION - PARTNER COMMENTS*/
+  .partner-comments .card-header-btn {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
+  }
+}
+
+/* ---------------------------------------------- */
+/* MAX-WIDTH: 576px */
+@media screen and (max-width: 576px) {
+  /* NAV */
+  .tinynav-logo p {
+    display: none;
+  }
+
+  /* FOOTER */
+  footer {
+    font-size: small;
+  }
+
+  /* PAGE CONTACT */
+  /* MAIN SECTION */
+  /* MAIN SECTION - CONTACT */
+  .contact ul {
+    font-size: 14px !important;
+  }
+
+  .contact ul li i {
+    font-size: 16px !important;
+  }
+
+  /* DIVERS */
+  /* BOUTON - TO TOP */
+  #totop {
+    padding: 8px;
+    bottom: 24px;
+    right: 12px;
+  }
+
+  .fa-angle-double-up {
+    font-size: small;
+  }
+}
+/* ---------------------------------------------- */
+/* MAX-WIDTH: 635px */
+@media screen and (max-width: 635px) {
+  /* NAV */
+  .tinynav-logo p {
+    font-size: small !important;
+  }
+
+  /* PAGE INDEX */
+  /* MAIN SECTION */
+  /* MAIN SECTION - FORM */
+  form > div > p {
+    display: none;
+  }
+
+  .hidden {
+    display: block;
+  }
+}
+
+/* ---------------------------------------------- */
+/* MAX-WIDTH: 768px */
+@media screen and (max-width: 768px) {
+  /* TITRES */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: large;
+  }
+
+  /* NAV */
+  nav > div > a {
+    display: none;
+  }
+  .tinynav-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .tinynav-logo img {
+    width: 80px;
+    padding: 8px 18px;
+    margin: 8px 28px;
+  }
+
+  /* MAIN */
+  main {
+    font-size: 14px;
+  }
+
+  /* PAGE INDEX */
+  /* MAIN SECTION */
+  /* MAIN SECTION - FORM */
+  form > div > p {
+    font-size: small;
+  }
+
+  /* PAGE HOME */
+  /* MAIN SECTION */
+  /* MAIN SECTION - PARTNERS*/
+  .partners h2 {
+    font-size: small;
+  }
+
+  /* PAGE PARTNER_1-2-3-4 */
+  /* MAIN SECTION */
+  /* MAIN SECTION - PARTNER COMMENTS*/
+  .partner-comments .card-header-btn {
+    justify-content: center;
+    margin: 0;
+  }
+  /* PAGE CONTACT */
+  /* MAIN SECTION */
+  /* MAIN SECTION - CONTACT */
+  .contact ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+  }
+
+  .contact ul li i {
+    font-size: 24px;
+  }
+}
+
+/* ---------------------------------------------- */
+/* MAX-WIDTH: 845px */
+@media screen and (max-width: 845px) {
+  /* NAV */
+  nav > div > a {
+    font-size: larger !important;
+    font-weight: bold;
+  }
+}
+
+/* ---------------------------------------------- */
+/* MAX-WIDTH: 992px */
+@media screen and (max-width: 992px) {
+  /* NAV */
+  .navbar-toggler {
+    margin: 0 30px;
+  }
+}
+
+/* ---------------------------------------------- */
+/* MAX-WIDTH: 1024px */
+@media screen and (max-width: 1024px) {
+  /* PAGE HOME */
+  /* MAIN SECTION */
+  /* MAIN SECTION - PARTNERS*/
+  .partner .card {
+    flex-direction: column;
+  }
+
+  .partner img {
+    width: 100%;
+  }
+}
