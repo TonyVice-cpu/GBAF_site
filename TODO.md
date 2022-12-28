@@ -1,14 +1,29 @@
 Global
-  - faire une fonction de vérif de loggin
   - sécuriser les envoies de formulaire (token csrf)
-
-Header
-  - logo, si log liens vers home.php sinon liens vers index.php
+  - alertes connexion réussi/non réussi, déconnexion, post de commentaires et vote
+  - nom prénom align right header
+  - supprimer les doubles BR
 
 Page home.php
   - revoir la fonction truncate
 
-Page partner.php
-  - reste à ressortir les données formatées en dynamique dessus
+Page partner.php - include comments.php
+  - nouveau commentaire - ajout = ok 
+    - voir si besoin modif et suppr
+  - like/dislike - ajout,modif,suppr = ok avec vérif si déjà voté
+    - voir pour ajout d'un compteur
+
+Page comment.php
+  - formulaire = ok
+    - modif html/css
+
+
+
+  commenter les actions
+  vérifier les titres d'onglets
+  commenter le php
+
+  rajouter fonction vérif si données existante dans $post
+  corriger la redirection de la fonction protected session au cas ou ça foire (fonctionne très bien pour le moment)
   
 

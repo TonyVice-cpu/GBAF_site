@@ -1,7 +1,5 @@
 <?php
-session_start();
-include('../_includes/connect/db.php');
-include('../_includes/functions.php');
+include('../_includes/common.php');
 $is_logged_in = verify_login($_POST['user_name'], $_POST['password']);
 if($is_logged_in) {
   $_SESSION['is_logged_in'] = true;

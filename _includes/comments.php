@@ -1,33 +1,27 @@
+<?php
+$comments = get_comments($_GET['id']);
+$count_comments = count($comments);
+?>
+
 <section class="partner-comments mb-5">
   <div class="card">
-    <h2 class="card-header">COMMENTAIRES</h2>
+    <h2 class="card-header"><?= $count_comments ?> COMMENTAIRE(S)</h2>
     <div class="card-header-btn mt-1 ">
-      <div><a href="./comment.php" class="btn btn-dark m-1">Nouveau commentaire</a></div>
+      <div><a href="comment.php?id=<?= $_GET['id'] ?>" class="btn btn-dark m-1">Nouveau commentaire</a></div>
       <div class="card-header-avis">
-        <div><a href="#" class="btn btn-dark m-1"><i class="fa-regular fa-thumbs-up"></i></a></div>
-        <div><a href="#" class="btn btn-dark m-1"><i class="fa-regular fa-thumbs-down"></i></a></div>
+        <form action="./action/vote.php" method="POST">
+          <input type="hidden" name="actor_id" value="<?= $_GET['id'] ?>">
+          <div><button type="submit" class="btn btn-dark m-1" name="vote" value="1"><i class="fa-regular fa-thumbs-up"></i></button></div>
+          <div><button type="submit" class="btn btn-dark m-1" name="vote" value="0"><i class="fa-regular fa-thumbs-down"></i></button></div>
+        </form>
       </div>
     </div>
-    <div class="card-body">
-      <h5 class="card-title">Prénom Date</h5>
-      <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit architecto magni
-        inventore eaque officiis quam laudantium ad, dolores expedita molestiae iure doloribus sapiente, nostrum
-        blanditiis.
-      </p>
-      <div class="card-footer text-muted text-center">2 days ago
+    <?php foreach ($comments as $comment) : ?>
+      <div class="card-body">
+        <h5 class="card-title"><?= htmlspecialchars($comment['first_name']) ?> <?= htmlspecialchars($comment['last_name']) ?></h5>
+        <p class="card-text"><?= htmlspecialchars($comment['post']) ?></p>
+        <div class="card-footer text-muted text-center"><?= htmlspecialchars($comment['date_add']) ?></div>
       </div>
-      <h5 class="card-title">Prénom Date</h5>
-      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa natus delectus impedit
-        soluta, est fugit.</p>
-      <div class="card-footer text-muted text-center">2 days ago
-      </div>
-      <h5 class="card-title">Prénom Date</h5>
-      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse minus nulla inventore
-        tempora aut fuga. Asperiores perspiciatis perferendis ipsum cum, error veniam minus excepturi quam
-        architecto nam eum neque quidem aut molestiae et maiores voluptate vitae facere deleniti velit eius
-        voluptatum. Autem neque, doloribus incidunt deleniti voluptatum harum. Molestiae, temporibus.</p>
-      <div class="card-footer text-muted text-center">2 days ago
-      </div>
-    </div>
+    <?php endforeach ?>
   </div>
 </section>

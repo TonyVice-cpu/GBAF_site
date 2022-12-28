@@ -9,8 +9,11 @@ $pass = '';
 
 try {
   $bdd = new PDO($dsn, $user, $pass);
-  // On lui demande de configurer PDO::ATTR_ERRMODE qui va nous sortir un rapport d’erreurs et que l’on souhaite qu’il émette une exception grâce à PDO::ERRMODE_EXCEPTION.
+  // On lui demande de configurer PDO::ATTR_ERRMODE qui va nous sortir un rapport ...
+  // ... d’erreurs et que l’on souhaite qu’il émette une exception grâce à PDO::ERRMODE_EXCEPTION.
   $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+  // On récupère seulement le tableau associatif.
+  $bdd->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
   // Cette ligne a pour but de définir le type d'encodage à effectuer sur nos requêtes.
   $bdd->exec('SET NAMES utf8');
   // Ici la connexion est effectuée.
