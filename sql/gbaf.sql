@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : mer. 28 déc. 2022 à 11:46
+-- Généré le : mer. 28 déc. 2022 à 20:54
 -- Version du serveur : 10.4.22-MariaDB
 -- Version de PHP : 8.0.13
 
@@ -77,9 +77,19 @@ CREATE TABLE `post` (
   `post_id` int(11) NOT NULL,
   `user_id` int(11) NOT NULL,
   `actor_id` int(11) NOT NULL,
-  `date_add` datetime NOT NULL,
+  `date_add` datetime NOT NULL DEFAULT current_timestamp(),
   `post` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Déchargement des données de la table `post`
+--
+
+INSERT INTO `post` (`post_id`, `user_id`, `actor_id`, `date_add`, `post`) VALUES
+(1, 1, 1, '2022-12-28 13:00:49', 'c\'est bien.'),
+(2, 1, 4, '2022-12-28 13:00:49', 'C\'est super.'),
+(3, 1, 1, '2022-12-28 19:18:32', 'bjr\r\n'),
+(4, 1, 1, '2022-12-28 19:21:02', 'coucou les amis');
 
 -- --------------------------------------------------------
 
@@ -144,7 +154,7 @@ ALTER TABLE `actor`
 -- AUTO_INCREMENT pour la table `post`
 --
 ALTER TABLE `post`
-  MODIFY `post_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `post_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- Contraintes pour les tables déchargées
