@@ -3,11 +3,11 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
-        <img src="/assets/img/logo.PNG" alt="logo GBAF">
+        <img src="./assets/img/logo.PNG" alt="logo GBAF">
         Le Groupement Banque et Assurance Français
       </a>
       <div class="tinynav-logo"><a href="#">
-          <img src="/assets/img/logo.PNG" alt="logo GBAF">
+          <img src="./assets/img/logo.PNG" alt="logo GBAF">
         </a>
         <p>Le Groupement Banque et Assurance Français</p>
       </div>
@@ -21,10 +21,10 @@
               <p class="nav-link-p">Bienvenue, <?= $_SESSION['account']['first_name'] ?> <?= $_SESSION['account']['last_name'] ?></p>
             </li>
             <li class="nav-item ms-2">
-              <a class="nav-link" href="/settings.php">Paramètres du compte</a>
+              <a class="nav-link" href="./settings.php">Paramètres du compte</a>
             </li>
             <li class="nav-item ms-2">
-              <a class="nav-link" href="/do_logout.php">Se déconnecter</a>
+              <a class="nav-link" href="./action/logout.php">Se déconnecter</a>
             </li>
           </ul>
         </div>
