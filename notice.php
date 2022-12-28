@@ -9,14 +9,14 @@ $title = "Mentions légales";
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="../assets/img/fav_icon.PNG">
+  <link rel="icon" href="./assets/img/fav_icon.PNG">
   <!-- CSS -->
   <!-- CSS Font-awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
   <!-- CSS Bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
   <!-- Mon CSS -->
-  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="./assets/css/styles.css">
   <title>GBAF - Le Groupement Banque et Assurance Français - <?= $title ?></title>
 </head>
 
@@ -130,7 +130,7 @@ $title = "Mentions légales";
         <!-- SEPARATEUR -->
         <div class="separator rounded bg-dark mt-5 mb-5"></div>
         <!-- LOGO -->
-        <div class="section-logo"><img src="../assets/img/logo.PNG" alt="Logo GBAF"></div>
+        <div class="section-logo"><img src="./assets/img/logo.PNG" alt="Logo GBAF"></div>
     </section>
   </main>
   <!-- FOOTER -->
@@ -145,7 +145,7 @@ $title = "Mentions légales";
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Mon JS -->
-  <script src="../assets/js/app.js"></script>
+  <script src="./assets/js/app.js"></script>
 
 </body>
 

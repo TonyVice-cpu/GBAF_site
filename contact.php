@@ -9,14 +9,14 @@ $title = "Contact";
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="../assets/img/fav_icon.PNG">
+  <link rel="icon" href="./assets/img/fav_icon.PNG">
   <!-- CSS -->
   <!-- CSS Font-awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
   <!-- CSS Bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
   <!-- Mon CSS -->
-  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="./assets/css/styles.css">
   <title>GBAF - Le Groupement Banque et Assurance Français - <?= $title ?></title>
 </head>
 
@@ -55,14 +55,14 @@ $title = "Contact";
       </div>
       <div class="mb-3">
         <label for="exampleFormControlTextarea1" class="form-label">Votre texte :</label>
-        <textarea class="form-control bg-light " id="exampleFormControlTextarea1" placeholder="Laissez votre message ici..." rows="3"></textarea>
+        <textarea class="form-control bg-light " id="exampleFormControlTextarea1" placeholder="Laissez votre message ici.." rows="3"></textarea>
       </div>
       <div class="section-button"><button type="submit" class="btn btn-dark mb-5">Envoyer</button></div>
     </section>
     <!-- SEPARATEUR -->
     <div class="separator rounded  bg-dark mb-5"></div>
     <!-- LOGO -->
-    <div class="section-logo"><img src="../assets/img/logo.PNG" alt="Logo GBAF"></div>
+    <div class="section-logo"><img src="./assets/img/logo.PNG" alt="Logo GBAF"></div>
   </main>
   <!-- FOOTER -->
   <!-- inclusion du footer -->
@@ -76,7 +76,7 @@ $title = "Contact";
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Mon JS -->
-  <script src="../assets/js/app.js"></script>
+  <script src="./assets/js/app.js"></script>
 
 </body>
 
