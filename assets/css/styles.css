@@ -145,7 +145,7 @@ main p {
   border-radius: 5px;
 }
 
-.hidden {
+#form-login .hidden {
   display: none;
   text-align: center;
   font-size: smaller;
@@ -317,13 +317,20 @@ footer p {
 /* BOUTON - TO TOP */
 #totop {
   display: none;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   border-radius: 50%;
   background-color: var(--primary);
-  padding: 8px;
+  width: 40px;
   bottom: 8px;
   right: 24px;
   cursor: pointer;
+  aspect-ratio: 1/1;
+}
+
+#totop.visible {
+  display: flex;
 }
 
 .fa-angle-double-up {
@@ -422,7 +429,7 @@ footer p {
     display: none;
   }
 
-  .hidden {
+  #form-login .hidden {
     display: block;
   }
 }

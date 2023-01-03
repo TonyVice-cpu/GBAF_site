@@ -15,33 +15,41 @@ include('connect/db.php');
 
 /**
  * On récupère la liste des acteurs
- * @return array
+ * @return array|false Liste de acteurs ou faux
  */
 function get_actors()
 {
   global $bdd;
-  $sth = $bdd->query(
-    "SELECT * FROM actor"
-  );
-  $actors = $sth->fetchAll();
+  try {
+    $sth = $bdd->query(
+      "SELECT * FROM actor"
+    );
+    $actors = $sth->fetchAll();
+  } catch (PDOException $e) {
+    return false;
+  }
   return $actors;
 }
 
 /**
  * On récupère un acteur à partir de son id
  * @param string $id id de l'acteur.
- * @return array
+ * @return array|false Données d'un acteur ou faux
  */
 function get_actor($id)
 {
   global $bdd;
-  $sth = $bdd->prepare(
-    "SELECT * FROM actor WHERE actor_id = :id"
-  );
-  $sth->execute([
-    'id' => $id
-  ]);
-  $actor = $sth->fetch();
+  try {
+    $sth = $bdd->prepare(
+      "SELECT * FROM actor WHERE actor_id = :id"
+    );
+    $sth->execute([
+      'id' => $id
+    ]);
+    $actor = $sth->fetch();
+  } catch (PDOException $e) {
+    return false;
+  }
   return $actor;
 }
 
@@ -53,18 +61,22 @@ function get_actor($id)
  * On vérifie si les parametres demandées existe en base.
  * @param string $user_name nom d'utilisateur.
  * @param string $password mot de passe de l'utilisateur.
- * @return false|array faux ou données de l'utilisateur.
+ * @return false|array Données de l'utilisateur ou faux
  */
 function verify_login($user_name, $password)
 {
   global $bdd;
-  $sth = $bdd->prepare(
-    "SELECT * FROM account WHERE user_name = :user_name"
-  );
-  $sth->execute([
-    'user_name' => $user_name
-  ]);
-  $account = $sth->fetch();
+  try {
+    $sth = $bdd->prepare(
+      "SELECT * FROM account WHERE user_name = :user_name"
+    );
+    $sth->execute([
+      'user_name' => $user_name
+    ]);
+    $account = $sth->fetch();
+  } catch (PDOException $e) {
+    return false;
+  }
   if (!$account) return false;
   $is_valid_password = password_verify($password, $account['password']);
   if (!$is_valid_password) return false;
@@ -72,6 +84,61 @@ function verify_login($user_name, $password)
     'user_id' => $account['user_id'],
     'last_name' => $account['last_name'],
     'first_name' => $account['first_name']
+  ];
+}
+
+/**
+ * Fonctions de création de compte
+ * 
+ * @param string $first_name Prénom de l'utilisateur
+ * @param string $last_name Nom de l'utilisateur
+ * @param string $user_name Pseudonyme de l'utilisateur
+ * @param string $password Mot de passe de l'utilisateur
+ * @param string $question Question secrète de l'utilisateur
+ * @param string $answer Réponse à la question secrète
+ * @return array|false Données de l'utilisateur ou faux.
+ */
+function create_account($first_name, $last_name, $user_name, $password, $question, $answer)
+{
+  global $bdd;
+  $hash = password_hash($password, PASSWORD_DEFAULT);
+  if (!$hash) return false;
+  try {
+    $sth = $bdd->prepare(
+      "INSERT INTO account
+      (
+        first_name,
+        last_name,
+        user_name,
+        `password`,
+        question,
+        answer
+      )
+    VALUES
+      (
+        :first_name,
+        :last_name,
+        :user_name,
+        :password,
+        :question,
+        :answer
+      )"
+    );
+    $sth->execute([
+      'first_name' => $first_name,
+      'last_name' => $last_name,
+      'user_name' => $user_name,
+      'password' => $hash,
+      'question' => $question,
+      'answer' => $answer,
+    ]);
+  } catch (PDOException $e) {
+    return false;
+  }
+  return [
+    'user_id' => $bdd->lastInsertId(),
+    'last_name' => $last_name,
+    'first_name' => $first_name
   ];
 }
 
@@ -84,13 +151,14 @@ function verify_login($user_name, $password)
  * En faisant une jonction avec les informations utilisateurs (post, date_add de la table post)
  * En ordre par date de publication decroissante
  * @param string $id id de l'acteur.
- * @return array
+ * @return array|false Liste des commentaires d'un acteur ou faux
  */
 function get_comments($id)
 {
   global $bdd;
-  $sth = $bdd->prepare(
-    "SELECT 
+  try {
+    $sth = $bdd->prepare(
+      "SELECT 
       a.first_name,
       a.last_name,
       p.post,
@@ -100,11 +168,14 @@ function get_comments($id)
     ON p.user_id = a.user_id
     WHERE actor_id = :id
     ORDER BY p.date_add DESC"
-  );
-  $sth->execute([
-    'id' => $id
-  ]);
-  $comments = $sth->fetchAll();
+    );
+    $sth->execute([
+      'id' => $id
+    ]);
+    $comments = $sth->fetchAll();
+  } catch (PDOException $e) {
+    return false;
+  }
   return $comments;
 }
 
@@ -114,22 +185,28 @@ function get_comments($id)
  * @param string $user_id id de l'utilisateur qui donne son avis
  * @param string $actor_id id du partenaire sur lequel on donne un avis
  * @param string $post commentaire posté
+ * @return boolean Vrai : OK, faux : la requête a échouée
  */
 function add_comment($user_id, $actor_id, $post)
 {
   global $bdd;
-  $sth = $bdd->prepare(
-    "INSERT INTO post 
+  try {
+    $sth = $bdd->prepare(
+      "INSERT INTO post 
     (user_id, actor_id, post)
     VALUES
     (:user_id, :actor_id, :post)"
-  );
+    );
 
-  $sth->execute([
-    'user_id' => $user_id,
-    'actor_id' => $actor_id,
-    'post' => $post
-  ]);
+    $sth->execute([
+      'user_id' => $user_id,
+      'actor_id' => $actor_id,
+      'post' => $post
+    ]);
+    return true;
+  } catch (PDOException $e) {
+    return false;
+  }
 }
 
 /**
@@ -145,35 +222,48 @@ function add_comment($user_id, $actor_id, $post)
  * @param string $user_id id de l'utilisateur qui donne son avis
  * @param string $actor_id id du partenaire sur lequel on donne un avis
  * @param string $vote 1 si like, 0 si dislike
+ * @return boolean Vrai : OK, faux : une requête a échouée
  */
 function like_dislike($user_id, $actor_id, $vote)
 {
   global $bdd;
-  // On récupère l'avis s'il existe
-  $sth = $bdd->prepare(
-    "SELECT * FROM vote WHERE user_id = :user_id AND actor_id = :actor_id"
-  );
-  $sth->execute([
-    'user_id' => $user_id,
-    'actor_id' => $actor_id,
-  ]);
-  $row = $sth->fetch();
+  try {
+    // On récupère l'avis s'il existe
+    $sth = $bdd->prepare(
+      "SELECT * FROM vote WHERE user_id = :user_id AND actor_id = :actor_id"
+    );
+    $sth->execute([
+      'user_id' => $user_id,
+      'actor_id' => $actor_id,
+    ]);
+    $row = $sth->fetch();
 
-  // Si l'avis existe...
-  if ($row) {
-    // ...et que sa valeur est identique, on le supprime
-    if ($row['vote'] == $vote) {
-      $sth = $bdd->prepare(
-        "DELETE FROM vote WHERE user_id = :user_id AND actor_id = :actor_id"
-      );
-      $sth->execute([
-        'user_id' => $user_id,
-        'actor_id' => $actor_id,
-      ]);
+    // Si l'avis existe...
+    if ($row) {
+      // ...et que sa valeur est identique, on le supprime
+      if ($row['vote'] == $vote) {
+        $sth = $bdd->prepare(
+          "DELETE FROM vote WHERE user_id = :user_id AND actor_id = :actor_id"
+        );
+        $sth->execute([
+          'user_id' => $user_id,
+          'actor_id' => $actor_id,
+        ]);
+      } else {
+        // Sinon on met à jour sa valeur
+        $sth = $bdd->prepare(
+          "UPDATE vote SET vote = :vote WHERE user_id = :user_id AND actor_id = :actor_id"
+        );
+        $sth->execute([
+          'user_id' => $user_id,
+          'actor_id' => $actor_id,
+          'vote' => $vote,
+        ]);
+      }
+      // Si l'avis n'existe pas, on l'ajoute
     } else {
-      // Sinon on met à jour sa valeur
       $sth = $bdd->prepare(
-        "UPDATE vote SET vote = :vote WHERE user_id = :user_id AND actor_id = :actor_id"
+        "INSERT INTO vote (user_id, actor_id, vote) VALUES (:user_id, :actor_id, :vote)"
       );
       $sth->execute([
         'user_id' => $user_id,
@@ -181,16 +271,9 @@ function like_dislike($user_id, $actor_id, $vote)
         'vote' => $vote,
       ]);
     }
-    // Si l'avis n'existe pas, on l'ajoute
-  } else {
-    $sth = $bdd->prepare(
-      "INSERT INTO vote (user_id, actor_id, vote) VALUES (:user_id, :actor_id, :vote)"
-    );
-    $sth->execute([
-      'user_id' => $user_id,
-      'actor_id' => $actor_id,
-      'vote' => $vote,
-    ]);
+    return true;
+  } catch (PDOException $e) {
+    return false;
   }
 }
 
@@ -205,24 +288,28 @@ function like_dislike($user_id, $actor_id, $vote)
  * 
  * @param string $user_id id d'un utilisateur
  * @param string $actor_id id du partenaire sur lequel on veut récupérer les avis
- * @return array ["likes", "dislikes", "user_vote"]
+ * @return array|false ["likes", "dislikes", "user_vote"] ou faux
  */
 function count_votes($user_id, $actor_id)
 {
   global $bdd;
-  $sth = $bdd->prepare(
-    "SELECT
+  try {
+    $sth = $bdd->prepare(
+      "SELECT
       SUM(CASE WHEN vote = 1 THEN 1 ELSE 0 END) `likes`,
       SUM(CASE WHEN vote = 0 THEN 1 ELSE 0 END) `dislikes`,
       -- (SELECT vote FROM vote WHERE user_id = :user_id AND actor_id = :actor_id) `user_vote`
       MAX(CASE WHEN user_id = :user_id THEN vote ELSE NULL END) `user_vote`
     FROM vote
     WHERE actor_id = :actor_id"
-  );
-  $sth->execute([
-    'user_id' => $user_id,
-    'actor_id' => $actor_id,
-  ]);
-  $votes = $sth->fetch();
+    );
+    $sth->execute([
+      'user_id' => $user_id,
+      'actor_id' => $actor_id,
+    ]);
+    $votes = $sth->fetch();
+  } catch (PDOException $e) {
+    return false;
+  }
   return $votes;
 }

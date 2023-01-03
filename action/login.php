@@ -1,9 +1,9 @@
 <?php
 include('../_includes/common.php');
-$is_logged_in = verify_login($_POST['user_name'], $_POST['password']);
-if($is_logged_in) {
+$account = verify_login($_POST['user_name'], $_POST['password']);
+if($account) {
   $_SESSION['is_logged_in'] = true;
-  $_SESSION['account'] = $is_logged_in;
+  $_SESSION['account'] = $account;
 } else {
   $_SESSION['is_logged_in'] = false;
 }
