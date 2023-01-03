@@ -10,8 +10,8 @@ Page home.php
 Page partner.php - include comments.php
   - nouveau commentaire - ajout = ok 
     - voir si besoin modif et suppr = vu avec mentor, non demandé, faire seuelement si possible
-    - ranger par dernière date
-    
+    - ranger par dernière date = ok
+
   - like/dislike - ajout,modif,suppr = ok avec vérif si déjà voté
     - voir pour ajout d'un compteur
 

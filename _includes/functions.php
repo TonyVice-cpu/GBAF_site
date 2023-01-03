@@ -82,6 +82,7 @@ function verify_login($user_name, $password)
 /**
  * On récupère les commentaires en rapport avec l'id d'un partenaire (first_name, last_name de la table account)
  * En faisant une jonction avec les informations utilisateurs (post, date_add de la table post)
+ * En ordre par date de publication decroissante
  * @param string $id id de l'acteur.
  * @return array
  */
@@ -97,7 +98,8 @@ function get_comments($id)
     FROM post p 
     JOIN account a
     ON p.user_id = a.user_id
-    WHERE actor_id = :id"
+    WHERE actor_id = :id
+    ORDER BY p.date_add DESC"
   );
   $sth->execute([
     'id' => $id
