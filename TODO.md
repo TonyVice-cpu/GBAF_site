@@ -1,8 +1,16 @@
-Global
+# Global
+
   - sécuriser les envoies de formulaire (token csrf)
-  - alertes connexion réussi/non réussi, déconnexion, post de commentaires et vote
+  - alertes connexion réussi/non réussi, déconnexion, post de commentaires et vote (commencer, reste à ajouter les alertes)
   - nom prénom align right header
   - supprimer les doubles BR
+  - vérifier les titres d'onglets
+  - vérifier le responsive des éléments ajoutés ou modifier lors du dev php
+  - passer un max de css dans bootstrap et enlever les !important (alléger mon styles.css)
+
+***
+
+# Page
 
 Page home.php
   - revoir la fonction truncate
@@ -18,16 +26,30 @@ Page partner.php - include comments.php
   - à faire valider par mentor
 
 Page comment.php
-  - formulaire = ok 
+  - formulaire de création de nouveau commentaire = ok 
+    - modif html/css
+
+Page register.php
+  - formulaire de création de compte= ok
     - modif html/css
 
 
+ ***
 
-  commenter les actions
-  vérifier les titres d'onglets
-  commenter le php
+# Divers
 
-  rajouter fonction vérif si données existante dans $post
-  corriger la redirection de la fonction protected session au cas ou ça foire (fonctionne très bien pour le moment)
+  - rajouter fonction vérif si données existante dans $post
+
+  - corriger la redirection de la fonction protected session au cas ou ça foire (fonctionne très bien pour le moment)
   
-  vérifier le responsive des éléments ajoutés ou modifier lors du dev php
+
+***
+
+# NE PAS OUBLIER
+
+  commenter l'ensemble du code
+  re-vérifier les fonctionnalitées existantes
+  
+
+
+  
