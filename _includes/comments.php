@@ -1,6 +1,7 @@
 <?php
 $comments = get_comments($_GET['id']);
 $count_comments = count($comments);
+$votes = count_votes($_SESSION['account']['user_id'], $_GET['id']);
 ?>
 
 <section class="partner-comments mb-5">
@@ -9,10 +10,10 @@ $count_comments = count($comments);
     <div class="card-header-btn mt-1 ">
       <div><a href="comment.php?id=<?= $_GET['id'] ?>" class="btn btn-dark m-1">Nouveau commentaire</a></div>
       <div class="card-header-avis">
-        <form action="./action/vote.php" method="POST">
+        <form class="d-flex align-items-center gap-1" action="./action/vote.php" method="POST">
           <input type="hidden" name="actor_id" value="<?= $_GET['id'] ?>">
-          <div><button type="submit" class="btn btn-dark m-1" name="vote" value="1"><i class="fa-regular fa-thumbs-up"></i></button></div>
-          <div><button type="submit" class="btn btn-dark m-1" name="vote" value="0"><i class="fa-regular fa-thumbs-down"></i></button></div>
+          <div><button type="submit" class="btn btn-dark" name="vote" value="1"><?= $votes['likes'] ?><i class="fa-<?= ($votes['user_vote'] === '1') ? 'solid' : 'regular' ?> fa-thumbs-up ms-2"></i></button></div>
+          <div><button type="submit" class="btn btn-dark" name="vote" value="0"><?= $votes['dislikes'] ?><i class="fa-<?= ($votes['user_vote'] === '0') ? 'solid' : 'regular' ?> fa-thumbs-down ms-2"></i></button></div>
         </form>
       </div>
     </div>

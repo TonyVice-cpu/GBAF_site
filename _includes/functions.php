@@ -181,7 +181,7 @@ function like_dislike($user_id, $actor_id, $vote)
         'vote' => $vote,
       ]);
     }
-  // Si l'avis n'existe pas, on l'ajoute
+    // Si l'avis n'existe pas, on l'ajoute
   } else {
     $sth = $bdd->prepare(
       "INSERT INTO vote (user_id, actor_id, vote) VALUES (:user_id, :actor_id, :vote)"
@@ -192,4 +192,37 @@ function like_dislike($user_id, $actor_id, $vote)
       'vote' => $vote,
     ]);
   }
+}
+
+/**
+ * Compte le nombre de votes :
+ * On récupère la liste des votes en fonction de l'id d'un partenaire (actor)
+ * Puis on agrege les résultats :
+ * - likes : la somme de tous les votes ayant pour valeur 1
+ * - disklikes : la somme de tous les votes ayant pour valeur 0
+ * - user_vote : le vote de l'utilisateur fourni en $user_id, NULL si celui-ci n'a pas voté
+ *  (en commentaire SQL, une vairante avec une sous-requête)
+ * 
+ * @param string $user_id id d'un utilisateur
+ * @param string $actor_id id du partenaire sur lequel on veut récupérer les avis
+ * @return array ["likes", "dislikes", "user_vote"]
+ */
+function count_votes($user_id, $actor_id)
+{
+  global $bdd;
+  $sth = $bdd->prepare(
+    "SELECT
+      SUM(CASE WHEN vote = 1 THEN 1 ELSE 0 END) `likes`,
+      SUM(CASE WHEN vote = 0 THEN 1 ELSE 0 END) `dislikes`,
+      -- (SELECT vote FROM vote WHERE user_id = :user_id AND actor_id = :actor_id) `user_vote`
+      MAX(CASE WHEN user_id = :user_id THEN vote ELSE NULL END) `user_vote`
+    FROM vote
+    WHERE actor_id = :actor_id"
+  );
+  $sth->execute([
+    'user_id' => $user_id,
+    'actor_id' => $actor_id,
+  ]);
+  $votes = $sth->fetch();
+  return $votes;
 }

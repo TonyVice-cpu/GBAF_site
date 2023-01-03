@@ -17,7 +17,7 @@ $title = "Connexion";
       <h1>BIENVENUE sur le site du GBAF.</h1>
       <p>Veuillez-vous identifier pour continuer SVP.</p>
     </div>
-    <form action="./action/login.php" method="post">
+    <form id="form-login" action="./action/login.php" method="post">
       <div><img src="./assets/img/user.png" alt="User avatar"></div>
       <div>
         <label for="user_name">Nom d'utilisateur : <i class="fa-solid fa-asterisk"></i></label>

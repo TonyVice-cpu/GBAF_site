@@ -123,18 +123,18 @@ main p {
 /* PAGE INDEX */
 /* MAIN SECTION */
 /* MAIN SECTION - FORM */
-form > div {
+#form-login > div {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 20px;
 }
 
-form > div > img {
+#form-login > div > img {
   width: 80px;
 }
 
-form > div > p {
+#form-login > div > p {
   background-color: var(--dark0);
   color: var(--light0);
   width: 50%;
@@ -151,23 +151,23 @@ form > div > p {
   font-size: smaller;
 }
 
-form > div > label {
+#form-login > div > label {
   margin: 10px;
   font-weight: bold;
 }
 
-form > div > input {
+#form-login > div > input {
   width: 80%;
   height: 40px;
   text-align: center;
 }
 
-form > div > a {
+#form-login > div > a {
   text-decoration: none;
   color: var(--primary);
 }
 
-form > div > a:hover {
+#form-login > div > a:hover {
   color: var(--dark0);
 }
 
@@ -200,9 +200,9 @@ form > div > a:hover {
 /* MAIN SECTION */
 /* MAIN SECTION - PRESENTATION */
 .presentation ul {
-display: flex;
-justify-content: center;
-font-weight: bold;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
 }
 
 /* SEPARATEUR */
@@ -333,13 +333,13 @@ footer p {
 /* ******************************************************************************************************************************************************************/
 /* RESPONSIVE */
 /* MAX-WIDTH: 375px */
-@media screen and (max-width: 375px){
+@media screen and (max-width: 375px) {
   /* ICON STAR */
-  .star-icon{
+  .star-icon {
     font-size: 10px !important;
   }
 
-/* PAGE CONTACT */
+  /* PAGE CONTACT */
   /* MAIN SECTION */
   /* MAIN SECTION - CONTACT */
   .contact ul li i {
@@ -418,7 +418,7 @@ footer p {
   /* PAGE INDEX */
   /* MAIN SECTION */
   /* MAIN SECTION - FORM */
-  form > div > p {
+  #form-login > div > p {
     display: none;
   }
 
@@ -463,7 +463,7 @@ footer p {
   /* PAGE INDEX */
   /* MAIN SECTION */
   /* MAIN SECTION - FORM */
-  form > div > p {
+  #form-login > div > p {
     font-size: small;
   }
 
