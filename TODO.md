@@ -1,4 +1,6 @@
-# Global
+# ToDo
+
+## Global
 
   - sécuriser les envoies de formulaire (token csrf)
   - alertes connexion réussi/non réussi, déconnexion, post de commentaires et vote (commencer, reste à ajouter les alertes)
@@ -9,12 +11,12 @@
 
 ***
 
-# Page
+## Page
 
-Page home.php
+### Page home.php
   - revoir la fonction truncate
 
-Page partner.php - include comments.php
+### Page partner.php - include comments.php
   - nouveau commentaire - ajout = ok ✔
     - voir si besoin modif et suppr = vu avec mentor, non demandé, faire seuelement si possible ✔
     - ranger par dernière date = ok ✔
@@ -24,21 +26,21 @@ Page partner.php - include comments.php
 
   - à faire valider par mentor
 
-Page comment.php
+### Page comment.php
   - formulaire de création de nouveau commentaire = ok ✔
     - modif html/css = à faire
 
-Page register.php
+### Page register.php
   - formulaire de création de compte = ok ✔
     - modif html/css = à faire
 
-Page settings.php
+### Page settings.php
   - formulaire de modif de compte = ok ✔
     - modif html/css = à faire
 
  ***
 
-# Divers
+## Divers
 
   - rajouter fonction vérif si données existante dans $post
 
@@ -47,7 +49,7 @@ Page settings.php
 
 ***
 
-# NE PAS OUBLIER
+## NE PAS OUBLIER
 
   commenter l'ensemble du code (actions et controleurs)
   re-vérifier les fonctionnalitées existantes
