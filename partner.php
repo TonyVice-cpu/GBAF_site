@@ -4,10 +4,8 @@ include('./_includes/common.php');
 protected_session();
 $actor = get_actor($_GET['id']);
 $title = $actor['actor_name'];
+include('./_includes/header.php');
 ?>
-
-<!-- inclusion du header contenant le DOCTYPE -->
-<?php include('./_includes/header.php'); ?>
 <!-- MAIN -->
 <main>
   <!-- SECTIONS -->

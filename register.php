@@ -1,14 +1,13 @@
 <?php
+// ATTENTION CETTE PAGE PEUT ETRE ATTEINTE SEULEMENT UNE FOIS CONNECTE
 include('./_includes/common.php');
 if (verif_session()) {
   header('Location: ./home.php');
   die;
 }
 $title = "Inscription";
+include('./_includes/header.php');
 ?>
-
-<!-- inclusion du header contenant le DOCTYPE -->
-<?php include('./_includes/header.php'); ?>
 <!-- MAIN -->
 <main>
   <!-- SECTION -->

@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
   <!-- Mon CSS -->
   <link rel="stylesheet" href="./assets/css/styles.css">
-  <title>GBAF - Le Groupement Banque et Assurance Français - <?= $title ?></title>
+  <title><?= $title ?> - GBAF - Le Groupement Banque et Assurance Français</title>
 </head>
 
 <body>
@@ -38,7 +38,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mt-3">
               <li class="nav-item ms-2">
-                <p class="nav-link-p">Bienvenue, <?= $_SESSION['account']['first_name'] ?> <?= $_SESSION['account']['last_name'] ?></p>
+                <p class="nav-link-p">Bienvenue, <?= htmlspecialchars($_SESSION['account']['first_name']) ?> <?= htmlspecialchars($_SESSION['account']['last_name']) ?></p>
               </li>
               <li class="nav-item ms-2">
                 <a class="nav-link" href="./settings.php">Paramètres du compte</a>

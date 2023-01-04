@@ -5,10 +5,8 @@ if (verif_session()) {
   die;
 }
 $title = "Connexion";
+include('./_includes/header.php');
 ?>
-
-<!-- inclusion du header contenant le DOCTYPE -->
-<?php include('./_includes/header.php'); ?>
 <!-- MAIN -->
 <main>
   <!-- SECTION -->

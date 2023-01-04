@@ -3,10 +3,8 @@
 include('./_includes/common.php');
 protected_session();
 $title = "Nouveau commentaire";
+include('./_includes/header.php');
 ?>
-
-<!-- inclusion du header contenant le DOCTYPE -->
-<?php include('./_includes/header.php'); ?>
 <!-- MAIN -->
 <main>
   <!-- SECTION -->

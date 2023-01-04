@@ -4,7 +4,6 @@
   - alertes connexion réussi/non réussi, déconnexion, post de commentaires et vote (commencer, reste à ajouter les alertes)
   - nom prénom align right header
   - supprimer les doubles BR
-  - vérifier les titres d'onglets
   - vérifier le responsive des éléments ajoutés ou modifier lors du dev php
   - passer un max de css dans bootstrap et enlever les !important (alléger mon styles.css)
 
@@ -26,13 +25,16 @@ Page partner.php - include comments.php
   - à faire valider par mentor
 
 Page comment.php
-  - formulaire de création de nouveau commentaire = ok 
-    - modif html/css
+  - formulaire de création de nouveau commentaire = ok ✔
+    - modif html/css = à faire
 
 Page register.php
-  - formulaire de création de compte= ok
-    - modif html/css
+  - formulaire de création de compte = ok ✔
+    - modif html/css = à faire
 
+Page settings.php
+  - formulaire de modif de compte = ok ✔
+    - modif html/css = à faire
 
  ***
 
@@ -47,7 +49,7 @@ Page register.php
 
 # NE PAS OUBLIER
 
-  commenter l'ensemble du code
+  commenter l'ensemble du code (actions et controleurs)
   re-vérifier les fonctionnalitées existantes
   
 

@@ -33,18 +33,18 @@ function get_actors()
 
 /**
  * On récupère un acteur à partir de son id
- * @param string $id id de l'acteur.
+ * @param string $actor_id id de l'acteur.
  * @return array|false Données d'un acteur ou faux
  */
-function get_actor($id)
+function get_actor($actor_id)
 {
   global $bdd;
   try {
     $sth = $bdd->prepare(
-      "SELECT * FROM actor WHERE actor_id = :id"
+      "SELECT * FROM actor WHERE actor_id = :actor_id"
     );
     $sth->execute([
-      'id' => $id
+      'actor_id' => $actor_id
     ]);
     $actor = $sth->fetch();
   } catch (PDOException $e) {
@@ -141,6 +141,88 @@ function create_account($first_name, $last_name, $user_name, $password, $questio
     'first_name' => $first_name
   ];
 }
+
+/**
+ * Fonction de modification des paramètres d'un compte
+ * 
+ * @param string $user_id L'identifiant de l'utilisateur à modifier
+ * @param string $first_name Prénom de l'utilisateur
+ * @param string $last_name Nom de l'utilisateur
+ * @param string $user_name Pseudonyme de l'utilisateur
+ * @param string $password Mot de passe de l'utilisateur (chaine vide : ne pas le modifier)
+ * @param string $question Question secrète de l'utilisateur
+ * @param string $answer Réponse à la question secrète
+ * @return array|false Données de l'utilisateur ou faux.
+ */
+function update_account($user_id, $first_name, $last_name, $user_name, $password, $question, $answer)
+{
+  global $bdd;
+  try {
+    // On initialise le tableau des données utilisateurs
+    $account = [
+      'user_id' => $user_id,
+      'first_name' => $first_name,
+      'last_name' => $last_name,
+      'user_name' => $user_name,
+      'question' => $question,
+      'answer' => $answer,
+    ];
+    // Chaine vide par défaut
+    $set_password = "";
+    // Si le mot de passe n'est pas vide
+    if(!empty($password)) {
+      // On redéfinit la valeur du champ password
+      $set_password = "password = :password,";
+      // On hache le mot de passe
+      $hash = password_hash($password, PASSWORD_DEFAULT);
+      // On l'insère dans le tableau de données
+      $account['password'] = $hash;
+    }
+
+    $sth = $bdd->prepare(
+      "UPDATE account
+      SET
+        first_name = :first_name,
+        last_name = :last_name,
+        user_name = :user_name,
+        $set_password
+        question = :question,
+        answer = :answer
+      WHERE user_id = :user_id
+      "
+    );
+    $sth->execute($account);
+  } catch (PDOException $e) {
+    return false;
+  }
+  return [
+    'user_id' => $user_id,
+    'last_name' => $last_name,
+    'first_name' => $first_name
+  ];
+}
+
+/**
+ * On récupère les données utilisateur à partir de son id
+ * @param string $user_id id du compte.
+ * @return array|false Données du compte ou faux
+ */
+function get_account($user_id)
+{
+  global $bdd;
+  try {
+    $sth = $bdd->prepare(
+      "SELECT * FROM account WHERE user_id = :user_id"
+    );
+    $sth->execute([
+      'user_id' => $user_id
+    ]);
+    $account = $sth->fetch();
+  } catch (PDOException $e) {
+    return false;
+  }
+  return $account;
+} 
 
 /**
  * Fonctions ayant rapport avec les commentaires (post)

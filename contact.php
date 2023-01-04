@@ -2,10 +2,8 @@
 // ATTENTION CETTE PAGE PEUT ETRE ATTEINTE SANS CONNEXION
 include('./_includes/common.php');
 $title = "Contact";
+include('./_includes/header.php');
 ?>
-
-<!-- inclusion du header contenant le DOCTYPE -->
-<?php include('./_includes/header.php'); ?>
 <!-- MAIN -->
 <main>
   <!-- SECTION -->
