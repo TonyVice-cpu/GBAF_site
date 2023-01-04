@@ -36,26 +36,11 @@ CREATE TABLE `post` (
   `post` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-INSERT INTO `post` (`post_id`, `user_id`, `actor_id`, `date_add`, `post`) VALUES
-(1, 1, 1, '2022-12-28 13:00:49', 'c\'est bien.'),
-(2, 1, 4, '2022-12-28 13:00:49', 'C\'est super.'),
-(3, 1, 1, '2022-12-28 19:18:32', 'bjr\r\n'),
-(4, 1, 1, '2022-12-28 19:21:02', 'coucou les amis'),
-(5, 1, 1, '2022-12-29 14:05:21', 'slt les amis'),
-(6, 1, 1, '2023-01-03 18:47:22', 'Test'),
-(7, 4, 1, '2023-01-04 17:18:58', 'C pas mal');
-
 CREATE TABLE `vote` (
   `user_id` int(11) NOT NULL,
   `actor_id` int(11) NOT NULL,
   `vote` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
-INSERT INTO `vote` (`user_id`, `actor_id`, `vote`) VALUES
-(1, 2, 0),
-(2, 1, 1),
-(4, 1, 1);
-
 
 ALTER TABLE `account`
   ADD PRIMARY KEY (`user_id`);
