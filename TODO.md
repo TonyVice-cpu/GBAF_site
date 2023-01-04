@@ -8,6 +8,7 @@
   - supprimer les doubles BR
   - vérifier le responsive des éléments ajoutés ou modifier lors du dev php
   - passer un max de css dans bootstrap et enlever les !important (alléger mon styles.css)
+  - revoir le centrage des éléments en grande résolution vers la gauche
 
 ***
 
