@@ -24,7 +24,7 @@ Détails de la page partenaire comprenant : ● logo ; ● titre ; ● texte de 
 
 Informations complémentaires : pour chaque nouveau commentaire, le prénom (de la personne connectée) et la date (du jour) seront remplis automatiquement.
 
-[Partenaires_tables+2.zip](https://github.com/TonyVice-cpu/GBAF_site/files/10275233/Partenaires_tables%2B2.zip)
-[wireframeZoning-20190705T132228Z-001+(1).zip](https://github.com/TonyVice-cpu/GBAF_site/files/10275234/wireframeZoning-20190705T132228Z-001%2B.1.zip)
+[Partenaires_tables+2.zip](https://github.com/TonyVice-cpu/GBAF_site/files/10275233/Partenaires_tables%2B2.zip)  
+[wireframeZoning-20190705T132228Z-001+(1).zip](https://github.com/TonyVice-cpu/GBAF_site/files/10275234/wireframeZoning-20190705T132228Z-001%2B.1.zip)  
 [Compte-rendu+réunion+de+lancement.pdf](https://github.com/TonyVice-cpu/GBAF_site/files/10275235/Compte-rendu%2Breunion%2Bde%2Blancement.pdf)
 [Cahier+des+charges+-+Extranet.pdf](https://github.com/TonyVice-cpu/GBAF_site/files/10275236/Cahier%2Bdes%2Bcharges%2B-%2BExtranet.pdf)
