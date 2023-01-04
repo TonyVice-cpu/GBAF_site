@@ -14,7 +14,8 @@ include('connect/db.php');
  */
 
 /**
- * On récupère la liste des acteurs
+ * Fonction qui récupère la liste des acteurs
+ * 
  * @return array|false Liste de acteurs ou faux
  */
 function get_actors()
@@ -32,7 +33,8 @@ function get_actors()
 }
 
 /**
- * On récupère un acteur à partir de son id
+ * Fonction qui récupère un acteur à partir de son id
+ * 
  * @param string $actor_id id de l'acteur.
  * @return array|false Données d'un acteur ou faux
  */
@@ -54,11 +56,12 @@ function get_actor($actor_id)
 }
 
 /**
- * Fonctions ayant rapport avec les utilisateurs (account)
+ * Fonctions ayant rapport avec les comptes utilisateurs (account)
  */
 
 /**
- * On vérifie si les parametres demandées existe en base.
+ * Fonction qui vérifie si les parametres demandées existe en base
+ * 
  * @param string $user_name nom d'utilisateur.
  * @param string $password mot de passe de l'utilisateur.
  * @return false|array Données de l'utilisateur ou faux
@@ -86,6 +89,29 @@ function verify_login($user_name, $password)
     'first_name' => $account['first_name']
   ];
 }
+
+/**
+ * Fonction qui récupère les données utilisateur à partir de son id
+ * 
+ * @param string $user_id id du compte.
+ * @return array|false Données du compte ou faux
+ */
+function get_account($user_id)
+{
+  global $bdd;
+  try {
+    $sth = $bdd->prepare(
+      "SELECT * FROM account WHERE user_id = :user_id"
+    );
+    $sth->execute([
+      'user_id' => $user_id
+    ]);
+    $account = $sth->fetch();
+  } catch (PDOException $e) {
+    return false;
+  }
+  return $account;
+} 
 
 /**
  * Fonctions de création de compte
@@ -203,35 +229,14 @@ function update_account($user_id, $first_name, $last_name, $user_name, $password
 }
 
 /**
- * On récupère les données utilisateur à partir de son id
- * @param string $user_id id du compte.
- * @return array|false Données du compte ou faux
- */
-function get_account($user_id)
-{
-  global $bdd;
-  try {
-    $sth = $bdd->prepare(
-      "SELECT * FROM account WHERE user_id = :user_id"
-    );
-    $sth->execute([
-      'user_id' => $user_id
-    ]);
-    $account = $sth->fetch();
-  } catch (PDOException $e) {
-    return false;
-  }
-  return $account;
-} 
-
-/**
  * Fonctions ayant rapport avec les commentaires (post)
  */
 
 /**
- * On récupère les commentaires en rapport avec l'id d'un partenaire (first_name, last_name de la table account)
+ * Fonction qui récupère les commentaires en rapport avec l'id d'un partenaire (first_name, last_name de la table account)
  * En faisant une jonction avec les informations utilisateurs (post, date_add de la table post)
  * En ordre par date de publication decroissante
+ * 
  * @param string $id id de l'acteur.
  * @return array|false Liste des commentaires d'un acteur ou faux
  */
@@ -262,7 +267,7 @@ function get_comments($id)
 }
 
 /**
- * Crée un commentaire
+ * Fonction qui crée un commentaire
  * 
  * @param string $user_id id de l'utilisateur qui donne son avis
  * @param string $actor_id id du partenaire sur lequel on donne un avis
@@ -296,7 +301,7 @@ function add_comment($user_id, $actor_id, $post)
  */
 
 /**
- * Ajoute ou supprime un avis :
+ * Fonction qui ajoute ou supprime un avis :
  * - Si l'avis existe et sa valeur est identique : on le supprime
  * - Si l'avis existe et sa valeur est différente : on le met à jour
  * - Si l'avis n'existe pas : on l'ajoute
@@ -360,7 +365,7 @@ function like_dislike($user_id, $actor_id, $vote)
 }
 
 /**
- * Compte le nombre de votes :
+ * Fonction qui compte le nombre de votes :
  * On récupère la liste des votes en fonction de l'id d'un partenaire (actor)
  * Puis on agrege les résultats :
  * - likes : la somme de tous les votes ayant pour valeur 1
