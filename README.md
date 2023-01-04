@@ -1,6 +1,6 @@
 # GBAF_site
 
-Réalisez l'extranet d'un groupe bancaire.
+## Réalisez l'extranet d'un groupe bancaire.
 
 Généralités. Le Groupement Banque Assurance Français (GBAF) est une fédération représentant les 6 grands groupes français : ● BNP Paribas ; ● BPCE ; ● Crédit Agricole ; ● Crédit Mutuel-CIC ; ● Société Générale ; ● La Banque Postale.
 

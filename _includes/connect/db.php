@@ -14,6 +14,8 @@ try {
   $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   // On récupère seulement le tableau associatif.
   $bdd->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+  // Cette ligne permet la compatibilité ascendante php 8.1+
+  $bdd->setAttribute(PDO::ATTR_STRINGIFY_FETCHES, true);
   // Cette ligne a pour but de définir le type d'encodage à effectuer sur nos requêtes.
   $bdd->exec('SET NAMES utf8');
   // Ici la connexion est effectuée.
