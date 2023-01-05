@@ -1,11 +1,16 @@
 <?php
+// récupération des commentaires en rapport avec l'id du partenaire
 $comments = get_comments($_GET['id']);
+// compte des commentaires
 $count_comments = count($comments);
+// comptes des votes en prenant compte de l'utilisateur connecté
 $votes = count_votes($_SESSION['account']['user_id'], $_GET['id']);
 ?>
 
 <section class="partner-comments mb-5">
+  <!-- CARTES COMMENTS-->
   <div class="card">
+    <!-- CARTES COMMENTS-HEADER -->
     <h2 class="card-header"><?= $count_comments ?> COMMENTAIRE(S)</h2>
     <div class="card-header-btn mt-1 ">
       <div><a href="comment.php?id=<?= $_GET['id'] ?>" class="btn btn-dark m-1">Nouveau commentaire</a></div>
@@ -17,6 +22,7 @@ $votes = count_votes($_SESSION['account']['user_id'], $_GET['id']);
         </form>
       </div>
     </div>
+    <!-- CARTES COMMENTS-BODY -->
     <?php foreach ($comments as $comment) : ?>
       <div class="card-body">
         <h5 class="card-title"><?= htmlspecialchars($comment['first_name']) ?> <?= htmlspecialchars($comment['last_name']) ?></h5>

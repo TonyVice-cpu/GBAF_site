@@ -1,9 +1,14 @@
 <?php
 // ATTENTION CETTE PAGE PEUT ETRE ATTEINTE SEULEMENT UNE FOIS CONNEECTE
+// inclusion du common
 include('./_includes/common.php');
+// vérification de l'authentification
 protected_session();
+// récupération des données de l'utilisateur à partir son id
 $account = get_account($_SESSION['account']['user_id']);
+// déclaration du titre de page dans l'onglet de navigatuer
 $title = "Paramètres du comptes";
+// inclusion du header
 include('./_includes/header.php');
 ?>
 <!-- MAIN -->
@@ -11,15 +16,12 @@ include('./_includes/header.php');
   <!-- SECTION -->
   <!-- SECTION SETTINGS -->
   <section>
-    <!-- SEPARATEUR -->
-    <div class="separator rounded bg-dark mt-5 mb-5"></div>
     <div class="settings">
-      <h2 class="fs-1 mt-5"><?= $title ?></h2>
-      <!-- SEPARATEUR - icons -->
-      <div class="star-icon"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-      <!-- SEPARATEUR -->
-      <div class="separator rounded bg-dark mt-5 mb-5"></div>
-      <!-- Formulaire -->
+      <!-- TITRE -->
+      <h2 class="fs-1 fw-bold text-uppercase mt-5 mb-5"><?= $title ?></h2>
+      <!-- PARAGRAPHE -->
+      <p><i class="fa-solid fa-circle me-2"></i>Veuillez modifier vos paramètres utilisateur ici, SVP.</p>
+      <!-- FORMULAIRE -->
       <form id="form-login" action="./action/settings.php" method="post">
         <div>
           <label for="first_name">Nom : <i class="fa-solid fa-asterisk"></i></label>
@@ -41,7 +43,7 @@ include('./_includes/header.php');
           <div class="alert alert-dark d-flex align-items-center" role="alert">
             <i class="fa-solid fa-triangle-exclamation fs-4 me-2"></i>
             <div>
-              Si vous voulez modifier votre mot de passe, veuillez remplir le champs, sinon laissez le vide.
+              Si vous voulez modifier votre mot de passe, veuillez remplir le champ, sinon laissez le vide.
             </div>
           </div>
           <input type="password" id="password" name="password">

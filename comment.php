@@ -1,8 +1,12 @@
 <?php
 // ATTENTION CETTE PAGE PEUT ETRE ATTEINTE SEULEMENT UNE FOIS CONNEECTE
+// inclusion du common
 include('./_includes/common.php');
+// vérification de l'authentification
 protected_session();
+// déclaration du titre de page dans l'onglet de navigateur
 $title = "Nouveau commentaire";
+// inclusion du header
 include('./_includes/header.php');
 ?>
 <!-- MAIN -->
@@ -10,25 +14,22 @@ include('./_includes/header.php');
   <!-- SECTION -->
   <!-- SECTION SETTINGS -->
   <section>
-    <!-- SEPARATEUR -->
-    <div class="separator rounded bg-dark mt-5 mb-5"></div>
     <div class="settings">
-      <h2 class="fs-1 mt-5"><?= $title ?></h2>
-      <!-- SEPARATEUR - icons -->
-      <div class="star-icon"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-      <!-- SEPARATEUR -->
-      <div class="separator rounded bg-dark mt-5 mb-5"></div>
-
+      <!-- TITRE -->
+      <h2 class="fs-1 fw-bold text-uppercase mt-5 mb-5"><?= $title ?></h2>
+      <!-- PARAGRAPHE -->
+      <p class="mb-5"><i class="fa-solid fa-circle me-2"></i>N'hésitez pas à nous laissez un commentaire.</p>
+      <!-- FORMULAIRE -->
       <form action="./action/add_comment.php" method="post">
-      <div>
-        <label for="post">Commentaire : </label>
-        <textarea id="post" name="post"></textarea>
-        <input type="hidden" name="actor_id" value="<?= $_GET['id'] ?>">
-      </div>
-      <div>
-        <button type="submit" class="btn btn-dark">Envoyer</button>
-      </div>
-    </form>
+        <div class="d-flex flex-column align-items-center justify-content-center">
+          <label class="mb-3" for="post">Commentaire : </label>
+          <textarea id="post" name="post"></textarea>
+          <input type="hidden" name="actor_id" value="<?= $_GET['id'] ?>">
+        </div>
+        <div class="d-flex flex-column align-items-center mt-3">
+          <button type="submit" class="btn btn-dark">Envoyer</button>
+        </div>
+      </form>
   </section>
 </main>
 <!-- FOOTER -->

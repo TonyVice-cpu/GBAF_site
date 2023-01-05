@@ -1,11 +1,15 @@
 <?php
 // ATTENTION CETTE PAGE PEUT ETRE ATTEINTE SEULEMENT UNE FOIS CONNECTE
+// inclusion du common
 include('./_includes/common.php');
+// si on est déjà connecté on redirige vers le home
 if (verif_session()) {
   header('Location: ./home.php');
   die;
 }
+// déclaration du titre de page dans l'onglet de navigateur
 $title = "Inscription";
+// inclusion du header
 include('./_includes/header.php');
 ?>
 <!-- MAIN -->
@@ -13,8 +17,8 @@ include('./_includes/header.php');
   <!-- SECTION -->
   <section>
     <div>
-      <h1>BIENVENUE sur le site du GBAF.</h1>
-      <p>Veuillez remplir le formulaire d'incription pour continuer SVP.</p>
+      <h1 class="fs-1 fw-bold text-uppercase mt-5 mb-5">BIENVENUE sur le site du GBAF.</h1>
+      <p><i class="fa-solid fa-circle me-2"></i>Veuillez remplir le formulaire d'incription pour continuer, SVP.</p>
     </div>
     <form id="form-login" action="./action/register.php" method="post">
       <div>

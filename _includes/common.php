@@ -1,4 +1,4 @@
 <?php
-include('connect/session.php');
-include('utils.php');
-include('functions.php');
+require_once('connect/session.php');
+require_once('utils.php');
+require_once('functions.php');

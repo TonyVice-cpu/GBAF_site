@@ -1,18 +1,23 @@
 <?php
+// CECI EST LA PAGE DE DEPART DU SITE
+// inclusion du common
 include('./_includes/common.php');
+// si on est déjà connecté on redirige vers le home
 if (verif_session()) {
   header('Location: ./home.php');
   die;
 }
+// déclaration du titre de page dans l'onglet de navigateur
 $title = "Connexion";
+// inclusion du header
 include('./_includes/header.php');
 ?>
 <!-- MAIN -->
 <main>
   <!-- SECTION -->
   <section>
-    <div>
-      <h1>BIENVENUE sur le site du GBAF.</h1>
+    <div class="text-center mt-3">
+      <h1 class="fs-1 fw-bold text-uppercase" >BIENVENUE sur le site du GBAF.</h1>
       <p>Veuillez-vous identifier pour continuer SVP.</p>
     </div>
     <form id="form-login" action="./action/login.php" method="post">
