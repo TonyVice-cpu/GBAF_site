@@ -48,7 +48,9 @@ h6 {
   margin: 20px; */
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
   width: 100%;
   padding: 5px;
   text-align: center;
@@ -327,21 +329,23 @@ footer p {
 /* DIVERS */
 /* BOUTON - TO TOP */
 #totop {
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   position: fixed;
   border-radius: 50%;
   background-color: var(--primary);
   width: 40px;
-  bottom: 8px;
-  right: 24px;
+  bottom: 16px;
+  right: 16px;
   cursor: pointer;
   aspect-ratio: 1/1;
+  transform: scale(0);
+  transition: transform 0.2s;
 }
 
 #totop.visible {
-  display: flex;
+  transform: scale(1);
 }
 
 .fa-angle-double-up {
@@ -411,14 +415,6 @@ footer p {
 
   .contact ul li i {
     font-size: 16px !important;
-  }
-
-  /* DIVERS */
-  /* BOUTON - TO TOP */
-  #totop {
-    padding: 8px;
-    bottom: 24px;
-    right: 12px;
   }
 
   .fa-angle-double-up {

@@ -48,7 +48,7 @@ include('./_includes/header.php')
         <div class="card card mt-5 mb-5">
           <img src="./assets/img/<?= htmlspecialchars($actor['logo']) ?>" alt="logo <?= htmlspecialchars($actor['actor_name']) ?>">
           <div class="card-body rounded-end bg-light">
-            <h3 class="card-title fw-bold text-uppercase"><?= htmlspecialchars($actor['actor_name']) ?></h3>
+            <h3 class="card-title fw-bold text-uppercase mb-5"><?= htmlspecialchars($actor['actor_name']) ?></h3>
             <p class="card-text"><?= nl2br(htmlspecialchars(truncate($actor['description'], 120))) ?></p>
             <a href="#">www.<?= htmlspecialchars($actor['actor_name']) ?>.fr</a>
             <p class="card-text d-flex justify-content-end"><a class="btn btn-dark" href="partner.php?id=<?= $actor['actor_id'] ?>"><small>Lire la suite</small></a>

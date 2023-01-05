@@ -29,10 +29,6 @@ include('./_includes/header.php');
   <!-- SECTION PARTNER-COMMENTS -->
   <!-- inclusion des commentaires -->
   <?php include('./_includes/comments.php') ?>
-  <!-- SEPARATEUR -->
-  <div class="separator rounded  bg-dark mt-5 mb-5"></div>
-  <!-- LOGO -->
-  <div class="section-logo"><img src="./assets/img/logo.PNG" alt="Logo GBAF"></div>
 </main>
 <!-- FOOTER -->
 <!-- inclusion du footer contenant le JAVASCRIPT -->
