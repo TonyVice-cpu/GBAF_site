@@ -5,39 +5,40 @@
   - sécuriser les envoies de formulaire (token csrf)
   - alertes connexion réussi/non réussi, déconnexion, post de commentaires et vote (commencer, reste à ajouter les alertes)
   - nom prénom align right header
-  - supprimer les doubles BR
   - vérifier le responsive des éléments ajoutés ou modifier lors du dev php
-  - passer un max de css dans bootstrap et enlever les !important (alléger mon styles.css)
-  - revoir le centrage des éléments en grande résolution vers la gauche
+  - passer un max de css dans bootstrap et enlever les !important (alléger mon styles.css) = commencé (ne pas oublié d'enlever ce qui est déjà commenté)
 
 ***
 
 ## Page
+
+### Page index.php
+  - changer l'alerte de champs requis par une bootsrap
 
 ### Page home.php
   - revoir la fonction truncate
 
 ### Page partner.php - include comments.php
   - nouveau commentaire - ajout = ok ✔
-    - voir si besoin modif et suppr = vu avec mentor, non demandé, faire seuelement si possible ✔
-    - ranger par dernière date = ok ✔
+  - voir si besoin modif et suppr = vu avec mentor, non demandé, faire seulement si possible ✔
+  - ranger par dernière date = ok ✔
 
   - like/dislike - ajout,modif,suppr = ok avec vérif si déjà voté ✔
-    - voir pour ajout d'un compteur = ok avec compte de l'utilisateur en cours + remplissage du pouce quand actif ✔
-
-  - à faire valider par mentor
+  - voir pour ajout d'un compteur = ok avec compte de l'utilisateur en cours + remplissage du pouce quand actif ✔
 
 ### Page comment.php
   - formulaire de création de nouveau commentaire = ok ✔
-    - modif html/css = à faire
+  - modif html/css = à faire
 
 ### Page register.php
   - formulaire de création de compte = ok ✔
-    - modif html/css = à faire
+  - changer l'alerte de champs requis par une bootsrap
+  - modif html/css = à faire
 
 ### Page settings.php
   - formulaire de modif de compte = ok ✔
-    - modif html/css = à faire
+  - changer l'alerte de champs requis par une bootsrap
+  - modif html/css = à faire
 
  ***
 
