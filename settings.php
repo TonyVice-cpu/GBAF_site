@@ -2,6 +2,8 @@
 // ATTENTION CETTE PAGE PEUT ETRE ATTEINTE SEULEMENT UNE FOIS CONNEECTE
 // inclusion du common
 include('./_includes/common.php');
+// inclusion du tableau des questions
+include('./_includes/questions.php');
 // vérification de l'authentification
 protected_session();
 // récupération des données de l'utilisateur à partir son id
@@ -25,17 +27,17 @@ include('./_includes/header.php');
       <form id="form-login" action="./action/settings.php" method="post">
         <div>
           <label for="first_name">Nom : <i class="fa-solid fa-asterisk"></i></label>
-          <input type="text" id="first_name" name="first_name" value="<?= htmlspecialchars($account['first_name']) ?>" required>
+          <input type="text" id="first_name" name="first_name" minlength="2" value="<?= htmlspecialchars($account['first_name']) ?>" required>
         </div>
 
         <div>
           <label for="last_name">Prénom : <i class="fa-solid fa-asterisk"></i></label>
-          <input type="text" id="last_name" name="last_name" value="<?= htmlspecialchars($account['last_name']) ?>" required>
+          <input type="text" id="last_name" name="last_name" minlength="2" value="<?= htmlspecialchars($account['last_name']) ?>" required>
         </div>
 
         <div>
           <label for="user_name">Nom d'utilisateur : <i class="fa-solid fa-asterisk"></i></label>
-          <input type="text" id="user_name" name="user_name" value="<?= htmlspecialchars($account['user_name']) ?>" required>
+          <input type="text" id="user_name" name="user_name" minlength="2" value="<?= htmlspecialchars($account['user_name']) ?>" required>
         </div>
 
         <div>
@@ -46,12 +48,17 @@ include('./_includes/header.php');
               Si vous voulez modifier votre mot de passe, veuillez remplir le champ, sinon laissez le vide.
             </div>
           </div>
-          <input type="password" id="password" name="password">
+          <input type="password" id="password" name="password" pattern="<?= $regex_password ?>">
         </div>
 
         <div>
           <label for="question">Question secrète : <i class="fa-solid fa-asterisk"></i></label>
-          <input type="text" id="question" name="question" value="<?= htmlspecialchars($account['question']) ?>" required>
+          <select name="question" id="question" required>
+          <option value="">--Choississez une question--</option>
+            <?php foreach ($questions as $question): ?>
+            <option <?= ($account['question'] === $question ) ? 'selected' : '' ?>><?= htmlspecialchars($question) ?></option>
+            <?php endforeach ?>
+          </select>
         </div>
 
         <div>

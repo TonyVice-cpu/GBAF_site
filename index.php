@@ -17,7 +17,7 @@ include('./_includes/header.php');
   <!-- SECTION -->
   <section>
     <div class="text-center mt-3">
-      <h1 class="fs-1 fw-bold text-uppercase" >BIENVENUE sur le site du GBAF.</h1>
+      <h1 class="fs-1 fw-bold text-uppercase">BIENVENUE sur le site du GBAF.</h1>
       <p>Veuillez-vous identifier pour continuer SVP.</p>
     </div>
     <form id="form-login" action="./action/login.php" method="post">

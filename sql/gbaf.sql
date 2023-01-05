@@ -42,8 +42,10 @@ CREATE TABLE `vote` (
   `vote` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+
 ALTER TABLE `account`
-  ADD PRIMARY KEY (`user_id`);
+  ADD PRIMARY KEY (`user_id`),
+  ADD UNIQUE KEY `user_name` (`user_name`);
 
 ALTER TABLE `actor`
   ADD PRIMARY KEY (`actor_id`);

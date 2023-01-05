@@ -48,6 +48,12 @@ h6 {
   margin: 20px; */
 }
 
+input, select, textarea {
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+}
+
 /* ******************************************************************************************************************************************************************/
 /* HEADER */
 /* NAV-BAR */
@@ -123,6 +129,11 @@ main {
 /* PAGE INDEX */
 /* MAIN SECTION */
 /* MAIN SECTION - FORM */
+#form-login {
+  margin: auto;
+  width: 80%;
+}
+
 #form-login > div {
   display: flex;
   flex-direction: column;
@@ -154,12 +165,6 @@ main {
 #form-login > div > label {
   margin: 10px;
   font-weight: bold;
-}
-
-#form-login > div > input {
-  width: 80%;
-  height: 40px;
-  text-align: center;
 }
 
 #form-login > div > a {
