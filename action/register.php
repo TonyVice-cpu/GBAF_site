@@ -5,8 +5,8 @@ $account = create_account(
   $_POST['last_name'],
   $_POST['user_name'],
   $_POST['password'],
-  $_POST['user_name'],
-  $_POST['user_name']
+  $_POST['question'],
+  $_POST['answer']
 );
 if ($account) {
   $_SESSION['is_logged_in'] = true;

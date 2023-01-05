@@ -27,6 +27,7 @@
 
 ### Page register.php
   - changer l'alerte de champs requis par une bootsrap
+  - vérife question secrète
   - modif html/css = à faire
 
 ### Page settings.php
