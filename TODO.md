@@ -19,24 +19,17 @@
   - revoir la fonction truncate
 
 ### Page partner.php - include comments.php
-  - nouveau commentaire - ajout = ok ✔
-  - voir si besoin modif et suppr = vu avec mentor, non demandé, faire seulement si possible ✔
-  - ranger par dernière date = ok ✔
-
-  - like/dislike - ajout,modif,suppr = ok avec vérif si déjà voté ✔
-  - voir pour ajout d'un compteur = ok avec compte de l'utilisateur en cours + remplissage du pouce quand actif ✔
+  - voir si besoin modif et suppr = vu avec mentor, non demandé, faire seulement si possible
+  - modif html/css = à faire
 
 ### Page comment.php
-  - formulaire de création de nouveau commentaire = ok ✔
   - modif html/css = à faire
 
 ### Page register.php
-  - formulaire de création de compte = ok ✔
   - changer l'alerte de champs requis par une bootsrap
   - modif html/css = à faire
 
 ### Page settings.php
-  - formulaire de modif de compte = ok ✔
   - changer l'alerte de champs requis par une bootsrap
   - modif html/css = à faire
 
@@ -56,6 +49,6 @@
   commenter l'ensemble du code (actions et controleurs)
   re-vérifier les fonctionnalitées existantes
   
+***
 
-
-  
+  il reste la partie question secrète à faire

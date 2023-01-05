@@ -371,7 +371,7 @@ function like_dislike($user_id, $actor_id, $vote)
  * - likes : la somme de tous les votes ayant pour valeur 1
  * - disklikes : la somme de tous les votes ayant pour valeur 0
  * - user_vote : le vote de l'utilisateur fourni en $user_id, NULL si celui-ci n'a pas voté
- *  (en commentaire SQL, une vairante avec une sous-requête)
+ *  (en commentaire SQL, une variante avec une sous-requête)
  * 
  * @param string $user_id id d'un utilisateur
  * @param string $actor_id id du partenaire sur lequel on veut récupérer les avis

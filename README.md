@@ -52,50 +52,50 @@ Les produits et services bancaires sont nombreux et très variés. Afin de rense
 
 #### Connexion/déconnexion :
 
-1. Connexion requise pour accéder aux informations du site via un UserName et un Password.  
-2. Au chargement de la page, les champs UserName et Password prennent toute la largeur de l’écran, entre le header et le footer.  
-3. À la première connexion, l'utilisateur peut créer son compte via une page d’inscription.  
-4. L’utilisateur peut modifier ses informations personnelles à tout moment via la page « Paramètres du compte ».  
+1. Connexion requise pour accéder aux informations du site via un UserName et un Password. ✔  
+2. Au chargement de la page, les champs UserName et Password prennent toute la largeur de l’écran, entre le header et le footer. ✔ 
+3. À la première connexion, l'utilisateur peut créer son compte via une page d’inscription. ✔ 
+4. L’utilisateur peut modifier ses informations personnelles à tout moment via la page « Paramètres du compte ». ✔  
 5. Champs requis sur la page d’inscription :  
-○ Nom  
-○ Prénom  
-○ UserName  
-○ Password  
-○ Question secrète  
-○ Réponse à la question secrète
+○ Nom  ✔  
+○ Prénom  ✔  
+○ UserName  ✔  
+○ Password  ✔  
+○ Question secrète  ✔  
+○ Réponse à la question secrète ✔
 
 6. Si l'utilisateur oublie son mot de passe, il peut saisir son UserName et répondre à la question secrète pour en créer un nouveau.  
-7. Quand l’utilisateur est connecté, son nom et son prénom sont indiqués dans le header sur l’ensemble des pages.  
-8. Un bouton « Se déconnecter » est présent dans le header.  
-9. Si l'utilisateur est déconnecté, il est redirigé automatiquement vers la première page pour une nouvelle connexion via un UserName et un Password.
+7. Quand l’utilisateur est connecté, son nom et son prénom sont indiqués dans le header sur l’ensemble des pages. ✔ 
+8. Un bouton « Se déconnecter » est présent dans le header.  ✔
+9. Si l'utilisateur est déconnecté, il est redirigé automatiquement vers la première page pour une nouvelle connexion via un UserName et un Password. ✔
 
 #### Utilisateur connecté :
 
 ##### Sont présents sur la page :
 
-1. Présentation succincte du GBAF  
-2. Liste des différents acteurs/partenaires du système bancaire français comprenant :   
-○ Logo  
-○ Titre  
-○ Présentation de l’entreprise avec affichage de la première ligne de texte  
-○ Bouton « Afficher la suite » (permettant d’ouvrir une nouvelle page pour chaque acteur/partenaire).
+1. Présentation succincte du GBAF  ✔
+2. Liste des différents acteurs/partenaires du système bancaire français comprenant : ✔   
+○ Logo  ✔  
+○ Titre  ✔  
+○ Présentation de l’entreprise avec affichage de la première ligne de texte  ✔  
+○ Bouton « Afficher la suite » (permettant d’ouvrir une nouvelle page pour chaque acteur/partenaire). ✔
 
 #### Détails de la page partenaire comprenant :
 
-1. Logo
-2. Titre
-3. Texte de description complet
-4. Bouton Like/Dislike permettant de donner un avis (professionnel et constructif) en un clic sur l’acteur/partenaire
-5. Indication du nombre de Like/Dislike
-6. Bouton pour poster un nouveau commentaire
-7. Liste des commentaires sur cet acteur/partenaire incluant :  
-○ Le prénom de l’utilisateur qui a laissé le commentaire  
-○ La date de publication  
-○ Le texte.
+1. Logo ✔
+2. Titre ✔
+3. Texte de description complet ✔
+4. Bouton Like/Dislike permettant de donner un avis (professionnel et constructif) en un clic sur l’acteur/partenaire ✔
+5. Indication du nombre de Like/Dislike ✔
+6. Bouton pour poster un nouveau commentaire ✔
+7. Liste des commentaires sur cet acteur/partenaire incluant : ✔   
+○ Le prénom de l’utilisateur qui a laissé le commentaire  ✔  
+○ La date de publication  ✔  
+○ Le texte.✔
 
 #### Informations complémentaires : 
 
-Pour chaque nouveau commentaire, le prénom (de la personne connectée) et la date (du jour) seront remplis automatiquement.
+Pour chaque nouveau commentaire, le prénom (de la personne connectée) et la date (du jour) seront remplis automatiquement. ✔
 
 [Partenaires_tables+2.zip](https://github.com/TonyVice-cpu/GBAF_site/files/10275233/Partenaires_tables%2B2.zip)  
 [wireframeZoning-20190705T132228Z-001+(1).zip](https://github.com/TonyVice-cpu/GBAF_site/files/10275234/wireframeZoning-20190705T132228Z-001%2B.1.zip)  
