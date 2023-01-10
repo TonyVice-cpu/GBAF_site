@@ -37,7 +37,7 @@ include('./_includes/header.php');
       <div>
         <button type="submit" class="btn btn-dark">Connexion</button>
       </div>
-      <div><a href="#">Mot de passe oublié ?</a></div>
+      <div><a href="./forgot.php?reset">Mot de passe oublié ?</a></div>
     </form>
   </section>
 </main>

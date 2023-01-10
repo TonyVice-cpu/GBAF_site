@@ -114,6 +114,54 @@ function get_account($user_id)
 } 
 
 /**
+ * Fonction qui récupère la question et l'id d'un utilisateur à partir de son nom d'utilisateur
+ * 
+ * @param string $user_name nom d'utilisateur du compte.
+ * @return array|false Données du compte ou faux
+ */
+function get_question($user_name)
+{
+  global $bdd;
+  try {
+    $sth = $bdd->prepare(
+      "SELECT question, user_id FROM account WHERE user_name = :user_name"
+    );
+    $sth->execute([
+      'user_name' => $user_name
+    ]);
+    $question = $sth->fetch();
+  } catch (PDOException $e) {
+    return false;
+  }
+  return $question;
+}
+
+/**
+ * Vérifie la réponse à la question secrète d'un utilisateur par rapport à son id
+ * 
+ * @param string $user_id id de d'utilisateur du compte.
+ * @param string $answer Réponse à la question secrète de l'utilisateur
+ * @return boolean Bonne réponse ou non
+ */
+function is_valid_answer($user_id, $answer)
+{
+  global $bdd;
+  try {
+    $sth = $bdd->prepare(
+      "SELECT 1 FROM account WHERE user_id = :user_id AND answer = :answer"
+    );
+    $sth->execute([
+      'user_id' => $user_id,
+      'answer' => $answer
+    ]);
+    $row = $sth->fetch();
+  } catch (PDOException $e) {
+    return false;
+  }
+  return ($row) ? true : false;
+} 
+
+/**
  * Fonctions de création de compte
  * 
  * @param string $first_name Prénom de l'utilisateur
@@ -226,6 +274,35 @@ function update_account($user_id, $first_name, $last_name, $user_name, $password
     'last_name' => $last_name,
     'first_name' => $first_name
   ];
+}
+
+/**
+ * Fonction de modification du mot de passe d'un compte
+ * 
+ * @param string $user_id L'identifiant de l'utilisateur à modifier
+ * @param string $password Mot de passe de l'utilisateur
+ * @return boolean Réussi ?
+ */
+function reset_password($user_id, $password)
+{
+  global $bdd;
+  try {
+    $hash = password_hash($password, PASSWORD_DEFAULT);
+    $sth = $bdd->prepare(
+      "UPDATE account
+      SET
+        password = :password
+      WHERE user_id = :user_id
+      "
+    );
+    $sth->execute([
+      'user_id' => $user_id,
+      'password' => $hash,
+    ]);
+  } catch (PDOException $e) {
+    return false;
+  }
+  return true;
 }
 
 /**
