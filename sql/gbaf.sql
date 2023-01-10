@@ -7,7 +7,7 @@ CREATE TABLE `account` (
   `last_name` varchar(64) NOT NULL,
   `first_name` varchar(32) NOT NULL,
   `user_name` varchar(64) NOT NULL,
-  `password` varchar(255) NOT NULL,
+  `password` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NOT NULL,
   `question` varchar(255) NOT NULL,
   `answer` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
