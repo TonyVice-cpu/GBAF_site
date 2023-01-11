@@ -41,13 +41,9 @@ h4,
 h5,
 h6 {
   font-family: var(--Montserrat);
-  /* font-weight: bold;
-  font-size: x-large;
-  text-align: center;
-  text-transform: uppercase;
-  margin: 20px; */
 }
 
+/* CHAMPS DE FORMULAIRE */
 input,
 select,
 textarea {
@@ -108,10 +104,6 @@ main {
   flex: 1;
 }
 
-/* main p {
-  text-align: center;
-} */
-
 /* LOGO GBAF */
 .section-logo img {
   width: 70px;
@@ -148,14 +140,9 @@ main {
 }
 
 #form-login > div > p {
-  background-color: var(--dark0);
-  color: var(--light0);
-  width: 50%;
-  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 5px;
 }
 
 #form-login .hidden {
@@ -230,8 +217,7 @@ main {
 .partner .card {
   display: flex;
   flex-direction: row;
-  width: 80%;
-  margin: auto;
+  object-fit: cover;
 }
 
 .partner img {
@@ -382,6 +368,14 @@ footer p {
 /* ---------------------------------------------- */
 /* MAX-WIDTH: 425px */
 @media screen and (max-width: 425px) {
+  /* PAGE INDEX */
+  /* MAIN SECTION */
+  /* MAIN SECTION - FORM */
+  #form-login div > p,
+  #form-login div > p > i {
+    font-size: xx-small;
+  }
+
   /* PAGE PARTNER_1-2-3-4 */
   /* MAIN SECTION */
   /* MAIN SECTION - PARTNER COMMENTS*/
@@ -428,17 +422,6 @@ footer p {
   .tinynav-logo p {
     font-size: small !important;
   }
-
-  /* PAGE INDEX */
-  /* MAIN SECTION */
-  /* MAIN SECTION - FORM */
-  #form-login > div > p {
-    display: none;
-  }
-
-  #form-login .hidden {
-    display: block;
-  }
 }
 
 /* ---------------------------------------------- */
@@ -472,13 +455,6 @@ footer p {
   /* MAIN */
   main {
     font-size: 14px;
-  }
-
-  /* PAGE INDEX */
-  /* MAIN SECTION */
-  /* MAIN SECTION - FORM */
-  #form-login > div > p {
-    font-size: small;
   }
 
   /* PAGE HOME */

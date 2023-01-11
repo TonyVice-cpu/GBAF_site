@@ -70,7 +70,6 @@ include('./_includes/header.php');
           <p>Tous les champs avec un <i class="fa-solid fa-asterisk"></i> sont obligatoires</p>
         </div>
 
-        <div class="hidden">Tous les champs avec un <i class="fa-solid fa-asterisk"></i>  sont obligatoire</div>
         <div>
           <button type="submit" class="btn btn-dark">Modifier</button>
         </div>

@@ -20,6 +20,7 @@ include('./_includes/header.php');
       <h1 class="fs-1 fw-bold text-uppercase">BIENVENUE sur le site du GBAF.</h1>
       <p>Veuillez-vous identifier pour continuer SVP.</p>
     </div>
+    <!-- FORMULAIRE -->
     <form id="form-login" action="./action/login.php" method="post">
       <div><img src="./assets/img/user.png" alt="User avatar"></div>
       <div>
@@ -30,10 +31,9 @@ include('./_includes/header.php');
         <label for="password">Mot de passe : <i class="fa-solid fa-asterisk"></i></label>
         <input type="password" id="password" name="password" required>
       </div>
-      <div>
+      <div class="text-center">
         <p>Tous les champs avec un <i class="fa-solid fa-asterisk"></i> sont obligatoires</p>
       </div>
-      <div class="hidden">Tous les champs avec un <i class="fa-solid fa-asterisk"></i>  sont obligatoire</div>
       <div>
         <button type="submit" class="btn btn-dark">Connexion</button>
       </div>
@@ -42,7 +42,7 @@ include('./_includes/header.php');
   </section>
 </main>
 <!-- SECTION LIENS VERS INSCRIPTION -->
-<section class="sign-up-link"><a class="mt-3" href="./register.php">Première visite ?</a></section>
+<div class="sign-up-link"><a class="mt-3" href="./register.php">Première visite ?</a></div>
 <!-- FOOTER -->
 <!-- inclusion du footer contenant le JAVASCRIPT -->
 <?php include('./_includes/footer.php'); ?>

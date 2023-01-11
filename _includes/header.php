@@ -38,7 +38,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mt-3">
               <li class="nav-item ms-2">
-                <p class="nav-link-p">Bienvenue, <?= htmlspecialchars($_SESSION['account']['first_name']) ?> <?= htmlspecialchars($_SESSION['account']['last_name']) ?></p>
+                <p class="nav-link-p text-center">Bienvenue, <?= htmlspecialchars($_SESSION['account']['first_name']) ?> <?= htmlspecialchars($_SESSION['account']['last_name']) ?></p>
               </li>
               <li class="nav-item ms-2">
                 <a class="nav-link" href="./settings.php">Paramètres du compte</a>
