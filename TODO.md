@@ -48,7 +48,4 @@
 
   commenter l'ensemble du code (actions et controleurs)
   re-vérifier les fonctionnalitées existantes
-  
-***
 
-  il reste la partie question secrète à faire

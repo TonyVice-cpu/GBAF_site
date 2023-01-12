@@ -64,7 +64,7 @@ Les produits et services bancaires sont nombreux et très variés. Afin de rense
 ○ Question secrète  ✔  
 ○ Réponse à la question secrète ✔
 
-6. Si l'utilisateur oublie son mot de passe, il peut saisir son UserName et répondre à la question secrète pour en créer un nouveau.  
+6. Si l'utilisateur oublie son mot de passe, il peut saisir son UserName et répondre à la question secrète pour en créer un nouveau. ✔  
 7. Quand l’utilisateur est connecté, son nom et son prénom sont indiqués dans le header sur l’ensemble des pages. ✔ 
 8. Un bouton « Se déconnecter » est présent dans le header.  ✔
 9. Si l'utilisateur est déconnecté, il est redirigé automatiquement vers la première page pour une nouvelle connexion via un UserName et un Password. ✔
