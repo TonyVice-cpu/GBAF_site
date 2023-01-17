@@ -12,9 +12,6 @@
 
 ## Page
 
-### Page index.php
-  - changer l'alerte de champs requis par une bootsrap
-
 ### Page home.php
   - revoir la fonction truncate
 
@@ -23,14 +20,6 @@
   - modif html/css = à faire
 
 ### Page comment.php
-  - modif html/css = à faire
-
-### Page register.php
-  - changer l'alerte de champs requis par une bootsrap
-  - modif html/css = à faire
-
-### Page settings.php
-  - changer l'alerte de champs requis par une bootsrap
   - modif html/css = à faire
 
  ***

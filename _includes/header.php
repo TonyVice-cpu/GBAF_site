@@ -21,6 +21,7 @@
   <header>
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <!-- LOGO -->
       <div class="container-fluid">
         <a class="navbar-brand" href="./index.php">
           <img src="./assets/img/logo.PNG" alt="logo GBAF">
@@ -31,18 +32,22 @@
           </a>
           <p>Le Groupement Banque et Assurance Français</p>
         </div>
+        <!-- MENU -->
         <?php if (verif_session()) : ?>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mt-3">
+              <!-- TEXT -->
               <li class="nav-item ms-2">
                 <p class="nav-link-p text-center">Bienvenue, <?= htmlspecialchars($_SESSION['account']['first_name']) ?> <?= htmlspecialchars($_SESSION['account']['last_name']) ?></p>
               </li>
+              <!-- LIEN VERS PARAMETRES DU COMPTE -->
               <li class="nav-item ms-2">
                 <a class="nav-link" href="./settings.php">Paramètres du compte</a>
               </li>
+              <!-- LIEN VERS SE DECONNECTER -->
               <li class="nav-item ms-2">
                 <a class="nav-link" href="./action/logout.php">Se déconnecter</a>
               </li>

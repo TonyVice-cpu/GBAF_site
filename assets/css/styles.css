@@ -112,56 +112,44 @@ main {
   margin-bottom: 30px;
 }
 
-/* ICON STAR */
-.star-icon {
-  color: var(--primary);
-  display: flex;
-  justify-content: center;
-}
-
 /* ******************************************************************************************************************************************************************/
-/* PAGE INDEX */
-/* MAIN SECTION */
-/* MAIN SECTION - FORM */
+/* PAGE INDEX - REGISTER - SETTINGS - FORGOT */
+/* FORMULAIRE */
 #form-login {
   margin: auto;
   width: 80%;
 }
 
-#form-login > div {
+#form-login div,
+#form-login figure {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 20px;
 }
 
-#form-login > div > img {
+#form-login > figure > img {
   width: 80px;
 }
 
-#form-login > div > p {
+#form-login div > p {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: small;
 }
 
-#form-login .hidden {
-  display: none;
-  text-align: center;
-  font-size: smaller;
-}
-
-#form-login > div > label {
+#form-login div > label {
   margin: 10px;
   font-weight: bold;
 }
 
-#form-login > div > a {
+#form-login div > a {
   text-decoration: none;
   color: var(--primary);
 }
 
-#form-login > div > a:hover {
+#form-login div > a:hover {
   color: var(--dark0);
 }
 
@@ -170,6 +158,7 @@ main {
   font-size: 12px;
 }
 
+/* PAGE INDEX */
 /* LIEN VERS INSCRIPTION */
 .sign-up-link {
   background-color: var(--primary);
@@ -341,12 +330,7 @@ footer p {
 /* ******************************************************************************************************************************************************************/
 /* RESPONSIVE */
 /* MAX-WIDTH: 375px */
-@media screen and (max-width: 375px) {
-  /* ICON STAR */
-  .star-icon {
-    font-size: 10px !important;
-  }
-
+@media screen and (max-width: 375px) { 
   /* PAGE CONTACT */
   /* MAIN SECTION */
   /* MAIN SECTION - CONTACT */

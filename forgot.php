@@ -25,10 +25,12 @@ include('./_includes/header.php');
 <main>
   <!-- SECTION -->
   <section>
+    <!-- TITRE -->
     <div>
-      <h1 class="fs-1 fw-bold text-uppercase mt-5 mb-5">BIENVENUE sur le site du GBAF.</h1>
+      <h1 class="fs-1 fw-bold text-uppercase mt-5 mb-5"><?= $title ?></h1>
       <p><i class="fa-solid fa-circle me-2"></i>Veuillez remplir le formulaire pour réinitialiser votre mot de passe, SVP.</p>
     </div>
+    <!-- FORMULAIRE -->
     <form id="form-login" action="./action/forgot.php" method="post">
       <?php 
       // ETAPE 3 : Si l'utilisateur a fourni la bonne réponse à sa question
@@ -65,11 +67,10 @@ include('./_includes/header.php');
           <input type="text" id="user_name" name="user_name" minlength="2" required>
         </div>
       <?php endif ?>
-      
+      <!-- BOUTON D'ENVOI -->
       <div>
         <button type="submit" class="btn btn-dark">Valider</button>
       </div>
-
     </form>
   </section>
 </main>

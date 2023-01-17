@@ -16,24 +16,29 @@ include('./_includes/header.php');
 <main>
   <!-- SECTION -->
   <section>
+    <!-- TITRE -->
     <div class="text-center mt-3">
       <h1 class="fs-1 fw-bold text-uppercase">BIENVENUE sur le site du GBAF.</h1>
       <p>Veuillez-vous identifier pour continuer SVP.</p>
     </div>
     <!-- FORMULAIRE -->
     <form id="form-login" action="./action/login.php" method="post">
-      <div><img src="./assets/img/user.png" alt="User avatar"></div>
+      <figure><img src="./assets/img/user.png" alt="User avatar"></figure>
+      <!-- NOM D'UTILISATEUR -->
       <div>
         <label for="user_name">Nom d'utilisateur : <i class="fa-solid fa-asterisk"></i></label>
         <input type="text" id="user_name" name="user_name" required>
       </div>
+      <!-- MDP -->
       <div>
         <label for="password">Mot de passe : <i class="fa-solid fa-asterisk"></i></label>
         <input type="password" id="password" name="password" required>
       </div>
-      <div class="text-center">
+      <!-- TEXT -->
+      <div class="text-center text-muted mt-5">
         <p>Tous les champs avec un <i class="fa-solid fa-asterisk"></i> sont obligatoires</p>
       </div>
+      <!-- BOUTON D'ENVOI -->
       <div>
         <button type="submit" class="btn btn-dark">Connexion</button>
       </div>
@@ -41,7 +46,7 @@ include('./_includes/header.php');
     </form>
   </section>
 </main>
-<!-- SECTION LIENS VERS INSCRIPTION -->
+<!-- LIENS VERS INSCRIPTION -->
 <div class="sign-up-link"><a class="mt-3" href="./register.php">Première visite ?</a></div>
 <!-- FOOTER -->
 <!-- inclusion du footer contenant le JAVASCRIPT -->
