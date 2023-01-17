@@ -42,7 +42,10 @@ include('./_includes/header.php');
       <div>
         <button type="submit" class="btn btn-dark">Connexion</button>
       </div>
-      <div><a href="./forgot.php?reset">Mot de passe oublié ?</a></div>
+      <!-- MDP PERDU -->
+      <div>
+        <a class="mt-3" href="./forgot.php?reset">Mot de passe oublié ?</a>
+      </div>
     </form>
   </section>
 </main>
