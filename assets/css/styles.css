@@ -180,20 +180,12 @@ main {
 
 /* ******************************************************************************************************************************************************************/
 /* PAGE HOME */
-/* MAIN SECTION */
-/* MAIN SECTION - PRESENTATION */
-.presentation ul {
-  display: flex;
-  justify-content: center;
-  font-weight: bold;
-}
-
-/* SEPARATEUR */
+/* SECTION - PRESENTATION */
 .separator {
   height: 4px;
 }
 
-/* MAIN SECTION - PARTNERS*/
+/* SECTION - PARTNERS */
 .partners {
   margin-bottom: 30px;
 }
@@ -202,7 +194,7 @@ main {
   font-size: larger;
 }
 
-/* PARTNER */
+/* ASIDE PARTNER */
 .partner .card {
   display: flex;
   flex-direction: row;
@@ -224,9 +216,8 @@ main {
 
 /* ******************************************************************************************************************************************************************/
 /* PAGE PARTNER_1-2-3-4 */
-/* MAIN SECTION */
-/* MAIN SECTION - PARTNER PRESENTATION */
-.partner-presentation > div {
+/* SECTION - PARTNER PRESENTATION */
+.partner-presentation > figure {
   display: flex;
   justify-content: center;
 }
@@ -239,7 +230,7 @@ main {
 .partner-presentation a:hover {
   color: var(--dark1);
 }
-/* MAIN SECTION - PARTNER COMMENTS*/
+/* SECTION - PARTNER COMMENTS*/
 .partner-comments .card-header-btn {
   display: flex;
   justify-content: flex-end;
@@ -253,8 +244,7 @@ main {
 
 /* ******************************************************************************************************************************************************************/
 /* PAGE CONTACT */
-/* MAIN SECTION */
-/* MAIN SECTION - CONTACT */
+/* SECTION - CONTACT */
 .contact ul {
   list-style: none;
   display: flex;
@@ -332,8 +322,7 @@ footer p {
 /* MAX-WIDTH: 375px */
 @media screen and (max-width: 375px) {
   /* PAGE CONTACT */
-  /* MAIN SECTION */
-  /* MAIN SECTION - CONTACT */
+  /* SECTION - CONTACT */
   .contact ul li i {
     display: flex;
     flex-direction: column;
@@ -353,16 +342,14 @@ footer p {
 /* MAX-WIDTH: 425px */
 @media screen and (max-width: 425px) {
   /* PAGE INDEX */
-  /* MAIN SECTION */
-  /* MAIN SECTION - FORM */
+  /* SECTION - FORM */
   #form-login div > p,
   #form-login div > p > i {
     font-size: xx-small;
   }
 
   /* PAGE PARTNER_1-2-3-4 */
-  /* MAIN SECTION */
-  /* MAIN SECTION - PARTNER COMMENTS*/
+  /* SECTION - PARTNER COMMENTS*/
   .partner-comments .card-header-btn {
     flex-direction: column;
     justify-content: center;
@@ -385,8 +372,7 @@ footer p {
   }
 
   /* PAGE CONTACT */
-  /* MAIN SECTION */
-  /* MAIN SECTION - CONTACT */
+  /* SECTION - CONTACT */
   .contact ul {
     font-size: 14px !important;
   }
@@ -442,22 +428,19 @@ footer p {
   }
 
   /* PAGE HOME */
-  /* MAIN SECTION */
-  /* MAIN SECTION - PARTNERS*/
+  /* SECTION - PARTNERS*/
   .partners h2 {
     font-size: small;
   }
 
   /* PAGE PARTNER_1-2-3-4 */
-  /* MAIN SECTION */
-  /* MAIN SECTION - PARTNER COMMENTS*/
+  /* SECTION - PARTNER COMMENTS*/
   .partner-comments .card-header-btn {
     justify-content: center;
     margin: 0;
   }
   /* PAGE CONTACT */
-  /* MAIN SECTION */
-  /* MAIN SECTION - CONTACT */
+  /* SECTION - CONTACT */
   .contact ul {
     display: flex;
     flex-direction: column;
@@ -493,8 +476,7 @@ footer p {
 /* MAX-WIDTH: 1024px */
 @media screen and (max-width: 1024px) {
   /* PAGE HOME */
-  /* MAIN SECTION */
-  /* MAIN SECTION - PARTNERS*/
+  /* SECTION - PARTNERS*/
   .partner .card {
     flex-direction: column;
   }

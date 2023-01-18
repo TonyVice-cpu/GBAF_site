@@ -16,7 +16,9 @@ include('./_includes/header.php');
   <!-- SECTIONS -->
   <!-- SECTION PARTNER-PRESENTATION -->
   <section class="partner-presentation">
-    <div><img src="./assets/img/<?= htmlspecialchars($actor['logo']) ?>" class="img-fluid rounded mt-5" alt="Logo <?= htmlspecialchars($actor['actor_name']) ?>"></div>
+    <figure>
+      <img src="./assets/img/<?= htmlspecialchars($actor['logo']) ?>" class="img-fluid rounded mt-5" alt="Logo <?= htmlspecialchars($actor['actor_name']) ?>">
+    </figure>
     <!-- TITRE -->
     <h2 class="fs-1 fw-bold text-uppercase mt-5"><?= htmlspecialchars($actor['actor_name']) ?></h2>
     <!-- LIEN -->

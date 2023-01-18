@@ -4,17 +4,12 @@
 
   - sécuriser les envoies de formulaire (token csrf)
   - alertes connexion réussi/non réussi, déconnexion, post de commentaires et vote (commencer, reste à ajouter les alertes)
-  - nom prénom align right header
   - vérifier le responsive des éléments ajoutés ou modifier lors du dev php
   - passer un max de css dans bootstrap et enlever les !important (alléger mon styles.css) = commencé (ne pas oublié d'enlever ce qui est déjà commenté)
 
 ***
 
 ## Page
-
-### Page partner.php - include comments.php
-  - voir si besoin modif et suppr = vu avec mentor, non demandé, faire seulement si possible
-  - modif html/css = à faire
 
 ### Page comment.php
   - modif html/css = à faire
@@ -33,6 +28,6 @@
 ## NE PAS OUBLIER
 
   commenter l'ensemble du code (actions et controleurs)
-  
+
   re-vérifier les fonctionnalitées existantes
 
