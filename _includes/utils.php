@@ -23,5 +23,5 @@ function my_dump($var)
  */
 function truncate($str, $width)
 {
-  return strtok(wordwrap($str, $width, "...\n"), "\n");
+  return strtok(wordwrap(preg_replace('/\s\s+/', ' ', $str), $width, "…\n"), "\n");
 }

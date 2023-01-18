@@ -12,9 +12,6 @@
 
 ## Page
 
-### Page home.php
-  - revoir la fonction truncate
-
 ### Page partner.php - include comments.php
   - voir si besoin modif et suppr = vu avec mentor, non demandé, faire seulement si possible
   - modif html/css = à faire
@@ -36,5 +33,6 @@
 ## NE PAS OUBLIER
 
   commenter l'ensemble du code (actions et controleurs)
+  
   re-vérifier les fonctionnalitées existantes
 

@@ -206,11 +206,11 @@ main {
 .partner .card {
   display: flex;
   flex-direction: row;
-  object-fit: cover;
 }
 
 .partner img {
   width: 40%;
+  object-fit: contain;
 }
 
 .partner div > a {
@@ -330,7 +330,7 @@ footer p {
 /* ******************************************************************************************************************************************************************/
 /* RESPONSIVE */
 /* MAX-WIDTH: 375px */
-@media screen and (max-width: 375px) { 
+@media screen and (max-width: 375px) {
   /* PAGE CONTACT */
   /* MAIN SECTION */
   /* MAIN SECTION - CONTACT */

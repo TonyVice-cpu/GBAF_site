@@ -19,7 +19,7 @@ include('./_includes/header.php');
       <!-- PARAGRAPHE -->
       <p class="mb-5"><i class="fa-solid fa-circle me-2"></i>Pour plus d'informations, n'hésitez pas à nous contacter.</p>
       <!-- SEPARATEUR -->
-      <div class="separator rounded  bg-dark mb-5"></div>
+      <div class="separator rounded bg-dark mb-5"></div>
       <!-- LISTE A PUCES -->
       <ul>
         <li><i class="fa-solid fa-house me-2 mb-5"></i> 35 rue de la Paix - Paris - 75002</li>
@@ -31,7 +31,7 @@ include('./_includes/header.php');
     <!-- LOGO -->
     <div class="section-logo"><img src="./assets/img/logo.PNG" alt="Logo GBAF"></div>
     <!-- SEPARATEUR -->
-    <div class="separator rounded  bg-dark mb-5"></div>
+    <div class="separator rounded bg-dark mb-5"></div>
   </section>
 </main>
 <!-- FOOTER -->
