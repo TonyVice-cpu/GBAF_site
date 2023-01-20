@@ -222,6 +222,16 @@ main {
   margin-right: 16px;
 }
 
+.partner-comments .card-footer {
+  margin-left: -16px;
+  margin-right: -16px;
+  font-size: 12px;
+}
+
+.partner-comments .card-body:last-child {
+  padding-bottom: 0;
+}
+
 .card-header-avis {
   display: flex;
   justify-content: center;

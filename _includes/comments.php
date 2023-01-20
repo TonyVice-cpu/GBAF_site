@@ -12,7 +12,7 @@ $votes = count_votes($_SESSION['account']['user_id'], $_GET['id']);
   <div class="card">
     <!-- CARTES COMMENTS-HEADER -->
     <h2 class="card-header"><?= $count_comments ?> COMMENTAIRE(S)</h2>
-    <div class="card-header-btn mt-1 ">
+    <div class="card-header-btn mt-1 mb-2">
       <div><a href="comment.php?id=<?= $_GET['id'] ?>" class="btn btn-dark m-1">Nouveau commentaire</a></div>
       <div class="card-header-avis">
         <form class="d-flex align-items-center gap-1" action="./action/vote.php" method="POST">
@@ -27,7 +27,7 @@ $votes = count_votes($_SESSION['account']['user_id'], $_GET['id']);
       <div class="card-body">
         <h5 class="card-title"><?= htmlspecialchars($comment['first_name']) ?> <?= htmlspecialchars($comment['last_name']) ?></h5>
         <p class="card-text"><?= htmlspecialchars($comment['post']) ?></p>
-        <div class="card-footer text-muted text-center"><?= htmlspecialchars($comment['date_add']) ?></div>
+        <div class="card-footer text-muted"><?= htmlspecialchars($comment['date_add']) ?></div>
       </div>
     <?php endforeach ?>
   </div>
