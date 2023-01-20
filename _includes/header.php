@@ -57,3 +57,6 @@
       </div>
     </nav>
   </header>
+  <!-- Inclusion de l'alerte -->
+  <?php
+  include('alert.php');

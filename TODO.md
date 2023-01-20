@@ -2,9 +2,7 @@
 
 ## Global
 
-  - sécuriser les envoies de formulaire (token csrf)
-  - alertes connexion réussi/non réussi, déconnexion, post de commentaires et vote (commencer, reste à ajouter les alertes)
-  - vérifier le responsive des éléments ajoutés ou modifier lors du dev php
+  - alertes post de commentaires et vote (commencer)
   - passer un max de css dans bootstrap et enlever les !important (alléger mon styles.css) = commencé (ne pas oublié d'enlever ce qui est déjà commenté)
 
 ***
@@ -17,8 +15,6 @@
  ***
 
 ## Divers
-
-  - rajouter fonction vérif si données existante dans $post
 
   - corriger la redirection de la fonction protected session au cas ou ça foire (fonctionne très bien pour le moment)
   

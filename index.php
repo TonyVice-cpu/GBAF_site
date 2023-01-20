@@ -17,13 +17,12 @@ include('./_includes/header.php');
   <!-- SECTION -->
   <section>
     <!-- TITRE -->
-    <div class="text-center mt-3">
+    <div class="text-center mt-3 mb-5">
       <h1 class="fs-1 fw-bold text-uppercase">BIENVENUE sur le site du GBAF.</h1>
       <p>Veuillez-vous identifier pour continuer SVP.</p>
     </div>
     <!-- FORMULAIRE -->
     <form id="form-login" action="./action/login.php" method="post">
-      <figure><img src="./assets/img/user.png" alt="User avatar"></figure>
       <!-- NOM D'UTILISATEUR -->
       <div>
         <label for="user_name">Nom d'utilisateur : <i class="fa-solid fa-asterisk"></i></label>

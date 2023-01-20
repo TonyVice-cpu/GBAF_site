@@ -34,7 +34,7 @@ include('./_includes/header.php')
     <!-- LOGO -->
     <figure class="section-logo mt-5">
       <img src="./assets/img/logo.PNG" alt="Logo GBAF">
-      <figcaption class="fw-bold text-center">Le Groupement Banque et Assurances</figcaption>
+      <figcaption class="fw-bold text-center">Le Groupement Banque et Assurances Français</figcaption>
     </figure>
     <!-- SEPARATEUR -->
     <div class="separator rounded bg-dark mt-5 mb-5"></div>

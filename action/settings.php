@@ -18,5 +18,14 @@ $account = update_account(
 );
 if ($account) {
   $_SESSION['account'] = $account;
+  $_SESSION['alert'] = [
+    'type' => 'dark',
+    'message' => 'Votre compte utilisateur a bien été modifié.'
+  ];
+}else{
+  $_SESSION['alert'] = [
+    'type' => 'danger',
+    'message' => 'Une erreur s\'est produite.'
+  ];
 }
 header('Location: ../home.php');
