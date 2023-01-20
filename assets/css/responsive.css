@@ -1,4 +1,8 @@
-/* RESPONSIVE */
+/*  GBAF Style Sheet - RESPONSIVE
+    --------------------------------------------------------------
+	média queries
+    --------------------------------------------------------------
+*/
 
 /* MAX-WIDTH: 375px */
 @media screen and (max-width: 375px) {

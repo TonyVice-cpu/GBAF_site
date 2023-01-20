@@ -1,4 +1,9 @@
-/* Variables couleurs et fonts */
+/*  GBAF Style Sheet - VARIABLES
+    --------------------------------------------------------------
+	déclaration des variables Couleurs et Fonts
+    --------------------------------------------------------------
+*/
+
 :root {
   --primary: #ff0000;
   --light0: #ffffff;

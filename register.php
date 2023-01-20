@@ -24,24 +24,24 @@ include('./_includes/header.php');
       <p><i class="fa-solid fa-circle me-2"></i>Veuillez remplir le formulaire d'incription pour continuer, SVP.</p>
     </div>
     <!-- FORMULAIRE -->
-    <form id="form-login" action="./action/register.php" method="post">
+    <form class="mx-auto" id="form-login" action="./action/register.php" method="post">
       <!-- NOM -->
-      <div>
+      <div class="d-flex flex-column align-items-center my-3">
         <label for="first_name">Nom : <i class="fa-solid fa-asterisk"></i></label>
         <input type="text" id="first_name" name="first_name" minlength="2" required>
       </div>
       <!-- PRENOM -->
-      <div>
+      <div class="d-flex flex-column align-items-center my-3">
         <label for="last_name">Prénom : <i class="fa-solid fa-asterisk"></i></label>
         <input type="text" id="last_name" name="last_name" minlength="2" required>
       </div>
       <!-- NOM D'UTILISATEUR -->
-      <div>
+      <div class="d-flex flex-column align-items-center my-3">
         <label for="user_name">Nom d'utilisateur : <i class="fa-solid fa-asterisk"></i></label>
         <input type="text" id="user_name" name="user_name" minlength="2" required>
       </div>
       <!-- MDP -->
-      <div>
+      <div class="d-flex flex-column align-items-center my-3">
         <label for="password">Mot de passe : <i class="fa-solid fa-asterisk"></i></label>
         <div>
           <P class="text-center text-muted">Minimum 8 caractères, au moins une majuscule, au moins une minuscule et au moins un chiffre.</P>
@@ -49,7 +49,7 @@ include('./_includes/header.php');
         <input type="password" id="password" name="password" pattern="<?= $regex_password ?>" required>
       </div>
       <!-- QUESTION SECRETE -->
-      <div>
+      <div class="d-flex flex-column align-items-center my-3">
         <label for="question">Question secrète : <i class="fa-solid fa-asterisk"></i></label>
         <select name="question" id="question" required>
           <option value="">--Choississez une question--</option>
@@ -59,16 +59,16 @@ include('./_includes/header.php');
         </select>
       </div>
       <!-- REPONSE -->
-      <div>
+      <div class="d-flex flex-column align-items-center my-3">
         <label for="answer">Réponse : <i class="fa-solid fa-asterisk"></i></label>
         <input type="text" id="answer" name="answer" required>
       </div>
       <!-- TEXT -->
-      <div class="text-center text-muted mt-5">
+      <div class="d-flex flex-column align-items-center text-muted">
         <p>Tous les champs avec un <i class="fa-solid fa-asterisk"></i> sont obligatoires</p>
       </div>
       <!-- BOUTON D'ENVOI -->
-      <div>
+      <div class="d-flex flex-column align-items-center my-3">
         <button type="submit" class="btn btn-dark">Envoyer</button>
       </div>
     </form>

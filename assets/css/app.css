@@ -1,4 +1,9 @@
-/* ALL */
+/*  GBAF Style Sheet - ALL
+    --------------------------------------------------------------
+	feuille de style
+    --------------------------------------------------------------
+*/
+
 *,
 ::before,
 ::after {
@@ -101,26 +106,10 @@ main {
 /* PAGE INDEX - REGISTER - SETTINGS - FORGOT */
 /* FORMULAIRE */
 #form-login {
-  margin: auto;
   width: 80%;
 }
 
-#form-login div,
-#form-login figure {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 20px;
-}
-
-#form-login > figure > img {
-  width: 80px;
-}
-
 #form-login div > p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: small;
 }
 

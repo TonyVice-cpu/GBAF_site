@@ -22,32 +22,32 @@ include('./_includes/header.php');
       <h1 class="fs-1 fw-bold text-uppercase mt-5 mb-5"><?= $title ?></h1>
       <p><i class="fa-solid fa-circle me-2"></i>Veuillez modifier vos paramètres utilisateur ici, SVP.</p>
       <!-- FORMULAIRE -->
-      <form id="form-login" action="./action/settings.php" method="post">
+      <form class="mx-auto" id="form-login" action="./action/settings.php" method="post">
         <!-- NOM -->
-        <div>
+        <div class="d-flex flex-column align-items-center my-3">
           <label for="first_name">Nom : <i class="fa-solid fa-asterisk"></i></label>
           <input type="text" id="first_name" name="first_name" minlength="2" value="<?= htmlspecialchars($account['first_name']) ?>" required>
         </div>
         <!-- PRENOM -->
-        <div>
+        <div class="d-flex flex-column align-items-center my-3">
           <label for="last_name">Prénom : <i class="fa-solid fa-asterisk"></i></label>
           <input type="text" id="last_name" name="last_name" minlength="2" value="<?= htmlspecialchars($account['last_name']) ?>" required>
         </div>
         <!-- NOM D'UTILISATEUR -->
-        <div>
+        <div class="d-flex flex-column align-items-center my-3">
           <label for="user_name">Nom d'utilisateur : <i class="fa-solid fa-asterisk"></i></label>
           <input type="text" id="user_name" name="user_name" minlength="2" value="<?= htmlspecialchars($account['user_name']) ?>" required>
         </div>
         <!-- MDP -->
-        <div>
+        <div class="d-flex flex-column align-items-center my-3">
           <label for="password">Mot de passe : </label>
           <div>
-            <p class="text-center text-muted">Si vous voulez modifier votre mot de passe, veuillez remplir le champ, sinon laissez le vide.</p>
+            <p class="text-muted">Si vous voulez modifier votre mot de passe, veuillez remplir le champ, sinon laissez le vide.</p>
           </div>
           <input type="password" id="password" name="password" pattern="<?= $regex_password ?>">
         </div>
         <!-- QUESTION SECRETE -->
-        <div>
+        <div class="d-flex flex-column align-items-center my-3">
           <label for="question">Question secrète : <i class="fa-solid fa-asterisk"></i></label>
           <select name="question" id="question" required>
             <option value="">--Choississez une question--</option>
@@ -57,16 +57,16 @@ include('./_includes/header.php');
           </select>
         </div>
         <!-- REPONSE -->
-        <div>
+        <div class="d-flex flex-column align-items-center my-3">
           <label for="answer">Réponse : <i class="fa-solid fa-asterisk"></i></label>
           <input type="text" id="answer" name="answer" value="<?= htmlspecialchars($account['answer']) ?>" required>
         </div>
         <!-- TEXT -->
-        <div>
-          <p class="text-center text-muted mt-5">Tous les champs avec un <i class="fa-solid fa-asterisk"></i> sont obligatoires</p>
+        <div class="d-flex flex-column align-items-center my-3">
+          <p class="text-muted">Tous les champs avec un <i class="fa-solid fa-asterisk"></i> sont obligatoires</p>
         </div>
         <!-- BOUTON D'ENVOI -->
-        <div>
+        <div class="d-flex flex-column align-items-center my-3">
           <button type="submit" class="btn btn-dark">Modifier</button>
         </div>
       </form>

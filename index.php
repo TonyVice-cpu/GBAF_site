@@ -22,27 +22,27 @@ include('./_includes/header.php');
       <p>Veuillez-vous identifier pour continuer SVP.</p>
     </div>
     <!-- FORMULAIRE -->
-    <form id="form-login" action="./action/login.php" method="post">
+    <form class="mx-auto " id="form-login" action="./action/login.php" method="post">
       <!-- NOM D'UTILISATEUR -->
-      <div>
+      <div class="d-flex flex-column align-items-center my-3">
         <label for="user_name">Nom d'utilisateur : <i class="fa-solid fa-asterisk"></i></label>
         <input type="text" id="user_name" name="user_name" required>
       </div>
       <!-- MDP -->
-      <div>
+      <div class="d-flex flex-column align-items-center my-3">
         <label for="password">Mot de passe : <i class="fa-solid fa-asterisk"></i></label>
         <input type="password" id="password" name="password" required>
       </div>
       <!-- TEXT -->
-      <div class="text-center text-muted mt-5">
+      <div class="d-flex flex-column align-items-center text-muted">
         <p>Tous les champs avec un <i class="fa-solid fa-asterisk"></i> sont obligatoires</p>
       </div>
       <!-- BOUTON D'ENVOI -->
-      <div>
+      <div class="d-flex flex-column align-items-center my-3">
         <button type="submit" class="btn btn-dark">Connexion</button>
       </div>
       <!-- MDP PERDU -->
-      <div>
+      <div class="d-flex flex-column align-items-center my-3">
         <a class="mt-3" href="./forgot.php?reset">Mot de passe oublié ?</a>
       </div>
     </form>

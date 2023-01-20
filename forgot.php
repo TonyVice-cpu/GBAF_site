@@ -10,10 +10,10 @@ if (verif_session()) {
   die;
 }
 // déclaration du titre de page dans l'onglet de navigateur
-$title = "Récupération du mot de passe";
+$title = "Modification du mot de passe";
 
 // Suppression des données de session de récupération si reset est présent dans la requête
-if(isset($_GET['reset'])) {
+if (isset($_GET['reset'])) {
   unset($_SESSION['question']);
   unset($_SESSION['is_valid_answer']);
 }
@@ -31,18 +31,15 @@ include('./_includes/header.php');
       <p><i class="fa-solid fa-circle me-2"></i>Veuillez remplir le formulaire pour réinitialiser votre mot de passe, SVP.</p>
     </div>
     <!-- FORMULAIRE -->
-    <form id="form-login" action="./action/forgot.php" method="post">
-      <?php 
+    <form class="mx-auto" id="form-login" action="./action/forgot.php" method="post">
+      <?php
       // ETAPE 3 : Si l'utilisateur a fourni la bonne réponse à sa question
       if (!empty($_SESSION['is_valid_answer'])) :
       ?>
-        <div>
+        <div class="d-flex flex-column align-items-center my-3">
           <label for="password">Saississez votre nouveau mot de passe : <i class="fa-solid fa-asterisk"></i></label>
-          <div class="alert alert-dark d-flex align-items-center" role="alert">
-            <i class="fa-solid fa-triangle-exclamation fs-4 me-2"></i>
-            <div>
-              Minimum 8 caractères, au moins une majuscule, au moins une minuscule et au moins un chiffre.
-            </div>
+          <div>
+            <P class="text-center text-muted">Minimum 8 caractères, au moins une majuscule, au moins une minuscule et au moins un chiffre.</P>
           </div>
           <input type="password" id="password" name="password" pattern="<?= $regex_password ?>" required>
         </div>
@@ -50,11 +47,11 @@ include('./_includes/header.php');
       // ETAPE 2 : Si un nom d'utilisateur valide est fourni, on affiche sa question secrète
       elseif (!empty($_SESSION['question'])) :
       ?>
-        <div>
+        <div class="d-flex flex-column align-items-center my-3">
           <label for="question">Votre question : <i class="fa-solid fa-asterisk"></i></label>
           <input type="text" id="question" value="<?= htmlspecialchars($_SESSION['question']['question']) ?>" disabled>
         </div>
-        <div>
+        <div class="d-flex flex-column align-items-center my-3">
           <label for="answer">Réponse : <i class="fa-solid fa-asterisk"></i></label>
           <input type="text" id="answer" name="answer" required>
         </div>
@@ -62,13 +59,13 @@ include('./_includes/header.php');
       // ETAPE 1 : Si aucun de ces cas, on affiche la saisie du nom d'utilisateur
       else :
       ?>
-        <div>
+        <div class="d-flex flex-column align-items-center my-3">
           <label for="user_name">Nom d'utilisateur : <i class="fa-solid fa-asterisk"></i></label>
           <input type="text" id="user_name" name="user_name" minlength="2" required>
         </div>
       <?php endif ?>
       <!-- BOUTON D'ENVOI -->
-      <div>
+      <div class="d-flex flex-column align-items-center my-3">
         <button type="submit" class="btn btn-dark">Valider</button>
       </div>
     </form>

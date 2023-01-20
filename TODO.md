@@ -14,7 +14,7 @@
  ***
 
 ## Divers
-  
+  option sur register settings question secrete, j'arrive pas a le centrer
 
 ***
 
