@@ -1,0 +1,11 @@
+/* Variables couleurs et fonts */
+:root {
+  --primary: #ff0000;
+  --light0: #ffffff;
+  --light1: #b8b8b8e0;
+  --dark0: #000000;
+  --dark1: #212529;
+
+  --Open: "Open", sans-serif;
+  --Montserrat: "Montserrat", sans-serif;
+}

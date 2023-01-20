@@ -1,0 +1,168 @@
+/* RESPONSIVE */
+
+/* MAX-WIDTH: 375px */
+@media screen and (max-width: 375px) {
+  /* PAGE CONTACT */
+  /* SECTION - CONTACT */
+  .contact ul li i {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0 !important;
+    margin-bottom: 16px !important;
+    margin-top: 16px !important;
+  }
+
+  /* LOGO GBAF */
+  .section-logo > img {
+    margin-top: 40px !important;
+  }
+}
+
+/* ---------------------------------------------- */
+/* MAX-WIDTH: 425px */
+@media screen and (max-width: 425px) {
+  /* PAGE INDEX */
+  /* SECTION - FORM */
+  #form-login div > p,
+  #form-login div > p > i {
+    font-size: xx-small;
+  }
+
+  /* PAGE PARTNER_1-2-3-4 */
+  /* SECTION - PARTNER COMMENTS*/
+  .partner-comments .card-header-btn {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
+  }
+}
+
+/* ---------------------------------------------- */
+/* MAX-WIDTH: 576px */
+@media screen and (max-width: 576px) {
+  /* NAV */
+  .tinynav-logo p {
+    display: none;
+  }
+
+  /* FOOTER */
+  footer {
+    font-size: small;
+  }
+
+  /* PAGE CONTACT */
+  /* SECTION - CONTACT */
+  .contact ul {
+    font-size: 14px !important;
+  }
+
+  .contact ul li i {
+    font-size: 16px !important;
+  }
+
+  .fa-angle-double-up {
+    font-size: small;
+  }
+}
+/* ---------------------------------------------- */
+/* MAX-WIDTH: 635px */
+@media screen and (max-width: 635px) {
+  /* NAV */
+  .tinynav-logo p {
+    font-size: small !important;
+  }
+}
+
+/* ---------------------------------------------- */
+/* MAX-WIDTH: 768px */
+@media screen and (max-width: 768px) {
+  /* TITRES */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: large;
+  }
+
+  /* NAV */
+  nav > div > a {
+    display: none;
+  }
+  .tinynav-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .tinynav-logo img {
+    width: 80px;
+    padding: 8px 18px;
+    margin: 8px 28px;
+  }
+
+  /* MAIN */
+  main {
+    font-size: 14px;
+  }
+
+  /* PAGE HOME */
+  /* SECTION - PARTNERS*/
+  .partners h2 {
+    font-size: small;
+  }
+
+  /* PAGE PARTNER_1-2-3-4 */
+  /* SECTION - PARTNER COMMENTS*/
+  .partner-comments .card-header-btn {
+    justify-content: center;
+    margin: 0;
+  }
+  /* PAGE CONTACT */
+  /* SECTION - CONTACT */
+  .contact ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+  }
+
+  .contact ul li i {
+    font-size: 24px;
+  }
+}
+
+/* ---------------------------------------------- */
+/* MAX-WIDTH: 845px */
+@media screen and (max-width: 845px) {
+  /* NAV */
+  nav > div > a {
+    font-size: larger !important;
+    font-weight: bold;
+  }
+}
+
+/* ---------------------------------------------- */
+/* MAX-WIDTH: 992px */
+@media screen and (max-width: 992px) {
+  /* NAV */
+  .navbar-toggler {
+    margin: 0 30px;
+  }
+}
+
+/* ---------------------------------------------- */
+/* MAX-WIDTH: 1024px */
+@media screen and (max-width: 1024px) {
+  /* PAGE HOME */
+  /* SECTION - PARTNERS*/
+  .partner .card {
+    flex-direction: column;
+  }
+
+  .partner img {
+    width: 100%;
+  }
+}
