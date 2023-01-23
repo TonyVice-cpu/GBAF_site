@@ -12,9 +12,9 @@ $votes = count_votes($_SESSION['account']['user_id'], $_GET['id']);
   <div class="card">
     <!-- CARTES COMMENTS-HEADER -->
     <h2 class="card-header"><?= $count_comments ?> COMMENTAIRE(S)</h2>
-    <div class="card-header-btn mt-2 mb-3">
+    <div class="d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-sm-end m-1 m-sm-3">
       <div><a href="comment.php?id=<?= $_GET['id'] ?>" class="btn btn-dark m-1">Nouveau commentaire</a></div>
-      <div class="card-header-avis">
+      <div class="d-flex justify-content-center">
         <form class="d-flex align-items-center gap-1" action="./action/vote.php" method="POST">
           <input type="hidden" name="actor_id" value="<?= $_GET['id'] ?>">
           <div><button type="submit" class="btn btn-dark" name="vote" value="1"><?= $votes['likes'] ?><i class="fa-<?= ($votes['user_vote'] === '1') ? 'solid' : 'regular' ?> fa-thumbs-up ms-2"></i></button></div>

@@ -15,9 +15,9 @@ include('./_includes/header.php')
 <main>
   <!-- SECTIONS -->
   <!-- SECTION PRESENTATION -->
-  <section class="presentation mt-5 mb-5">
+  <section class="presentation my-5">
     <!-- TITRE -->
-    <h1 class="fs-1 fw-bold text-uppercase mb-5">Qui sommes-nous ?</h1>
+    <h2 class="fs-1 fw-bold text-uppercase my-3 mt-xl-5">Qui sommes-nous ?</h2>
     <!-- PARAGRAPHE -->
     <p><i class="fa-solid fa-circle me-2"></i>Le <span class="fw-bold">Groupement Banque et Assurance Français (GBAF) </span>est une fédération représentant <span class="fw-bold">les 6 plus grands groupes français.</span></p>
     <p><i class="fa-solid fa-circle me-2"></i><span class="fw-bold">BNP Paribas, BPCE, Crédit Agricole, Crédit Mutuel - CIC, Société Générale, La Banque Postale.</span></p>
@@ -32,21 +32,21 @@ include('./_includes/header.php')
     <p><i class="fa-solid fa-circle me-2"></i>C'est pour remédier à cela que le <span class="fw-bold">Groupement Banque et Assurance Français</span> souhaite proposer aux salariés des grands groupes français un point d’entrée unique, répertoriant un grand nombre d’informations sur les partenaires et acteurs du groupe ainsi que sur les produits et services bancaires et financiers.</p>
     <p><i class="fa-solid fa-circle me-2"></i>Grâce à l'extranet du <span class="fw-bold">GBAF</span>, chaque salarié pourra avoir accès à ses informations, poster un commentaire et donner son avis.</p>
     <!-- LOGO -->
-    <figure class="section-logo mt-5">
+    <figure class="section-logo text-center my-5">
       <img src="./assets/img/logo.PNG" alt="Logo GBAF">
-      <figcaption class="fw-bold text-center">Le Groupement Banque et Assurances Français</figcaption>
+      <figcaption class="mt-3 fw-bold text-center">Le Groupement Banque et Assurances Français</figcaption>
     </figure>
     <!-- SEPARATEUR -->
-    <div class="separator rounded bg-dark mt-5 mb-5"></div>
+    <div class="separator rounded bg-dark my-5"></div>
   </section>
   <!-- SECTION PARTNERS -->
   <section class="partners">
     <!-- TITRE -->
-    <h2 class="fs-1 fw-bold text-uppercase mb-5">Acteurs et partenaires</h2>
+    <h2 class="fs-1 fw-bold text-uppercase my-3 mt-xl-5">Acteurs et partenaires</h2>
     <!-- CARTES PARTNER -->
     <?php foreach ($actors as $actor) : ?>
       <aside class="partner">
-        <div class="card card mt-5 mb-5">
+        <div class="card flex-lg-row my-5 overflow-hidden">
           <img src="./assets/img/<?= htmlspecialchars($actor['logo']) ?>" alt="logo <?= htmlspecialchars($actor['actor_name']) ?>">
           <div class="card-body rounded-end bg-light">
             <h3 class="card-title fw-bold text-uppercase mb-5"><?= htmlspecialchars($actor['actor_name']) ?></h3>

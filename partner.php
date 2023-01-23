@@ -16,11 +16,11 @@ include('./_includes/header.php');
   <!-- SECTIONS -->
   <!-- SECTION PARTNER-PRESENTATION -->
   <section class="partner-presentation">
-    <figure>
+    <figure class="text-center">
       <img src="./assets/img/<?= htmlspecialchars($actor['logo']) ?>" class="img-fluid rounded mt-5" alt="Logo <?= htmlspecialchars($actor['actor_name']) ?>">
     </figure>
     <!-- TITRE -->
-    <h2 class="fs-1 fw-bold text-uppercase mt-5"><?= htmlspecialchars($actor['actor_name']) ?></h2>
+    <h2 class="fs-1 fw-bold text-uppercase my-3 mt-xl-5"><?= htmlspecialchars($actor['actor_name']) ?></h2>
     <!-- LIEN -->
     <a href="#">www.<?= htmlspecialchars($actor['actor_name']) ?>.fr</a>
     <!-- PARAGRAPHE -->

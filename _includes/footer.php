@@ -1,6 +1,6 @@
-<footer>
+<footer class="p-2 text-center">
   <div class="footer-link mt-2">
-    <a href="/notice.php"><i class="fa-solid fa-grip-lines-vertical me-2"></i>Mentions légales<i class="fa-solid fa-grip-lines-vertical ms-2"></i></a>
+    <a href="/notice.php" class="me-4"><i class="fa-solid fa-grip-lines-vertical me-2"></i>Mentions légales<i class="fa-solid fa-grip-lines-vertical ms-2"></i></a>
     <a href="/contact.php"><i class="fa-solid fa-grip-lines-vertical me-2"></i>Contact<i class="fa-solid fa-grip-lines-vertical ms-2"></i></a>
   </div>
   <div class="footer-copyright mt-2">

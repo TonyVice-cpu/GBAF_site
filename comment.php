@@ -14,22 +14,26 @@ include('./_includes/header.php');
   <!-- SECTION -->
   <!-- SECTION SETTINGS -->
   <section>
-    <div class="settings">
-      <!-- TITRE -->
-      <h2 class="fs-1 fw-bold text-uppercase mt-5 mb-5"><?= $title ?></h2>
-      <!-- PARAGRAPHE -->
-      <p class="mb-5"><i class="fa-solid fa-circle me-2"></i>N'hésitez pas à nous laissez un commentaire.</p>
-      <!-- FORMULAIRE -->
-      <form action="./action/add_comment.php" method="post">
-        <div class="d-flex flex-column align-items-center justify-content-center">
-          <label class="mb-3" for="post">Commentaire : </label>
-          <textarea id="post" name="post"></textarea>
-          <input type="hidden" name="actor_id" value="<?= $_GET['id'] ?>">
-        </div>
-        <div class="d-flex flex-column align-items-center mt-3">
-          <button type="submit" class="btn btn-dark">Envoyer</button>
-        </div>
-      </form>
+    <!-- TITRE -->
+    <h2 class="fs-1 fw-bold text-uppercase my-3 mt-xl-5"><?= $title ?></h2>
+    <!-- PARAGRAPHE -->
+    <p class="mb-5">N'hésitez pas à nous laissez un commentaire.</p>
+    <!-- FORMULAIRE -->
+    <form action="./action/add_comment.php" method="post">
+      <div class="d-flex flex-column align-items-center justify-content-center my-3">
+        <label class="fw-bold mb-3" for="post">Commentaire : <i class="fa-solid fa-asterisk"></i></label>
+        <textarea id="post" name="post"></textarea>
+        <input type="hidden" name="actor_id" value="<?= $_GET['id'] ?>">
+      </div>
+      <!-- TEXT -->
+      <div class="d-flex flex-column align-items-center text-muted">
+        <p>Tous les champs avec un <i class="fa-solid fa-asterisk"></i> sont obligatoires</p>
+      </div>
+      <!-- BOUTON -->
+      <div class="d-flex flex-column align-items-center my-3">
+        <button type="submit" class="btn btn-dark">Envoyer</button>
+      </div>
+    </form>
   </section>
 </main>
 <!-- FOOTER -->

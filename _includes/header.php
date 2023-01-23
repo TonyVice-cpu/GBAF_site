@@ -23,32 +23,27 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <!-- LOGO -->
       <div class="container-fluid">
-        <a class="navbar-brand" href="./index.php">
+        <a class="navbar-brand d-flex align-items-center" href="./index.php">
           <img src="./assets/img/logo.PNG" alt="logo GBAF">
-          Le Groupement Banque et Assurance Français
+          <h1 class="d-none d-md-block m-0">Le Groupement Banque et Assurance Français</h1>
         </a>
-        <div class="tinynav-logo"><a href="./index.php">
-            <img src="./assets/img/logo.PNG" alt="logo GBAF">
-          </a>
-          <p>Le Groupement Banque et Assurance Français</p>
-        </div>
         <!-- MENU -->
         <?php if (verif_session()) : ?>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mt-3">
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav flex-column text-center">
               <!-- TEXT -->
-              <li class="nav-item ms-2">
-                <p class="nav-link-p text-center">Bienvenue, <?= htmlspecialchars($_SESSION['account']['first_name']) ?> <?= htmlspecialchars($_SESSION['account']['last_name']) ?></p>
+              <li class="nav-item">
+                <p class="nav-link">Bienvenue, <?= htmlspecialchars($_SESSION['account']['first_name']) ?> <?= htmlspecialchars($_SESSION['account']['last_name']) ?></p>
               </li>
               <!-- LIEN VERS PARAMETRES DU COMPTE -->
-              <li class="nav-item ms-2">
+              <li class="nav-item">
                 <a class="nav-link" href="./settings.php">Paramètres du compte</a>
               </li>
               <!-- LIEN VERS SE DECONNECTER -->
-              <li class="nav-item ms-2">
+              <li class="nav-item">
                 <a class="nav-link" href="./action/logout.php">Se déconnecter</a>
               </li>
             </ul>

@@ -42,6 +42,11 @@ textarea {
   text-align: center;
 }
 
+/* LIENS */
+a {
+  text-decoration: none;
+}
+
 /* ******************************************************************************************************************************************************************/
 /* HEADER */
 /* NAV-BAR */
@@ -49,10 +54,8 @@ nav {
   border-bottom: 16px solid var(--primary);
 }
 
-.tinynav-logo {
-  display: none;
-  color: var(--light0);
-  font-weight: bold;
+.navbar-brand h1 {
+  font-size: 2vw;
 }
 
 nav img {
@@ -63,27 +66,18 @@ nav img {
   margin: 10px 30px;
 }
 
-nav > div > a {
-  font-size: x-large !important;
-  font-weight: bold;
-}
-
-.navbar-expand-lg .navbar-nav {
-  flex-direction: column;
-  align-items: center;
+.navbar-toggler,
+.navbar-collapse {
   margin: 0 30px;
 }
 
-.navbar-expand-lg .navbar-collapse {
-  justify-content: flex-end;
+nav ul li a.nav-link {
+  font-size: small;
 }
 
-nav ul li a {
-  font-size: small !important;
-}
-
-.nav-link-p {
-  color: var(--light0) !important;
+p.nav-link {
+  color: var(--light0);
+  margin: 0;
 }
 
 /* ******************************************************************************************************************************************************************/
@@ -97,29 +91,24 @@ main {
 /* LOGO GBAF */
 .section-logo img {
   width: 70px;
-  display: flex;
-  margin: auto;
-  margin-bottom: 30px;
 }
 
 /* ******************************************************************************************************************************************************************/
 /* PAGE INDEX - REGISTER - SETTINGS - FORGOT */
 /* FORMULAIRE */
+form div > p {
+  font-size: small;
+}
+
 #form-login {
   width: 80%;
 }
 
-#form-login div > p {
-  font-size: small;
-}
-
 #form-login div > label {
   margin: 10px;
-  font-weight: bold;
 }
 
 #form-login div > a {
-  text-decoration: none;
   color: var(--primary);
 }
 
@@ -136,15 +125,9 @@ main {
 /* LIEN VERS INSCRIPTION */
 .sign-up-link {
   background-color: var(--primary);
-  font-size: 24px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
 }
 
 .sign-up-link > a {
-  text-decoration: none;
-  text-transform: uppercase;
   color: var(--dark0);
 }
 
@@ -159,28 +142,11 @@ main {
   height: 4px;
 }
 
-/* SECTION - PARTNERS */
-.partners {
-  margin-bottom: 30px;
-}
-
-.partners h2 {
-  font-size: larger;
-}
-
-/* ASIDE PARTNER */
-.partner .card {
-  display: flex;
-  flex-direction: row;
-}
-
 .partner img {
-  width: 40%;
   object-fit: contain;
 }
 
 .partner div > a {
-  text-decoration: none;
   color: var(--primary);
 }
 
@@ -191,25 +157,16 @@ main {
 /* ******************************************************************************************************************************************************************/
 /* PAGE PARTNER_1-2-3-4 */
 /* SECTION - PARTNER PRESENTATION */
-.partner-presentation > figure {
-  display: flex;
-  justify-content: center;
-}
 
 .partner-presentation a {
-  text-decoration: none;
   color: var(--primary);
 }
 
 .partner-presentation a:hover {
   color: var(--dark1);
 }
+
 /* SECTION - PARTNER COMMENTS*/
-.partner-comments .card-header-btn {
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 16px;
-}
 
 .partner-comments .card-date {
   font-size: 12px;
@@ -219,47 +176,14 @@ main {
   padding-bottom: 0;
 }
 
-.card-header-avis {
-  display: flex;
-  justify-content: center;
-}
-
-/* ******************************************************************************************************************************************************************/
-/* PAGE CONTACT */
-/* SECTION - CONTACT */
-.contact ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 20px;
-  padding-left: 0;
-}
-
-.contact ul li i {
-  font-size: 24px;
-}
-
-.section-button {
-  display: flex;
-  justify-content: center;
-}
-
 /* ******************************************************************************************************************************************************************/
 /* FOOTER */
 footer {
-  height: 100px;
   background-color: var(--dark1);
   border-top: 16px solid var(--primary);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 footer a {
-  margin: 10px;
-  text-decoration: none;
   color: var(--light0);
 }
 
@@ -270,6 +194,28 @@ footer a:hover {
 footer p {
   color: var(--light1);
   font-size: x-small;
+}
+
+/* CONTACT */
+.contact .list-unstyled {
+  max-width: 400px;
+}
+
+.contact .list-unstyled > li {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.contact .list-unstyled > li > i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  aspect-ratio: 1/1;
+  background-color: #ddd;
+  border-radius: 50%;
+  font-size: 18px;
 }
 
 /* ******************************************************************************************************************************************************************/

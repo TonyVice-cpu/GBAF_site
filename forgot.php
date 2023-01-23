@@ -26,10 +26,9 @@ include('./_includes/header.php');
   <!-- SECTION -->
   <section>
     <!-- TITRE -->
-    <div>
-      <h1 class="fs-1 fw-bold text-uppercase mt-5 mb-5"><?= $title ?></h1>
-      <p><i class="fa-solid fa-circle me-2"></i>Veuillez remplir le formulaire pour réinitialiser votre mot de passe, SVP.</p>
-    </div>
+    <h2 class="fs-1 fw-bold text-uppercase my-3 mt-xl-5"><?= $title ?></h2>
+    <!-- PARAGRAPHE -->
+    <p class="mb-5">Veuillez remplir le formulaire pour réinitialiser votre mot de passe.</p>
     <!-- FORMULAIRE -->
     <form class="mx-auto" id="form-login" action="./action/forgot.php" method="post">
       <?php
@@ -37,7 +36,7 @@ include('./_includes/header.php');
       if (!empty($_SESSION['is_valid_answer'])) :
       ?>
         <div class="d-flex flex-column align-items-center my-3">
-          <label for="password">Saississez votre nouveau mot de passe : <i class="fa-solid fa-asterisk"></i></label>
+          <label class="fw-bold" for="password">Saississez votre nouveau mot de passe : <i class="fa-solid fa-asterisk"></i></label>
           <div>
             <P class="text-center text-muted">Minimum 8 caractères, au moins une majuscule, au moins une minuscule et au moins un chiffre.</P>
           </div>
@@ -48,11 +47,11 @@ include('./_includes/header.php');
       elseif (!empty($_SESSION['question'])) :
       ?>
         <div class="d-flex flex-column align-items-center my-3">
-          <label for="question">Votre question : <i class="fa-solid fa-asterisk"></i></label>
+          <label class="fw-bold" for="question">Votre question : </label>
           <input type="text" id="question" value="<?= htmlspecialchars($_SESSION['question']['question']) ?>" disabled>
         </div>
         <div class="d-flex flex-column align-items-center my-3">
-          <label for="answer">Réponse : <i class="fa-solid fa-asterisk"></i></label>
+          <label class="fw-bold" for="answer">Réponse : <i class="fa-solid fa-asterisk"></i></label>
           <input type="text" id="answer" name="answer" required>
         </div>
       <?php
@@ -60,10 +59,14 @@ include('./_includes/header.php');
       else :
       ?>
         <div class="d-flex flex-column align-items-center my-3">
-          <label for="user_name">Nom d'utilisateur : <i class="fa-solid fa-asterisk"></i></label>
+          <label class="fw-bold" for="user_name">Nom d'utilisateur : <i class="fa-solid fa-asterisk"></i></label>
           <input type="text" id="user_name" name="user_name" minlength="2" required>
         </div>
       <?php endif ?>
+      <!-- TEXT -->
+      <div class="d-flex flex-column align-items-center text-muted">
+        <p>Tous les champs avec un <i class="fa-solid fa-asterisk"></i> sont obligatoires</p>
+      </div>
       <!-- BOUTON D'ENVOI -->
       <div class="d-flex flex-column align-items-center my-3">
         <button type="submit" class="btn btn-dark">Valider</button>

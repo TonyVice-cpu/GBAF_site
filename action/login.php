@@ -6,7 +6,7 @@ if ($account) {
   $_SESSION['account'] = $account;
   $_SESSION['alert'] = [
     'type' => 'dark',
-    'message' => 'Vous êtes bien connecté à votre compte utilisateur.'
+    'message' => 'Vous êtes connecté.'
   ];
 } else {
   $_SESSION['is_logged_in'] = false;

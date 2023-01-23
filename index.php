@@ -17,20 +17,17 @@ include('./_includes/header.php');
   <!-- SECTION -->
   <section>
     <!-- TITRE -->
-    <div class="text-center mt-3 mb-5">
-      <h1 class="fs-1 fw-bold text-uppercase">BIENVENUE sur le site du GBAF.</h1>
-      <p>Veuillez-vous identifier pour continuer SVP.</p>
-    </div>
+    <h2 class="fs-1 fw-bold text-uppercase text-center my-3 my-xl-5">BIENVENUE sur le site du GBAF</h2>
     <!-- FORMULAIRE -->
     <form class="mx-auto " id="form-login" action="./action/login.php" method="post">
       <!-- NOM D'UTILISATEUR -->
       <div class="d-flex flex-column align-items-center my-3">
-        <label for="user_name">Nom d'utilisateur : <i class="fa-solid fa-asterisk"></i></label>
+        <label class="fw-bold" for="user_name">Nom d'utilisateur : <i class="fa-solid fa-asterisk"></i></label>
         <input type="text" id="user_name" name="user_name" required>
       </div>
       <!-- MDP -->
       <div class="d-flex flex-column align-items-center my-3">
-        <label for="password">Mot de passe : <i class="fa-solid fa-asterisk"></i></label>
+        <label class="fw-bold" for="password">Mot de passe : <i class="fa-solid fa-asterisk"></i></label>
         <input type="password" id="password" name="password" required>
       </div>
       <!-- TEXT -->
@@ -49,7 +46,7 @@ include('./_includes/header.php');
   </section>
 </main>
 <!-- LIENS VERS INSCRIPTION -->
-<div class="sign-up-link"><a class="mt-3" href="./register.php">Première visite ?</a></div>
+<div class="sign-up-link d-flex justify-content-center text-center"><a class="text-uppercase fs-3 mt-3" href="./register.php">Première visite ?</a></div>
 <!-- FOOTER -->
 <!-- inclusion du footer contenant le JAVASCRIPT -->
 <?php include('./_includes/footer.php'); ?>

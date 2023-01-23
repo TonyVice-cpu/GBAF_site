@@ -3,6 +3,6 @@ include('../_includes/common.php');
 session_unset();
 $_SESSION['alert'] = [
   'type' => 'dark',
-  'message' => 'Vous êtes bien déconnecté.'
+  'message' => 'Vous êtes déconnecté.'
 ];
 header('Location: ../index.php');

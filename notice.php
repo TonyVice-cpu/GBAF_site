@@ -12,7 +12,7 @@ include('./_includes/header.php');
   <!-- SECTION -->
   <!-- SECTION SETTINGS -->
   <section class="settings">
-    <h2 class="fs-1 fw-bold text-uppercase mt-5 mb-5"><?= $title ?></h2>
+    <h2 class="fs-1 fw-bold text-uppercase my-3 mt-xl-5"><?= $title ?></h2>
 
     <h5 class="bg-light fw-bold text-uppercase">1 – Édition du site</h5>
     <p>En vertu de l’article 6 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l’économie numérique, il
