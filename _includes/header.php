@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
   <!-- Mon CSS -->
   <link rel="stylesheet" href="./assets/css/styles.css">
-  <title><?= $title ?> - GBAF - Le Groupement Banque et Assurance Français</title>
+  <title><?= $title ?> - GBAF - Le Groupement Banque - Assurance Français</title>
 </head>
 
 <body>
@@ -23,9 +23,9 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <!-- LOGO -->
       <div class="container-fluid">
-        <a class="navbar-brand d-flex align-items-center" href="./index.php">
+        <a class="navbar-brand d-flex align-items-center" href="./index.php" title="Cliquez-ici pour revenir en arrière">
           <img src="./assets/img/logo.PNG" alt="logo GBAF">
-          <h1 class="d-none d-md-block m-0">Le Groupement Banque et Assurance Français</h1>
+          <h1 class="d-none d-md-block m-0">Le Groupement Banque - Assurance Français</h1>
         </a>
         <!-- MENU -->
         <?php if (verif_session()) : ?>
@@ -40,11 +40,11 @@
               </li>
               <!-- LIEN VERS PARAMETRES DU COMPTE -->
               <li class="nav-item">
-                <a class="nav-link" href="./settings.php">Paramètres du compte</a>
+                <a class="nav-link" href="./settings.php" title="Cliquez-ici pour accéder aux paramêtres de votre compte.">Paramètres du compte</a>
               </li>
               <!-- LIEN VERS SE DECONNECTER -->
               <li class="nav-item">
-                <a class="nav-link" href="./action/logout.php">Se déconnecter</a>
+                <a class="nav-link" href="./action/logout.php" title="Cliquez-ici pour vous déconnecter">Se déconnecter</a>
               </li>
             </ul>
           </div>

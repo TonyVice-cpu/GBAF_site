@@ -15,6 +15,7 @@ html {
   scroll-behavior: smooth;
 }
 
+/* ******************************************************************************************************************************************************************/
 /* BODY */
 body {
   font-family: var(--Open);
@@ -33,7 +34,13 @@ h6 {
   font-family: var(--Montserrat);
 }
 
-/* CHAMPS DE FORMULAIRE */
+/* LIENS */
+a {
+  text-decoration: none;
+}
+
+/* ******************************************************************************************************************************************************************/
+/* REFACTORISATION */
 input,
 select,
 textarea {
@@ -42,9 +49,10 @@ textarea {
   text-align: center;
 }
 
-/* LIENS */
-a {
-  text-decoration: none;
+nav ul li a.nav-link,
+form div > p,
+.card-contact p {
+  font-size: small;
 }
 
 /* ******************************************************************************************************************************************************************/
@@ -71,10 +79,6 @@ nav img {
   margin: 0 30px;
 }
 
-nav ul li a.nav-link {
-  font-size: small;
-}
-
 p.nav-link {
   color: var(--light0);
   margin: 0;
@@ -88,18 +92,9 @@ main {
   flex: 1;
 }
 
-/* LOGO GBAF */
-.section-logo img {
-  width: 70px;
-}
-
 /* ******************************************************************************************************************************************************************/
 /* PAGE INDEX - REGISTER - SETTINGS - FORGOT */
 /* FORMULAIRE */
-form div > p {
-  font-size: small;
-}
-
 #form-login {
   width: 80%;
 }
@@ -138,10 +133,35 @@ form div > p {
 /* ******************************************************************************************************************************************************************/
 /* PAGE HOME */
 /* SECTION - PRESENTATION */
+.presentation li:not(:last-child)::after,
+.contact p:last-child::after {
+  content: "";
+  display: block;
+  height: 3px;
+  background-color: var(--primary);
+  max-width: 40px;
+  margin: 1rem auto;
+  border-radius: 2px;
+}
+
+.presentation li::marker {
+  font-family: "Font Awesome 6 Free";
+  font-weight: bold;
+  content: "\f00c   ";
+  font-size: 20px;
+  margin: 1rem;
+  color: var(--primary);
+}
+
+/* PAGE HOME */
+/* SEPARATEUR */
 .separator {
   height: 4px;
 }
 
+/* PAGE HOME */
+/* SECTION - PARTNERS */
+/* CARTES PARTNER */
 .partner img {
   object-fit: contain;
 }
@@ -157,7 +177,6 @@ form div > p {
 /* ******************************************************************************************************************************************************************/
 /* PAGE PARTNER_1-2-3-4 */
 /* SECTION - PARTNER PRESENTATION */
-
 .partner-presentation a {
   color: var(--primary);
 }
@@ -167,13 +186,23 @@ form div > p {
 }
 
 /* SECTION - PARTNER COMMENTS*/
-
 .partner-comments .card-date {
   font-size: 12px;
 }
 
 .partner-comments .card-body:last-child {
   padding-bottom: 0;
+}
+
+/* ******************************************************************************************************************************************************************/
+/* PAGE CONTACT */
+.card-contact {
+  width: 90%;
+}
+
+/* PAGE NOTICE */
+.notice h3 {
+  background-color: var(--light2);
 }
 
 /* ******************************************************************************************************************************************************************/
@@ -196,30 +225,25 @@ footer p {
   font-size: x-small;
 }
 
-/* CONTACT */
-.contact .list-unstyled {
-  max-width: 400px;
+/* ******************************************************************************************************************************************************************/
+/* DIVERS */
+/* LOGO GBAF */
+.section-logo img {
+  width: 70px;
 }
 
-.contact .list-unstyled > li {
-  display: flex;
-  text-align: center;
-  align-items: center;
-}
-
-.contact .list-unstyled > li > i {
+/* ICONS */
+i.icon {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 40px;
   aspect-ratio: 1/1;
-  background-color: #ddd;
+  background-color: var(--light2);
   border-radius: 50%;
   font-size: 18px;
 }
 
-/* ******************************************************************************************************************************************************************/
-/* DIVERS */
 /* BOUTON - TO TOP */
 #totop {
   display: flex;

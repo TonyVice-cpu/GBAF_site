@@ -2,16 +2,11 @@
 
 ## Global
 
-  - passer un max de css dans bootstrap et enlever les !important (alléger mon styles.css) = commencé (ne pas oublié d'enlever ce qui est déjà commenté)
+  - vérifier page contact html css, finir page mentions légales html css
+  - le nom dans la nav est surligné
+  - commenter les actions
 
 ***
-
-## Page
-
-### Page comment.php
-  - modif html/css = à faire
-
- ***
 
 ## Divers
   option sur register settings question secrete, j'arrive pas a le centrer

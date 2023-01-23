@@ -4,7 +4,14 @@
     --------------------------------------------------------------
 */
 
-/* ---------------------------------------------- */
+
+/* SM */
+@media screen and (min-width: 576px) {
+  .presentation li:not(:last-child)::after {
+    background-color: transparent;
+  }
+}
+
 /* LG */
 @media screen and (min-width: 992px) {
   /* PAGE HOME */
@@ -12,8 +19,13 @@
   .partner img {
     width: 40%;
   }
+
+  .card-contact {
+    height: 325px;
+  }
 }
 
+/* XL */
 @media screen and (min-width: 1200px) {
   .navbar-brand h1 {
     font-size: 24px;
