@@ -1,5 +1,5 @@
 <?php
-// CETTE PAGE PEUT ETRE ATTEINTE SEULEMENT UNE FOIS CONNEECTE
+// CETTE PAGE PEUT ETRE ATTEINTE SEULEMENT UNE FOIS CONNECTE
 // inclusion du common
 include('./_includes/common.php');
 // inclusion du tableau des questions

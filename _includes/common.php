@@ -2,6 +2,7 @@
 
 /**
  * Fichier du COMMON.
+ * Chargé au départ de chaque pages.
  * Charge le fichier des REGEX,
  * le fichier des fonctions appartenant aux sessions,
  * le fichier des  fonctions utilitaires,
