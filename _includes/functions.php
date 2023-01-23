@@ -1,7 +1,8 @@
 <?php
 
 /**
- * Fonctions ayant rapport avec l'utilisation de la base de données.
+ * Fichier des fonctions ayant rapport avec l'utilisation de la base de données.
+ * Chargé à partir du COMMON.
  */
 
 /**

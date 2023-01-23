@@ -1,7 +1,8 @@
 <?php
 
 /**
- * Fonctions appartenant aux sessions
+ * Fichier de fonctions appartenant aux sessions.
+ * Chargé à partir du COMMON.
  */
 
 /**

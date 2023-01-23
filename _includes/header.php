@@ -23,7 +23,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <!-- LOGO -->
       <div class="container-fluid">
-        <a class="navbar-brand d-flex align-items-center" href="./index.php" title="Cliquez-ici pour revenir en arrière">
+        <a class="navbar-brand d-flex align-items-center" href="./index.php" title="Cliquez-ici pour revenir en arrière.">
           <img src="./assets/img/logo.PNG" alt="logo GBAF">
           <h1 class="d-none d-md-block m-0">Le Groupement Banque - Assurance Français</h1>
         </a>
@@ -44,7 +44,7 @@
               </li>
               <!-- LIEN VERS SE DECONNECTER -->
               <li class="nav-item">
-                <a class="nav-link" href="./action/logout.php" title="Cliquez-ici pour vous déconnecter">Se déconnecter</a>
+                <a class="nav-link" href="./action/logout.php" title="Cliquez-ici pour vous déconnecter.">Se déconnecter</a>
               </li>
             </ul>
           </div>

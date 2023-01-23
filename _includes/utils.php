@@ -1,7 +1,8 @@
 <?php
 
 /**
- * Fonctions utilitaires
+ * Fichiers des fonctions utilitaires.
+ * Chargé à partir du COMMON.
  */
 
 /**
