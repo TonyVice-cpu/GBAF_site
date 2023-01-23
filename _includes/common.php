@@ -2,7 +2,7 @@
 
 /**
  * Fichier du COMMON.
- * Chargé au départ de chaque pages.
+ * Chargé une fois au départ de chaque pages (index.php, register.php, home.php, partner.php, comment.php, settings.php, contact.php et notice.php).
  * Charge le fichier des REGEX,
  * le fichier des fonctions appartenant aux sessions,
  * le fichier des  fonctions utilitaires,
