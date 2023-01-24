@@ -19,7 +19,7 @@ include('./_includes/header.php')
     <!-- TITRE -->
     <h2 class="fs-1 fw-bold text-uppercase my-3 mt-xl-5">Présentation</h2>
     <!-- PARAGRAPHE -->
-    <p class="mb-5">Le Groupement Banque - Assurance Français.</p>
+    <p class="mb-5">Le GBAF - Promouvoir l'activité bancaire à l’échelle nationale.</p>
     <!-- TEXT -->
     <div class="d-flex flex-column flex-lg-row gap-4">
       <div class="rounded shadow p-3 gap-3">
@@ -32,7 +32,7 @@ include('./_includes/header.php')
           <li><span class="fw-bold">BNP Paribas, BPCE, Crédit Agricole, Crédit Mutuel - CIC, Société Générale, La Banque Postale.</span></li>
           <li>Même si il existe une forte concurrence entre ces entités, elles travaillent toutes de la même façon pour gérer
             près de 80 millions de comptes sur le territoire national.</li>
-          <li><span class="fw-bold">Le GBAF</span> est le représentant de la profession bancaire et des assureurs sur tous les axes de la réglementation financière française.</li>
+          <li><span class="fw-bold">Le GBAF est le représentant de la profession bancaire et des assureurs</span> sur tous les axes de la réglementation financière française.</li>
           <li>C’est aussi un interlocuteur privilégié des pouvoirs publics.</li>
         </ul>
       </div>
@@ -42,12 +42,11 @@ include('./_includes/header.php')
           <h3 class="m-0 text-uppercase fw-bold">Notre mission</h3>
         </div>
         <ul>
-          <li>Sa mission est de promouvoir l'activité bancaire à l’échelle nationale.</li>
-          <li>Les produits et services bancaires étant très nombreux et très variès, le but du site du <span class="fw-bold">GBAF</span> est de renseigner au mieux les clients mais aussi les salariés des 340 agences de banques et assurances en France.</li>
+          <li>Les produits et services bancaires étant très nombreux et très variès, <span class="fw-bold">le but du site du GBAF est de renseigner au mieux les clients mais aussi les salariés des 340 agences de banques et assurances en France.</span></li>
           <li>Agents, chargés de clientèle, conseillers financiers, tous recherchent sur Internet des informations portant sur des produits bancaires et des financeurs, entre autres.</li>
           <li>Aujourd’hui, il n’existe pas de base de données pour chercher ces informations de manière fiable et rapide ou pour donner son avis sur les partenaires et acteurs du secteur bancaire, tels que les associations ou les financeurs solidaires.</li>
           <li>C'est pour remédier à cela que le <span class="fw-bold">Le Groupement Banque - Assurance Français</span> souhaite proposer aux salariés des grands groupes français un point d’entrée unique, répertoriant un grand nombre d’informations sur les partenaires et acteurs du groupe ainsi que sur les produits et services bancaires et financiers.</li>
-          <li>Grâce à l'extranet du <span class="fw-bold">GBAF</span>, chaque salarié pourra avoir accès à ses informations, poster un commentaire et donner son avis.</li>
+          <li><span class="fw-bold">Grâce à l'extranet du GBAF</span>, chaque salarié pourra avoir accès à ses informations, poster un commentaire et donner son avis.</li>
         </ul>
       </div>
     </div>
