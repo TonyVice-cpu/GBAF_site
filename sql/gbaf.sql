@@ -12,9 +12,6 @@ CREATE TABLE `account` (
   `answer` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-INSERT INTO `account` (`user_id`, `last_name`, `first_name`, `user_name`, `password`, `question`, `answer`) VALUES
-(1, 'ANCELIN', 'Anthony', 'tony', '$2y$10$10UBzCSksoIj//U/K9lP/e1bqIfGLfwW2EkC8IqwVyBEsW93fDf/e', '', '');
-
 CREATE TABLE `actor` (
   `actor_id` int(11) NOT NULL,
   `actor_name` varchar(64) NOT NULL,
