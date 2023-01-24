@@ -23,32 +23,32 @@ Les produits et services bancaires sont nombreux et très variés. Afin de rense
 
 #### À réaliser :  
 
-1. Développement du produit  
-2. Présentation de la liste des différents acteurs du système bancaire français.
+1. Développement du produit.  ✔
+2. Présentation de la liste des différents acteurs du système bancaire français. ✔
 
 ### Détails de la mission
 
 #### Éléments techniques à respecter :
 
-1. Conception du frontend  
-2. Développement en HTML5  
-3. Mise en forme et mise en page en CSS3, en respectant le zoning et le wireframe fournis  
-4. Modélisation de la base de données via phpMyAdmin  
-5. Importation des données dans la base de données  
-6. Gestion de la base de données en SQL  
-7. Connexion à la base de données en PHP  
-8. Consommation des données de la base SQL grâce au langage PHP  
-9. Utilisation de requêtes SQL pour permettre l’acquisition et la gestion des données.
+1. Conception du frontend  ✔
+2. Développement en HTML5  ✔
+3. Mise en forme et mise en page en CSS3, en respectant le zoning et le wireframe fournis.  ✔
+4. Modélisation de la base de données via phpMyAdmin.  ✔
+5. Importation des données dans la base de données.  ✔
+6. Gestion de la base de données en SQL.  ✔
+7. Connexion à la base de données en PHP.  ✔
+8. Consommation des données de la base SQL grâce au langage PHP.  ✔
+9. Utilisation de requêtes SQL pour permettre l’acquisition et la gestion des données. ✔
 
 #### Particularités du site :
 
-1. Site responsive : possibilité de consulter le site au bureau ou en itinérance à partir de différentes supports (tablettes et smartphones).
+1. Site responsive : possibilité de consulter le site au bureau ou en itinérance à partir de différentes supports (tablettes et smartphones). ✔
 
 #### Fonctionnalités de l’application :
 
-1. La structure du site sera développée en HTML5, la mise en forme et la mise en page seront faites en CSS3.  
-2. Le site sera proposé à tous les utilisateurs en situation de mobilité et/ou sédentarisés dans un bureau. Il est donc impératif de mettre en place au moins un breakpoint pertinent.  
-3. La connexion avec la base de données s’effectuera via PDO en PHP. Les langages PHP et SQL seront utilisés pour traiter les interactions entre le site et la base de données.
+1. La structure du site sera développée en HTML5, la mise en forme et la mise en page seront faites en CSS3. ✔ 
+2. Le site sera proposé à tous les utilisateurs en situation de mobilité et/ou sédentarisés dans un bureau. Il est donc impératif de mettre en place au moins un breakpoint pertinent.  ✔
+3. La connexion avec la base de données s’effectuera via PDO en PHP. Les langages PHP et SQL seront utilisés pour traiter les interactions entre le site et la base de données. ✔
 
 #### Connexion/déconnexion :
 
@@ -96,6 +96,8 @@ Les produits et services bancaires sont nombreux et très variés. Afin de rense
 #### Informations complémentaires : 
 
 Pour chaque nouveau commentaire, le prénom (de la personne connectée) et la date (du jour) seront remplis automatiquement. ✔
+
+### Documentation transmise par le client :
 
 [Partenaires_tables+2.zip](https://github.com/TonyVice-cpu/GBAF_site/files/10275233/Partenaires_tables%2B2.zip)  
 [wireframeZoning-20190705T132228Z-001+(1).zip](https://github.com/TonyVice-cpu/GBAF_site/files/10275234/wireframeZoning-20190705T132228Z-001%2B.1.zip)  
