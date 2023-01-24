@@ -97,6 +97,8 @@ Les produits et services bancaires sont nombreux et très variés. Afin de rense
 
 Pour chaque nouveau commentaire, le prénom (de la personne connectée) et la date (du jour) seront remplis automatiquement. ✔
 
+### Documentation transmise par le client :
+
 [Partenaires_tables+2.zip](https://github.com/TonyVice-cpu/GBAF_site/files/10275233/Partenaires_tables%2B2.zip)  
 [wireframeZoning-20190705T132228Z-001+(1).zip](https://github.com/TonyVice-cpu/GBAF_site/files/10275234/wireframeZoning-20190705T132228Z-001%2B.1.zip)  
 [Compte-rendu+réunion+de+lancement.pdf](https://github.com/TonyVice-cpu/GBAF_site/files/10275235/Compte-rendu%2Breunion%2Bde%2Blancement.pdf)
