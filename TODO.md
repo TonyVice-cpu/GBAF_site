@@ -11,5 +11,3 @@
 ## NE PAS OUBLIER
 
   - commenter l'ensemble du code (actions et controleurs)
-
-
