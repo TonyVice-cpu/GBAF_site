@@ -8,13 +8,8 @@
 
 ***
 
-## Divers
-  option sur register settings question secrete, j'arrive pas a le centrer
-
-***
-
 ## NE PAS OUBLIER
 
-  commenter l'ensemble du code (actions et controleurs)
+  - commenter l'ensemble du code (actions et controleurs)
 
 
