@@ -14,18 +14,18 @@ include('./_includes/header.php');
   <section class="notice">
     <h2 class="fs-1 fw-bold text-uppercase my-3 mt-xl-5"><?= $title ?></h2>
 
-    <h3 class="fw-bold text-uppercase rounded p-2 fs-5">1 – Édition du site</h3>
+    <h3 class="fw-bold text-uppercase rounded p-2 fs-5 mt-5 mb-4">1 – Édition du site</h3>
     <p>En vertu de l’article 6 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l’économie numérique, il
-      est précisé aux utilisateurs du site internet https://www.gbaf.fr l’identité des différents intervenants dans
+      est précisé aux utilisateurs du site internet <a href="index.php">www.gbaf.fr</a> l’identité des différents intervenants dans
       le cadre de sa réalisation et de son suivi :</p>
 
-    <p>Propriétaire du site : Chalets et caviar – Contact : contact@gbaf.fr 07 00 00 00 00 – Adresse : 35 rue de la
+    <p>Propriétaire du site : Le Groupement Banque - Assurance Français – Contact : <a href="mailto:contact@gbaf.fr">contact@gbaf.fr</a> 07 00 00 00 00 – Adresse : 35 rue de la
       Paix – 75002 Paris.
 
     <p>Identification de l’entreprise : SARL Groupement Banque - Assurance Français au capital social de 100000€ – SIREN : –
       RCS ou RM : –Adresse postale : 25 rue de la Paix – 75002 Paris.</p>
 
-    <p>Directeur de la publication : Contact : contact@gbaf.fr.</p>
+    <p>Directeur de la publication : Contact : <a href="mailto:contact@gbaf.fr">contact@gbaf.fr</a>.</p>
 
     <p>Hébergeur : Hostinger</p>
 
@@ -34,7 +34,7 @@ include('./_includes/header.php');
     <p>Autres contributeurs : Les mentions légales sont proposées par le générateur de mentions légales de La
       Webeuse. Développeur web : Anthony ANCELIN</p>
 
-    <h3 class="fw-bold text-uppercase rounded p-2 fs-5">2 – Propriété intellectuelle et contrefaçons.</h3>
+    <h3 class="fw-bold text-uppercase rounded p-2 fs-5 mt-5 mb-4">2 – Propriété intellectuelle et contrefaçons.</h3>
     <p>Le Groupement Banque - Assurance Français est propriétaire des droits de propriété intellectuelle et détient
       les droits d’usage sur
       tous les éléments accessibles sur le site internet, notamment les textes, images, graphismes, logos, vidéos,
@@ -48,14 +48,14 @@ include('./_includes/header.php');
       comme constitutive d’une contrefaçon et poursuivie conformément aux dispositions des articles L.335-2 et
       suivants du Code de Propriété Intellectuelle.</p>
 
-    <h3 class="fw-bold text-uppercase rounded p-2 fs-5">3 – Limitations de responsabilité.</h3>
+    <h3 class="fw-bold text-uppercase rounded p-2 fs-5 mt-5 mb-4">3 – Limitations de responsabilité.</h3>
     <p>Le GBAF ne pourra être tenu pour responsable des dommages directs et indirects causés au matériel de
-      l’utilisateur, lors de l’accès au site https://www.gbaf.fr.</p>
+      l’utilisateur, lors de l’accès au site <a href="index.php">www.gbaf.fr</a>.</p>
 
     <p>Le GBAF décline toute responsabilité quant à l’utilisation qui pourrait être faite des informations
-      et contenus présents sur https://www.gbaf.fr.</p>
+      et contenus présents sur <a href="index.php">www.gbaf.fr</a>.</p>
 
-    <p>Le GBAF s’engage à sécuriser au mieux le site https://www.gbaf.fr, cependant
+    <p>Le GBAF s’engage à sécuriser au mieux le site <a href="index.php">www.gbaf.fr</a>, cependant
       sa responsabilité ne pourra être mise en cause si des données indésirables sont importées et installées sur
       son site à son insu.</p>
 
@@ -68,23 +68,20 @@ include('./_includes/header.php');
       civile et/ou pénale de l’utilisateur, notamment en cas de message à caractère raciste, injurieux, diffamant,
       ou pornographique, quel que soit le support utilisé (texte, photographie …).</p>
 
-    <h3 class="fw-bold text-uppercase rounded p-2 fs-5">4 – CNIL et gestion des données personnelles.</h3>
+    <h3 class="fw-bold text-uppercase rounded p-2 fs-5 mt-5 mb-4">4 – CNIL et gestion des données personnelles.</h3>
     <p>Conformément aux dispositions de la loi 78-17 du 6 janvier 1978 modifiée, l’utilisateur du site
-      https://www.gbaf.fr dispose d’un droit d’accès, de modification et de suppression des
-      informations collectées. Pour exercer ce droit, envoyez un message à notre Délégué à la Protection des Données
-      : Anthony ANCELIN – Anthony ANCELIN.</p>
-
-    <p>Pour plus d’informations sur la façon dont nous traitons vos données (type de données, finalité,
-      destinataire…), lisez notre Politique de Confidentialité.</p>
+      <a href="index.php">www.gbaf.fr</a> dispose d’un droit d’accès, de modification et de suppression des
+      informations collectées. Pour exercer ce droit, envoyez un message à notre Délégué à la Protection des Données : Anthony ANCELIN – Anthony ANCELIN.
+    </p>
 
     <p>Il est également possible de déposer une réclamation auprès de la CNIL.</p>
 
-    <h3 class="fw-bold text-uppercase rounded p-2 fs-5">5 – Liens hypertextes et cookies.</h3>
-    <p>Le site https://www.gbaf.fr contient des liens hypertextes vers d’autres sites et
+    <h3 class="fw-bold text-uppercase rounded p-2 fs-5 mt-5 mb-4">5 – Liens hypertextes et cookies.</h3>
+    <p>Le site <a href="index.php">www.gbaf.fr</a> contient des liens hypertextes vers d’autres sites et
       dégage toute responsabilité à propos de ces liens externes ou des liens créés par d’autres sites vers
-      https://www.gbaf.fr.</p>
+      <a href="index.php">www.gbaf.fr</a>.</p>
 
-    <p>La navigation sur le site https://www.gbaf.fr est susceptible de provoquer
+    <p>La navigation sur le site <a href="index.php">www.gbaf.fr</a> est susceptible de provoquer
       l’installation de cookie(s) sur l’ordinateur de l’utilisateur.</p>
 
     <p>Un « cookie » est un fichier de petite taille qui enregistre des informations relatives à la navigation d’un
@@ -99,8 +96,8 @@ include('./_includes/header.php');
     <p>Pour plus d’informations sur la façon dont nous faisons usage des cookies, lisez notre Politique de
       Confidentialité.</p>
 
-    <h3 class="fw-bold text-uppercase rounded p-2 fs-5">6 – Droit applicable et attribution de juridiction.</h3>
-    <p>Tout litige en relation avec l’utilisation du site https://www.gbaf.fr est soumis au
+    <h3 class="fw-bold text-uppercase rounded p-2 fs-5 mt-5 mb-4">6 – Droit applicable et attribution de juridiction.</h3>
+    <p>Tout litige en relation avec l’utilisation du site <a href="index.php">www.gbaf.fr</a> est soumis au
       droit français.</p>
     <p class="mb-5">En dehors des cas où la loi ne le permet pas, il est fait attribution exclusive de juridiction
       aux tribunaux compétents de Chambéry.</p>

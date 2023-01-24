@@ -16,12 +16,16 @@
  * Nom d'utilisateur MySQL
  * Mdp MySQL
  */
-$dsn = 'mysql:dbname=gbaf;host=localhost';
-$user = 'root';
-$pass = '';
+
+// Déclaration des données de connexion
+$cred = [
+  'dsn' => 'mysql:dbname=gbaf;host=localhost',
+  'user' => 'root',
+  'pass' => ''
+];
 
 try {
-  $bdd = new PDO($dsn, $user, $pass);
+  $bdd = new PDO($cred['dsn'], $cred['user'], $cred['pass']);
   /**
    *On lui demande de configurer PDO::ATTR_ERRMODE qui va nous sortir un rapportd’erreurs
    *et que l’on souhaite qu’il émette une exception grâce à PDO::ERRMODE_EXCEPTION.
@@ -46,3 +50,8 @@ try {
   echo 'Échec lors de la connexion : ' . $e->getMessage();
   die;
 }
+/**
+ * On détruit les données d'accès à la base de données
+ * une fois la connexion établie, pour des raisons de sécurité
+ */
+unset($cred);

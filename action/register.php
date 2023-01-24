@@ -1,4 +1,8 @@
 <?php
+/**
+ * Action qui permet à l'utilisateur de créer un compte
+ * Redigire sur la page d'accueil
+ */
 include('../_includes/common.php');
 $account = create_account(
   $_POST['first_name'],

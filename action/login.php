@@ -1,4 +1,8 @@
 <?php
+/**
+ * Action qui permet à l'utilisateur de se connecter
+ * Redigire sur la page d'accueil
+ */
 include('../_includes/common.php');
 $account = verify_login($_POST['user_name'], $_POST['password']);
 if ($account) {

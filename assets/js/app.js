@@ -1,3 +1,10 @@
+/*  JAVASCRIPT 
+    --------------------------------------------------------------
+	bouton to top
+  chargé à partir du footer (footer.php)
+    --------------------------------------------------------------
+*/
+
 const totop = document.getElementById("totop");
 totop.addEventListener("click", () => window.scrollTo(0, 0));
 

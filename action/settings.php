@@ -1,4 +1,9 @@
 <?php
+/**
+ * Action qui permet à l'utilisateur de modifier son profil
+ * L'utilisateur doit etre connecté
+ * Redigire sur la page d'accueil
+ */
 include('../_includes/common.php');
 protected_session();
 $account = update_account(

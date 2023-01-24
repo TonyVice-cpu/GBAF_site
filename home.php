@@ -73,7 +73,7 @@ include('./_includes/header.php')
             <h3 class="card-title fw-bold text-uppercase mb-5"><?= htmlspecialchars($actor['actor_name']) ?></h3>
             <p class="card-text"><?= htmlspecialchars(truncate($actor['description'], 120)) ?></p>
             <a href="#">www.<?= htmlspecialchars($actor['actor_name']) ?>.fr</a>
-            <p class="card-text d-flex justify-content-end"><a class="btn btn-dark" href="partner.php?id=<?= $actor['actor_id'] ?>"><small>Lire la suite</small></a>
+            <p class="card-text d-flex justify-content-end"><a class="btn btn-dark" href="partner.php?id=<?= $actor['actor_id'] ?>" title="Cliquez-ici pour Lire la suite."><small>Lire la suite</small></a>
             </p>
           </div>
         </div>

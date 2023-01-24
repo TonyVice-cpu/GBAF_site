@@ -37,6 +37,11 @@ h6 {
 /* LIENS */
 a {
   text-decoration: none;
+  color: var(--primary);
+}
+
+a:hover {
+  color: var(--dark1);
 }
 
 /* ******************************************************************************************************************************************************************/
@@ -84,6 +89,10 @@ p.nav-link {
   margin: 0;
 }
 
+p.nav-link:hover {
+  color: var(--light0);
+}
+
 /* ******************************************************************************************************************************************************************/
 /* MAIN */
 main {
@@ -103,12 +112,12 @@ main {
   margin: 10px;
 }
 
-#form-login div > a {
-  color: var(--primary);
-}
-
 #form-login div > a:hover {
   color: var(--dark0);
+}
+
+#form-login div > p {
+  text-align: center;
 }
 
 .fa-asterisk {
@@ -133,8 +142,7 @@ main {
 /* ******************************************************************************************************************************************************************/
 /* PAGE HOME */
 /* SECTION - PRESENTATION */
-.presentation li:not(:last-child)::after,
-.contact p:last-child::after {
+.presentation li:not(:last-child)::after {
   content: "";
   display: block;
   height: 3px;
@@ -166,24 +174,9 @@ main {
   object-fit: contain;
 }
 
-.partner div > a {
-  color: var(--primary);
-}
-
-.partner div > a:hover {
-  color: var(--dark1);
-}
-
 /* ******************************************************************************************************************************************************************/
 /* PAGE PARTNER_1-2-3-4 */
 /* SECTION - PARTNER PRESENTATION */
-.partner-presentation a {
-  color: var(--primary);
-}
-
-.partner-presentation a:hover {
-  color: var(--dark1);
-}
 
 /* SECTION - PARTNER COMMENTS*/
 .partner-comments .card-date {
@@ -195,14 +188,19 @@ main {
 }
 
 /* ******************************************************************************************************************************************************************/
-/* PAGE CONTACT */
-.card-contact {
-  width: 90%;
-}
-
 /* PAGE NOTICE */
 .notice h3 {
   background-color: var(--light2);
+}
+
+/* PAGE POWEREDBY */
+.poweredby .card-poweredby,
+.contact .card-contact {
+  flex: 1;
+}
+
+.poweredby .card-poweredby img {
+  height: 100px;
 }
 
 /* ******************************************************************************************************************************************************************/
@@ -242,6 +240,11 @@ i.icon {
   background-color: var(--light2);
   border-radius: 50%;
   font-size: 18px;
+}
+
+i.icon.large {
+  height: 100px;
+  font-size: 48px;
 }
 
 /* BOUTON - TO TOP */

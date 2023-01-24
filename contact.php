@@ -17,7 +17,7 @@ include('./_includes/header.php');
     <!-- PARAGRAPHE -->
     <p class="mb-5">N'hésitez pas à nous contacter.</p>
     <!-- CARDS CONTACT -->
-    <div class="d-flex flex-column align-items-center flex-lg-row gap-4">
+    <div class="d-flex flex-column flex-lg-row gap-4">
       <!-- CARD CONTACT 1 -->
       <div class="card-contact rounded shadow p-4 gap-3">
         <div class="d-flex flex-column align-items-center mb-3 gap-4">
@@ -33,7 +33,7 @@ include('./_includes/header.php');
           <i class="icon fa-solid fa-envelope"></i>
           <h3 class="m-0 text-uppercase fw-bold fs-4">Par E-Mail :</h3>
           <p class="text-muted">Écrivez-nous via notre adresse mail.</p>
-          <p class="text-center fs-6">contactez-nous@gbaf.fr</p>
+          <p class="text-center fs-6"><a href="mailto:contactez-nous@gbaf.fr">contactez-nous@gbaf.fr</a></p>
         </div>
       </div>
       <!-- CARD CONTACT 3 -->

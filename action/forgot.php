@@ -1,4 +1,8 @@
 <?php
+/**
+ * Action qui permet de réinitialiser un mot de passe perdu
+ * En 3 étapes
+ */
 include('../_includes/common.php');
 
 // ETAPE 1 : Si l'utilisateur a saisi son nom d'utilisateur

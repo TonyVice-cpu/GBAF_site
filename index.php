@@ -19,7 +19,7 @@ include('./_includes/header.php');
     <!-- TITRE -->
     <h2 class="fs-1 fw-bold text-uppercase text-center my-3 my-xl-5">Bienvenue sur le site du GBAF</h2>
     <!-- FORMULAIRE -->
-    <form class="mx-auto " id="form-login" action="./action/login.php" method="post">
+    <form class="mx-auto" id="form-login" action="./action/login.php" method="post">
       <!-- NOM D'UTILISATEUR -->
       <div class="d-flex flex-column align-items-center my-3">
         <label class="fw-bold" for="user_name">Nom d'utilisateur : <i class="fa-solid fa-asterisk"></i></label>
@@ -36,17 +36,17 @@ include('./_includes/header.php');
       </div>
       <!-- BOUTON D'ENVOI -->
       <div class="d-flex flex-column align-items-center my-3">
-        <button type="submit" class="btn btn-dark">Connexion</button>
+        <button type="submit" class="btn btn-dark" title="Cliquez-ici pour Valider.">Connexion</button>
       </div>
       <!-- MDP PERDU -->
       <div class="d-flex flex-column align-items-center my-3">
-        <a class="mt-3" href="./forgot.php?reset">Mot de passe oublié ?</a>
+        <a class="mt-3" href="./forgot.php?reset" title="Cliquez-ici pour Accéder à la modification du MDP.">Mot de passe oublié ?</a>
       </div>
     </form>
   </section>
 </main>
 <!-- LIENS VERS INSCRIPTION -->
-<div class="sign-up-link d-flex justify-content-center text-center"><a class="text-uppercase fs-3 mt-3" href="./register.php">Première visite ?</a></div>
+<div class="sign-up-link d-flex justify-content-center text-center"><a class="text-uppercase fs-3 mt-3" href="./register.php" title="Cliquez-ici pour vous Enregistrer.">Première visite ?</a></div>
 <!-- FOOTER -->
 <!-- inclusion du footer contenant le JAVASCRIPT -->
 <?php include('./_includes/footer.php'); ?>

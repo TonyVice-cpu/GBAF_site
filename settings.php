@@ -67,7 +67,7 @@ include('./_includes/header.php');
       </div>
       <!-- BOUTON D'ENVOI -->
       <div class="d-flex flex-column align-items-center my-3">
-        <button type="submit" class="btn btn-dark">Modifier</button>
+        <button type="submit" class="btn btn-dark" title="Cliquez-ici pour Modifier.">Modifier</button>
       </div>
     </form>
   </section>

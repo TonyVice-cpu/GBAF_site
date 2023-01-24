@@ -13,7 +13,7 @@ $votes = count_votes($_SESSION['account']['user_id'], $_GET['id']);
     <!-- CARTES COMMENTS-HEADER -->
     <h2 class="card-header"><?= $count_comments ?> COMMENTAIRE(S)</h2>
     <div class="d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-sm-end m-1 m-sm-3">
-      <div><a href="comment.php?id=<?= $_GET['id'] ?>" class="btn btn-dark m-1">Nouveau commentaire</a></div>
+      <div><a href="comment.php?id=<?= $_GET['id'] ?>" class="btn btn-dark m-1" title="Cliquez-ici pour Accéder à la page suivante.">Nouveau commentaire</a></div>
       <div class="d-flex justify-content-center">
         <form class="d-flex align-items-center gap-1" action="./action/vote.php" method="POST">
           <input type="hidden" name="actor_id" value="<?= $_GET['id'] ?>">

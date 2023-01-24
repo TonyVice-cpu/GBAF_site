@@ -1,4 +1,9 @@
 <?php
+/**
+ * Action qui permet à l'utilisateur de voter pour un partenaire
+ * L'utilisateur doit etre connecté
+ * Redigige sur le partenaire associé
+ */
 include('../_includes/common.php');
 protected_session();
 $success = like_dislike($_SESSION['account']['user_id'], $_POST['actor_id'], $_POST['vote'] );

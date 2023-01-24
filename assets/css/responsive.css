@@ -4,7 +4,6 @@
     --------------------------------------------------------------
 */
 
-
 /* SM */
 @media screen and (min-width: 576px) {
   .presentation li:not(:last-child)::after {
@@ -18,10 +17,6 @@
   /* SECTION - PARTNERS*/
   .partner img {
     width: 40%;
-  }
-
-  .card-contact {
-    height: 325px;
   }
 }
 
